@@ -1,12 +1,12 @@
 # Feature Implementation
 
 ## Feature Details
-- **ID**: research-service-display
-- **Title**: Research service card showing magnifying glass icon and description about finding highest performing content creators in user's niche
+- **ID**: script-service-display
+- **Title**: Script service card showing document icon and description about creating full month's worth of scripts using research and business information
 - **Category**: ui
 
 ## Description
-Research service card showing magnifying glass icon and description about finding highest performing content creators in user's niche
+Script service card showing document icon and description about creating full month's worth of scripts using research and business information
 
 ## Project Context
 - **Platform**: Vite React (Web)
@@ -19,9 +19,9 @@ Research service card showing magnifying glass icon and description about findin
 
 ## Verification Steps
 1. Navigate to services section
-2. Locate Research service card
-3. Verify magnifying glass icon displays correctly
-4. Verify description text explains research process for content creators
+2. Locate Script service card
+3. Verify document/script icon displays correctly
+4. Verify description explains monthly script creation process
 
 ## Instructions
 1. **Explore**: Review the existing codebase structure and patterns
@@ -38,7 +38,7 @@ Research service card showing magnifying glass icon and description about findin
 5. **Update**: Only mark feature as "passes": true in feature_list.json AFTER browser testing confirms it works
 
 ## Important
-- Implement ONLY this specific feature (ID: research-service-display)
+- Implement ONLY this specific feature (ID: script-service-display)
 - Do NOT modify features already marked as passes: true
 - Follow existing code patterns and conventions
 - Maintain backward compatibility

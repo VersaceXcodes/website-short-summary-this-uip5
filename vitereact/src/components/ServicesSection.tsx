@@ -13,7 +13,7 @@ const ServicesSection: React.FC = () => {
     },
     {
       title: "Script",
-      description: "Compelling narratives tailored to your brand voice.",
+      description: "Create a full month's worth of scripts using research and business information.",
       icon: FileText
     },
     {

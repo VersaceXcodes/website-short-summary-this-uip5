@@ -90,8 +90,9 @@
     "selected": true,
     "order": 5,
     "status": "completed",
-    "completedAt": "2026-01-20T18:05:00.000Z",
-    "attempts": 2
+    "completedAt": "2026-01-20T18:00:22.953Z",
+    "attempts": 2,
+    "lastAttemptAt": "2026-01-20T18:00:22.953Z"
   },
   {
     "id": "script-service-display",
@@ -106,7 +107,10 @@
     "priority": 2,
     "passes": false,
     "selected": true,
-    "order": 6
+    "order": 6,
+    "status": "in_progress",
+    "lastAttemptAt": "2026-01-20T18:00:27.111Z",
+    "attempts": 1
   },
   {
     "id": "film-edit-service-display",
