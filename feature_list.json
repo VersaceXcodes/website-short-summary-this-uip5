@@ -146,9 +146,9 @@
     "selected": true,
     "order": 9,
     "status": "completed",
-    "lastAttemptAt": "2026-01-20T14:50:00.000Z",
+    "lastAttemptAt": "2026-01-20T14:50:08.172Z",
     "attempts": 2,
-    "completedAt": "2026-01-20T14:50:00.000Z"
+    "completedAt": "2026-01-20T14:50:08.172Z"
   },
   {
     "id": "services-learn-pricing-button",
@@ -161,9 +161,13 @@
       "Verify navigation to Pricing page occurs"
     ],
     "priority": 1,
-    "passes": false,
+    "passes": true,
     "selected": true,
-    "order": 10
+    "order": 10,
+    "status": "completed",
+    "lastAttemptAt": "2026-01-20T14:50:12.643Z",
+    "attempts": 1,
+    "completedAt": "2026-01-20T14:58:00.000Z"
   },
   {
     "id": "faq-section-display",

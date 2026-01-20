@@ -48,13 +48,20 @@ const ServicesSection: React.FC = () => {
           ))}
         </div>
         
-        <div className="mt-16 text-center">
+        <div className="mt-16 flex flex-col md:flex-row justify-center items-center gap-6">
           <Button 
             onClick={() => navigate('/about')}
             size="lg"
-            className="font-smut uppercase tracking-wider bg-cognac-brown text-ivory hover:bg-cognac-brown/90 text-lg px-8 py-6 h-auto"
+            className="font-smut uppercase tracking-wider bg-cognac-brown text-ivory hover:bg-cognac-brown/90 text-lg px-8 py-6 h-auto w-full md:w-auto"
           >
             Learn more about what we do
+          </Button>
+          <Button 
+            onClick={() => navigate('/pricing')}
+            size="lg"
+            className="font-smut uppercase tracking-wider bg-cognac-brown text-ivory hover:bg-cognac-brown/90 text-lg px-8 py-6 h-auto w-full md:w-auto"
+          >
+            Learn more about our pricing
           </Button>
         </div>
       </div>
