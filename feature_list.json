@@ -109,9 +109,9 @@
     "selected": true,
     "order": 6,
     "status": "completed",
-    "lastAttemptAt": "2026-01-20T18:11:12.648Z",
+    "lastAttemptAt": "2026-01-20T18:13:18.800Z",
     "attempts": 3,
-    "completedAt": "2026-01-20T18:15:00.000Z"
+    "completedAt": "2026-01-20T18:13:18.800Z"
   },
   {
     "id": "film-edit-service-display",
@@ -124,9 +124,13 @@
       "Verify description explains filming and editing process division"
     ],
     "priority": 2,
-    "passes": false,
+    "passes": true,
     "selected": true,
-    "order": 7
+    "order": 7,
+    "status": "completed",
+    "lastAttemptAt": "2026-01-20T18:13:24.990Z",
+    "attempts": 2,
+    "completedAt": "2026-01-20T18:16:43.454Z"
   },
   {
     "id": "upload-service-display",

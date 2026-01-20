@@ -1,12 +1,12 @@
 # Feature Implementation
 
 ## Feature Details
-- **ID**: script-service-display
-- **Title**: Script service card showing document icon and description about creating full month's worth of scripts using research and business information
+- **ID**: film-edit-service-display
+- **Title**: Film & Edit service card showing video camera icon and description about client filming videos and agency editing them
 - **Category**: ui
 
 ## Description
-Script service card showing document icon and description about creating full month's worth of scripts using research and business information
+Film & Edit service card showing video camera icon and description about client filming videos and agency editing them
 
 ## Project Context
 - **Platform**: Vite React (Web)
@@ -19,9 +19,9 @@ Script service card showing document icon and description about creating full mo
 
 ## Verification Steps
 1. Navigate to services section
-2. Locate Script service card
-3. Verify document/script icon displays correctly
-4. Verify description explains monthly script creation process
+2. Locate Film & Edit service card
+3. Verify video camera icon displays correctly
+4. Verify description explains filming and editing process division
 
 ## Instructions
 1. **Explore**: Review the existing codebase structure and patterns
@@ -38,7 +38,7 @@ Script service card showing document icon and description about creating full mo
 5. **Update**: Only mark feature as "passes": true in feature_list.json AFTER browser testing confirms it works
 
 ## Important
-- Implement ONLY this specific feature (ID: script-service-display)
+- Implement ONLY this specific feature (ID: film-edit-service-display)
 - Do NOT modify features already marked as passes: true
 - Follow existing code patterns and conventions
 - Maintain backward compatibility

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Search, FileText, Clapperboard, Upload } from 'lucide-react';
+import { Search, FileText, Video, Upload } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 
@@ -18,8 +18,8 @@ const ServicesSection: React.FC = () => {
     },
     {
       title: "Film & Edit",
-      description: "High-quality production and professional editing.",
-      icon: Clapperboard
+      description: "You film the videos, and we professionally edit them.",
+      icon: Video
     },
     {
       title: "Upload",
