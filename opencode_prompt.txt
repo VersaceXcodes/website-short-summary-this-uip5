@@ -1,12 +1,12 @@
 # Feature Implementation
 
 ## Feature Details
-- **ID**: scroll-mini-logo
-- **Title**: Small logo that appears in center of header when user starts scrolling down from the top of the page
+- **ID**: research-service-display
+- **Title**: Research service card showing magnifying glass icon and description about finding highest performing content creators in user's niche
 - **Category**: ui
 
 ## Description
-Small logo that appears in center of header when user starts scrolling down from the top of the page
+Research service card showing magnifying glass icon and description about finding highest performing content creators in user's niche
 
 ## Project Context
 - **Platform**: Vite React (Web)
@@ -18,10 +18,10 @@ Small logo that appears in center of header when user starts scrolling down from
 - Keep changes within the existing Vite boilerplate
 
 ## Verification Steps
-1. Load homepage at top position
-2. Scroll down slowly and observe header area
-3. Verify small logo appears in center of header during scroll
-4. Scroll back to top and verify logo disappears
+1. Navigate to services section
+2. Locate Research service card
+3. Verify magnifying glass icon displays correctly
+4. Verify description text explains research process for content creators
 
 ## Instructions
 1. **Explore**: Review the existing codebase structure and patterns
@@ -38,7 +38,7 @@ Small logo that appears in center of header when user starts scrolling down from
 5. **Update**: Only mark feature as "passes": true in feature_list.json AFTER browser testing confirms it works
 
 ## Important
-- Implement ONLY this specific feature (ID: scroll-mini-logo)
+- Implement ONLY this specific feature (ID: research-service-display)
 - Do NOT modify features already marked as passes: true
 - Follow existing code patterns and conventions
 - Maintain backward compatibility

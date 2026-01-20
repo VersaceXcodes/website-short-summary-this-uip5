@@ -52,9 +52,9 @@
     "selected": true,
     "order": 3,
     "status": "completed",
-    "lastAttemptAt": "2026-01-20T17:55:00.000Z",
+    "lastAttemptAt": "2026-01-20T17:58:39.325Z",
     "attempts": 3,
-    "completedAt": "2026-01-20T17:55:00.000Z"
+    "completedAt": "2026-01-20T17:58:39.325Z"
   },
   {
     "id": "services-overview-section",
@@ -86,9 +86,12 @@
       "Verify description text explains research process for content creators"
     ],
     "priority": 2,
-    "passes": false,
+    "passes": true,
     "selected": true,
-    "order": 5
+    "order": 5,
+    "status": "completed",
+    "completedAt": "2026-01-20T18:05:00.000Z",
+    "attempts": 2
   },
   {
     "id": "script-service-display",

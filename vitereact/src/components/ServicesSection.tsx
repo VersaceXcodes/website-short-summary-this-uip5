@@ -8,7 +8,7 @@ const ServicesSection: React.FC = () => {
   const steps = [
     {
       title: "Research",
-      description: "We dive deep into your industry to find what resonates.",
+      description: "Finding the highest performing content creators in your niche.",
       icon: Search
     },
     {
