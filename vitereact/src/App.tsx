@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import Home from '@/components/views/Home';
 import About from '@/components/views/About';
 import Pricing from '@/components/views/Pricing';
@@ -24,6 +25,7 @@ const App: React.FC = () => {
               {/* <Route path="*" element={<Navigate to="/" replace />} /> */}
             </Routes>
           </main>
+          <Footer />
         </div>
       </QueryClientProvider>
     </Router>

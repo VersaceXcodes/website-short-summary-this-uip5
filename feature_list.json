@@ -214,12 +214,11 @@
       "Verify contact email contact@cinebih.com is displayed"
     ],
     "priority": 1,
-    "passes": false,
+    "passes": true,
     "selected": true,
     "order": 13,
-    "status": "in_progress",
-    "lastAttemptAt": "2026-01-20T15:10:03.861Z",
-    "attempts": 1
+    "status": "completed",
+    "completedAt": "2026-01-20T15:20:00.000Z"
   },
   {
     "id": "footer-social-icons",
