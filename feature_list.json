@@ -359,13 +359,12 @@
       "Click button to verify it initiates contact/booking process"
     ],
     "priority": 1,
-    "passes": false,
+    "passes": true,
     "selected": true,
     "order": 22,
-    "status": "in_progress",
-    "lastAttemptAt": "2026-01-20T15:43:44.385Z",
-    "attempts": 2,
-    "errorMessage": "Agent completed but feature not marked as passed"
+    "status": "completed",
+    "lastAttemptAt": "2026-01-20T15:54:35.629Z",
+    "attempts": 3
   },
   {
     "id": "pricing-page-navigation",
