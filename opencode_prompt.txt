@@ -1,12 +1,12 @@
 # Feature Implementation
 
 ## Feature Details
-- **ID**: pricing-book-now-buttons
-- **Title**: Book Now buttons on each pricing plan that initiate the booking/contact process for that specific plan
-- **Category**: functional
+- **ID**: contact-page-navigation
+- **Title**: Dedicated Contact Us page accessible via main navigation
+- **Category**: navigation
 
 ## Description
-Book Now buttons on each pricing plan that initiate the booking/contact process for that specific plan
+Dedicated Contact Us page accessible via main navigation
 
 ## Project Context
 - **Platform**: Vite React (Web)
@@ -18,10 +18,10 @@ Book Now buttons on each pricing plan that initiate the booking/contact process 
 - Keep changes within the existing Vite boilerplate
 
 ## Verification Steps
-1. Navigate to Pricing page
-2. Click Book Now button on Starter plan
-3. Verify booking process initiates with Starter plan context
-4. Repeat for Optimise and Dominate plans
+1. Click Contact Us link in main navigation
+2. Verify Contact page loads correctly
+3. Verify page displays contact form or information
+4. Verify page maintains consistent styling with rest of site
 
 ## Instructions
 1. **Explore**: Review the existing codebase structure and patterns
@@ -38,7 +38,7 @@ Book Now buttons on each pricing plan that initiate the booking/contact process 
 5. **Update**: Only mark feature as "passes": true in feature_list.json AFTER browser testing confirms it works
 
 ## Important
-- Implement ONLY this specific feature (ID: pricing-book-now-buttons)
+- Implement ONLY this specific feature (ID: contact-page-navigation)
 - Do NOT modify features already marked as passes: true
 - Follow existing code patterns and conventions
 - Maintain backward compatibility

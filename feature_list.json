@@ -489,8 +489,9 @@
     "selected": true,
     "order": 29,
     "status": "completed",
-    "lastAttemptAt": "2026-01-20T16:56:39.203Z",
-    "attempts": 1
+    "lastAttemptAt": "2026-01-20T17:00:44.206Z",
+    "attempts": 1,
+    "completedAt": "2026-01-20T17:00:44.206Z"
   },
   {
     "id": "contact-page-navigation",
@@ -505,7 +506,10 @@
     "priority": 1,
     "passes": false,
     "selected": true,
-    "order": 30
+    "order": 30,
+    "status": "in_progress",
+    "lastAttemptAt": "2026-01-20T17:00:49.319Z",
+    "attempts": 1
   },
   {
     "id": "contact-form-display",
