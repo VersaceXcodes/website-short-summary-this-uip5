@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../assets/logo.svg';
 
 const Header: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -24,7 +25,7 @@ const Header: React.FC = () => {
       </div>
       
       <div className={`flex-1 flex justify-center transition-opacity duration-300 ${scrolled ? 'opacity-100' : 'opacity-0'}`}>
-          <div className="text-2xl font-smut-full">CINEBIH</div>
+          <img src={logo} alt="CINEBIH" className="h-12 w-auto" />
       </div>
 
       <div className="flex-1 flex justify-end gap-6 text-xl font-smut">

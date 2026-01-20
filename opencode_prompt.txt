@@ -1,12 +1,12 @@
 # Feature Implementation
 
 ## Feature Details
-- **ID**: contact-form-submission
-- **Title**: Functional contact form that accepts user input and processes form submissions
-- **Category**: functional
+- **ID**: scroll-mini-logo
+- **Title**: Small logo that appears in center of header when user starts scrolling down from the top of the page
+- **Category**: ui
 
 ## Description
-Functional contact form that accepts user input and processes form submissions
+Small logo that appears in center of header when user starts scrolling down from the top of the page
 
 ## Project Context
 - **Platform**: Vite React (Web)
@@ -18,10 +18,10 @@ Functional contact form that accepts user input and processes form submissions
 - Keep changes within the existing Vite boilerplate
 
 ## Verification Steps
-1. Navigate to Contact Us page
-2. Fill out all required form fields
-3. Click submit button
-4. Verify form submission processes successfully with confirmation message
+1. Load homepage at top position
+2. Scroll down slowly and observe header area
+3. Verify small logo appears in center of header during scroll
+4. Scroll back to top and verify logo disappears
 
 ## Instructions
 1. **Explore**: Review the existing codebase structure and patterns
@@ -38,7 +38,7 @@ Functional contact form that accepts user input and processes form submissions
 5. **Update**: Only mark feature as "passes": true in feature_list.json AFTER browser testing confirms it works
 
 ## Important
-- Implement ONLY this specific feature (ID: contact-form-submission)
+- Implement ONLY this specific feature (ID: scroll-mini-logo)
 - Do NOT modify features already marked as passes: true
 - Follow existing code patterns and conventions
 - Maintain backward compatibility

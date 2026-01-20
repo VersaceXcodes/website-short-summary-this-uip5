@@ -50,7 +50,10 @@
     "priority": 2,
     "passes": false,
     "selected": true,
-    "order": 3
+    "order": 3,
+    "status": "in_progress",
+    "lastAttemptAt": "2026-01-20T17:37:14.146Z",
+    "attempts": 1
   },
   {
     "id": "services-overview-section",
@@ -547,8 +550,9 @@
     "selected": true,
     "order": 32,
     "status": "completed",
-    "lastAttemptAt": "2026-01-20T17:26:28.727Z",
-    "attempts": 1
+    "lastAttemptAt": "2026-01-20T17:37:08.834Z",
+    "attempts": 1,
+    "completedAt": "2026-01-20T17:37:08.834Z"
   },
   {
     "id": "responsive-mobile-design",
