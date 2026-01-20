@@ -450,12 +450,13 @@
       "Verify complete service list and Book Now button are present"
     ],
     "priority": 1,
-    "passes": false,
+    "passes": true,
     "selected": true,
     "order": 27,
-    "status": "in_progress",
-    "lastAttemptAt": "2026-01-20T16:44:56.406Z",
-    "attempts": 1
+    "status": "completed",
+    "lastAttemptAt": "2026-01-20T16:45:53.674Z",
+    "attempts": 2,
+    "errorMessage": "Agent completed but feature not marked as passed"
   },
   {
     "id": "pricing-plan-features",

@@ -57,7 +57,7 @@ const pricingPlans = [
     period: "/month",
     description: "For brands that want to dominate their niche with daily content.",
     features: [
-      "30 Short Form Videos",
+      "30 shorts/month",
       "Onboarding & Review Calls",
       "Topic Research & Concepting",
       "Professional Scriptwriting",
