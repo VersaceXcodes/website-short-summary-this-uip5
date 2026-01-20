@@ -363,8 +363,9 @@
     "selected": true,
     "order": 22,
     "status": "completed",
-    "lastAttemptAt": "2026-01-20T15:54:35.629Z",
-    "attempts": 3
+    "lastAttemptAt": "2026-01-20T15:59:24.392Z",
+    "attempts": 3,
+    "completedAt": "2026-01-20T15:59:24.392Z"
   },
   {
     "id": "pricing-page-navigation",
@@ -377,9 +378,12 @@
       "Verify same Pricing page loads"
     ],
     "priority": 1,
-    "passes": false,
+    "passes": true,
     "selected": true,
-    "order": 23
+    "order": 23,
+    "status": "completed",
+    "lastAttemptAt": "2026-01-20T15:59:30.097Z",
+    "attempts": 1
   },
   {
     "id": "pricing-cost-explanation",

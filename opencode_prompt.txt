@@ -1,12 +1,12 @@
 # Feature Implementation
 
 ## Feature Details
-- **ID**: about-book-now-button
-- **Title**: Book Now button on About page that allows interested users to initiate contact or booking process
+- **ID**: pricing-page-navigation
+- **Title**: Dedicated Pricing page accessible via main navigation and service section buttons
 - **Category**: navigation
 
 ## Description
-Book Now button on About page that allows interested users to initiate contact or booking process
+Dedicated Pricing page accessible via main navigation and service section buttons
 
 ## Project Context
 - **Platform**: Vite React (Web)
@@ -18,10 +18,10 @@ Book Now button on About page that allows interested users to initiate contact o
 - Keep changes within the existing Vite boilerplate
 
 ## Verification Steps
-1. Navigate to About page
-2. Locate Book Now button
-3. Verify button is prominently displayed
-4. Click button to verify it initiates contact/booking process
+1. Click Pricing link in main navigation
+2. Verify Pricing page loads correctly
+3. Navigate back to homepage and click 'learn more about our pricing' button
+4. Verify same Pricing page loads
 
 ## Instructions
 1. **Explore**: Review the existing codebase structure and patterns
@@ -38,7 +38,7 @@ Book Now button on About page that allows interested users to initiate contact o
 5. **Update**: Only mark feature as "passes": true in feature_list.json AFTER browser testing confirms it works
 
 ## Important
-- Implement ONLY this specific feature (ID: about-book-now-button)
+- Implement ONLY this specific feature (ID: pricing-page-navigation)
 - Do NOT modify features already marked as passes: true
 - Follow existing code patterns and conventions
 - Maintain backward compatibility
