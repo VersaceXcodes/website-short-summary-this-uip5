@@ -1,12 +1,12 @@
 # Feature Implementation
 
 ## Feature Details
-- **ID**: faq-question-expansion
-- **Title**: Interactive functionality allowing users to click FAQ questions to expand/collapse detailed answers
-- **Category**: functional
+- **ID**: footer-social-icons
+- **Title**: Social media icons in footer that will link to agency's social media profiles (links to be added later)
+- **Category**: ui
 
 ## Description
-Interactive functionality allowing users to click FAQ questions to expand/collapse detailed answers
+Social media icons in footer that will link to agency's social media profiles (links to be added later)
 
 ## Project Context
 - **Platform**: Vite React (Web)
@@ -18,10 +18,10 @@ Interactive functionality allowing users to click FAQ questions to expand/collap
 - Keep changes within the existing Vite boilerplate
 
 ## Verification Steps
-1. Navigate to FAQ section
-2. Click on first FAQ question
-3. Verify answer expands and displays full content
-4. Click question again to verify answer collapses
+1. Navigate to footer section
+2. Verify all major social media icons are present
+3. Verify icons are properly styled and visible
+4. Verify icons are clickable (even if links not yet active)
 
 ## Instructions
 1. **Explore**: Review the existing codebase structure and patterns
@@ -38,7 +38,7 @@ Interactive functionality allowing users to click FAQ questions to expand/collap
 5. **Update**: Only mark feature as "passes": true in feature_list.json AFTER browser testing confirms it works
 
 ## Important
-- Implement ONLY this specific feature (ID: faq-question-expansion)
+- Implement ONLY this specific feature (ID: footer-social-icons)
 - Do NOT modify features already marked as passes: true
 - Follow existing code patterns and conventions
 - Maintain backward compatibility

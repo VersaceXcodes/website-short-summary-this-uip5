@@ -223,8 +223,9 @@
     "selected": true,
     "order": 12,
     "status": "completed",
-    "lastAttemptAt": "2026-01-20T18:26:40.741Z",
-    "attempts": 1
+    "lastAttemptAt": "2026-01-20T18:31:14.079Z",
+    "attempts": 1,
+    "completedAt": "2026-01-20T18:31:14.079Z"
   },
   {
     "id": "homepage-footer",
@@ -255,9 +256,12 @@
       "Verify icons are clickable (even if links not yet active)"
     ],
     "priority": 2,
-    "passes": false,
+    "passes": true,
     "selected": true,
-    "order": 14
+    "order": 14,
+    "status": "completed",
+    "completedAt": "2026-01-20T18:35:00.000Z",
+    "attempts": 2
   },
   {
     "id": "about-page-navigation",
