@@ -128,9 +128,9 @@
     "selected": true,
     "order": 7,
     "status": "completed",
-    "lastAttemptAt": "2026-01-20T18:13:24.990Z",
+    "lastAttemptAt": "2026-01-20T18:21:12.797Z",
     "attempts": 2,
-    "completedAt": "2026-01-20T18:16:43.454Z"
+    "completedAt": "2026-01-20T18:21:12.797Z"
   },
   {
     "id": "upload-service-display",
@@ -143,9 +143,13 @@
       "Verify description mentions Instagram, TikTok, Facebook, YouTube, LinkedIn platforms"
     ],
     "priority": 2,
-    "passes": false,
+    "passes": true,
     "selected": true,
-    "order": 8
+    "order": 8,
+    "status": "completed",
+    "lastAttemptAt": "2026-01-20T18:21:19.510Z",
+    "attempts": 2,
+    "completedAt": "2026-01-20T18:21:19.510Z"
   },
   {
     "id": "services-learn-more-about-button",

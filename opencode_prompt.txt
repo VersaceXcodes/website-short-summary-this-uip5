@@ -1,12 +1,12 @@
 # Feature Implementation
 
 ## Feature Details
-- **ID**: film-edit-service-display
-- **Title**: Film & Edit service card showing video camera icon and description about client filming videos and agency editing them
+- **ID**: upload-service-display
+- **Title**: Upload service card showing upload icon and description about optimized content uploading across multiple social media platforms
 - **Category**: ui
 
 ## Description
-Film & Edit service card showing video camera icon and description about client filming videos and agency editing them
+Upload service card showing upload icon and description about optimized content uploading across multiple social media platforms
 
 ## Project Context
 - **Platform**: Vite React (Web)
@@ -19,9 +19,9 @@ Film & Edit service card showing video camera icon and description about client 
 
 ## Verification Steps
 1. Navigate to services section
-2. Locate Film & Edit service card
-3. Verify video camera icon displays correctly
-4. Verify description explains filming and editing process division
+2. Locate Upload service card
+3. Verify upload icon displays correctly
+4. Verify description mentions Instagram, TikTok, Facebook, YouTube, LinkedIn platforms
 
 ## Instructions
 1. **Explore**: Review the existing codebase structure and patterns
@@ -38,7 +38,7 @@ Film & Edit service card showing video camera icon and description about client 
 5. **Update**: Only mark feature as "passes": true in feature_list.json AFTER browser testing confirms it works
 
 ## Important
-- Implement ONLY this specific feature (ID: film-edit-service-display)
+- Implement ONLY this specific feature (ID: upload-service-display)
 - Do NOT modify features already marked as passes: true
 - Follow existing code patterns and conventions
 - Maintain backward compatibility

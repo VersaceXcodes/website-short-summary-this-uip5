@@ -23,7 +23,7 @@ const ServicesSection: React.FC = () => {
     },
     {
       title: "Upload",
-      description: "Strategic distribution to maximize reach.",
+      description: "Optimized content uploading across multiple social media platforms: Instagram, TikTok, Facebook, YouTube, and LinkedIn.",
       icon: Upload
     }
   ];
