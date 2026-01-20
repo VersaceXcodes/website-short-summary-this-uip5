@@ -67,9 +67,9 @@
     "selected": true,
     "order": 4,
     "status": "completed",
-    "lastAttemptAt": "2026-01-20T14:37:02.574Z",
+    "lastAttemptAt": "2026-01-20T14:41:22.857Z",
     "attempts": 3,
-    "completedAt": "2026-01-20T15:00:00.000Z"
+    "completedAt": "2026-01-20T14:41:22.857Z"
   },
   {
     "id": "research-service-display",
@@ -142,9 +142,13 @@
       "Verify navigation to About page occurs"
     ],
     "priority": 1,
-    "passes": false,
+    "passes": true,
     "selected": true,
-    "order": 9
+    "order": 9,
+    "status": "completed",
+    "lastAttemptAt": "2026-01-20T14:50:00.000Z",
+    "attempts": 2,
+    "completedAt": "2026-01-20T14:50:00.000Z"
   },
   {
     "id": "services-learn-pricing-button",

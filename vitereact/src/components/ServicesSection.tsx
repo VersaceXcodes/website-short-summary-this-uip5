@@ -1,7 +1,10 @@
 import React from 'react';
 import { Search, FileText, Clapperboard, Upload } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { Button } from '@/components/ui/button';
 
 const ServicesSection: React.FC = () => {
+  const navigate = useNavigate();
   const steps = [
     {
       title: "Research",
@@ -43,6 +46,16 @@ const ServicesSection: React.FC = () => {
               </p>
             </div>
           ))}
+        </div>
+        
+        <div className="mt-16 text-center">
+          <Button 
+            onClick={() => navigate('/about')}
+            size="lg"
+            className="font-smut uppercase tracking-wider bg-cognac-brown text-ivory hover:bg-cognac-brown/90 text-lg px-8 py-6 h-auto"
+          >
+            Learn more about what we do
+          </Button>
         </div>
       </div>
     </section>

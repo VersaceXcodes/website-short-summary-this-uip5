@@ -1,12 +1,12 @@
 # Feature Implementation
 
 ## Feature Details
-- **ID**: services-overview-section
-- **Title**: Services section with ivory background explaining 'How our services work' with 4 service steps: Research, Script, Film & Edit, Upload
-- **Category**: ui
+- **ID**: services-learn-more-about-button
+- **Title**: Button in services section that navigates users to the About page to learn more about what the agency does
+- **Category**: navigation
 
 ## Description
-Services section with ivory background explaining 'How our services work' with 4 service steps: Research, Script, Film & Edit, Upload
+Button in services section that navigates users to the About page to learn more about what the agency does
 
 ## Project Context
 - **Platform**: Vite React (Web)
@@ -19,9 +19,9 @@ Services section with ivory background explaining 'How our services work' with 4
 
 ## Verification Steps
 1. Navigate to services section on homepage
-2. Verify section displays with ivory/cream background
-3. Verify 'How our services work' heading displays prominently
-4. Verify all 4 service steps are visible with proper icons and descriptions
+2. Locate 'learn more about what we do' button
+3. Click the button
+4. Verify navigation to About page occurs
 
 ## Instructions
 1. **Explore**: Review the existing codebase structure and patterns
@@ -38,7 +38,7 @@ Services section with ivory background explaining 'How our services work' with 4
 5. **Update**: Only mark feature as "passes": true in feature_list.json AFTER browser testing confirms it works
 
 ## Important
-- Implement ONLY this specific feature (ID: services-overview-section)
+- Implement ONLY this specific feature (ID: services-learn-more-about-button)
 - Do NOT modify features already marked as passes: true
 - Follow existing code patterns and conventions
 - Maintain backward compatibility
