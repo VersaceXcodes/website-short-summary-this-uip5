@@ -1,0 +1,527 @@
+[
+  {
+    "id": "homepage-header-navigation",
+    "category": "navigation",
+    "description": "Main navigation header with Home, About, Pricing, Contact Us links that allows users to navigate between all main sections of the website",
+    "steps": [
+      "Load homepage and verify header displays with forest green background",
+      "Click each navigation link (Home, About, Pricing, Contact Us)",
+      "Verify each link navigates to correct page/section",
+      "Verify navigation remains visible and functional on all pages"
+    ],
+    "priority": 1,
+    "passes": false,
+    "selected": true,
+    "order": 1
+  },
+  {
+    "id": "homepage-hero-section",
+    "category": "ui",
+    "description": "Welcome section with cognac brown background displaying main headline 'Taking Your Business to the Next Level' and descriptive text about social media services",
+    "steps": [
+      "Load homepage and verify hero section displays with cognac brown background",
+      "Verify headline text appears on right side using CA SMUT font",
+      "Verify descriptive text appears on left side using CA SMUT FULL font",
+      "Verify logo displays in center and moves to back when overlapping text"
+    ],
+    "priority": 1,
+    "passes": false,
+    "selected": true,
+    "order": 2
+  },
+  {
+    "id": "scroll-mini-logo",
+    "category": "ui",
+    "description": "Small logo that appears in center of header when user starts scrolling down from the top of the page",
+    "steps": [
+      "Load homepage at top position",
+      "Scroll down slowly and observe header area",
+      "Verify small logo appears in center of header during scroll",
+      "Scroll back to top and verify logo disappears"
+    ],
+    "priority": 2,
+    "passes": false,
+    "selected": true,
+    "order": 3
+  },
+  {
+    "id": "services-overview-section",
+    "category": "ui",
+    "description": "Services section with ivory background explaining 'How our services work' with 4 service steps: Research, Script, Film & Edit, Upload",
+    "steps": [
+      "Navigate to services section on homepage",
+      "Verify section displays with ivory/cream background",
+      "Verify 'How our services work' heading displays prominently",
+      "Verify all 4 service steps are visible with proper icons and descriptions"
+    ],
+    "priority": 1,
+    "passes": false,
+    "selected": true,
+    "order": 4
+  },
+  {
+    "id": "research-service-display",
+    "category": "ui",
+    "description": "Research service card showing magnifying glass icon and description about finding highest performing content creators in user's niche",
+    "steps": [
+      "Navigate to services section",
+      "Locate Research service card",
+      "Verify magnifying glass icon displays correctly",
+      "Verify description text explains research process for content creators"
+    ],
+    "priority": 2,
+    "passes": false,
+    "selected": true,
+    "order": 5
+  },
+  {
+    "id": "script-service-display",
+    "category": "ui",
+    "description": "Script service card showing document icon and description about creating full month's worth of scripts using research and business information",
+    "steps": [
+      "Navigate to services section",
+      "Locate Script service card",
+      "Verify document/script icon displays correctly",
+      "Verify description explains monthly script creation process"
+    ],
+    "priority": 2,
+    "passes": false,
+    "selected": true,
+    "order": 6
+  },
+  {
+    "id": "film-edit-service-display",
+    "category": "ui",
+    "description": "Film & Edit service card showing video camera icon and description about client filming videos and agency editing them",
+    "steps": [
+      "Navigate to services section",
+      "Locate Film & Edit service card",
+      "Verify video camera icon displays correctly",
+      "Verify description explains filming and editing process division"
+    ],
+    "priority": 2,
+    "passes": false,
+    "selected": true,
+    "order": 7
+  },
+  {
+    "id": "upload-service-display",
+    "category": "ui",
+    "description": "Upload service card showing upload icon and description about optimized content uploading across multiple social media platforms",
+    "steps": [
+      "Navigate to services section",
+      "Locate Upload service card",
+      "Verify upload icon displays correctly",
+      "Verify description mentions Instagram, TikTok, Facebook, YouTube, LinkedIn platforms"
+    ],
+    "priority": 2,
+    "passes": false,
+    "selected": true,
+    "order": 8
+  },
+  {
+    "id": "services-learn-more-about-button",
+    "category": "navigation",
+    "description": "Button in services section that navigates users to the About page to learn more about what the agency does",
+    "steps": [
+      "Navigate to services section on homepage",
+      "Locate 'learn more about what we do' button",
+      "Click the button",
+      "Verify navigation to About page occurs"
+    ],
+    "priority": 1,
+    "passes": false,
+    "selected": true,
+    "order": 9
+  },
+  {
+    "id": "services-learn-pricing-button",
+    "category": "navigation",
+    "description": "Button in services section that navigates users to the Pricing page to learn about service costs",
+    "steps": [
+      "Navigate to services section on homepage",
+      "Locate 'learn more about our pricing' button",
+      "Click the button",
+      "Verify navigation to Pricing page occurs"
+    ],
+    "priority": 1,
+    "passes": false,
+    "selected": true,
+    "order": 10
+  },
+  {
+    "id": "faq-section-display",
+    "category": "ui",
+    "description": "FAQ section displaying 8 frequently asked questions with collapsible/expandable answers to keep page length manageable",
+    "steps": [
+      "Navigate to FAQ section on homepage",
+      "Verify all 8 FAQ questions are visible",
+      "Verify answers are initially collapsed/hidden",
+      "Click on each question to verify answers expand and collapse properly"
+    ],
+    "priority": 1,
+    "passes": false,
+    "selected": true,
+    "order": 11
+  },
+  {
+    "id": "faq-question-expansion",
+    "category": "functional",
+    "description": "Interactive functionality allowing users to click FAQ questions to expand/collapse detailed answers",
+    "steps": [
+      "Navigate to FAQ section",
+      "Click on first FAQ question",
+      "Verify answer expands and displays full content",
+      "Click question again to verify answer collapses"
+    ],
+    "priority": 2,
+    "passes": false,
+    "selected": true,
+    "order": 12
+  },
+  {
+    "id": "homepage-footer",
+    "category": "ui",
+    "description": "Footer section with burgundy background containing social media icons and contact email contact@cinebih.com",
+    "steps": [
+      "Scroll to bottom of homepage",
+      "Verify footer displays with burgundy background",
+      "Verify social media icons are present",
+      "Verify contact email contact@cinebih.com is displayed"
+    ],
+    "priority": 1,
+    "passes": false,
+    "selected": true,
+    "order": 13
+  },
+  {
+    "id": "footer-social-icons",
+    "category": "ui",
+    "description": "Social media icons in footer that will link to agency's social media profiles (links to be added later)",
+    "steps": [
+      "Navigate to footer section",
+      "Verify all major social media icons are present",
+      "Verify icons are properly styled and visible",
+      "Verify icons are clickable (even if links not yet active)"
+    ],
+    "priority": 2,
+    "passes": false,
+    "selected": true,
+    "order": 14
+  },
+  {
+    "id": "about-page-navigation",
+    "category": "navigation",
+    "description": "Dedicated About page accessible via main navigation and service section buttons",
+    "steps": [
+      "Click About link in main navigation",
+      "Verify About page loads correctly",
+      "Navigate back to homepage and click 'learn more about what we do' button",
+      "Verify same About page loads"
+    ],
+    "priority": 1,
+    "passes": false,
+    "selected": true,
+    "order": 15
+  },
+  {
+    "id": "about-our-story-section",
+    "category": "ui",
+    "description": "Our Story section on About page explaining agency founding principles and mission to help businesses with content creation",
+    "steps": [
+      "Navigate to About page",
+      "Locate Our Story section",
+      "Verify section explains agency founding principles",
+      "Verify content covers business growth challenges and agency solutions"
+    ],
+    "priority": 1,
+    "passes": false,
+    "selected": true,
+    "order": 16
+  },
+  {
+    "id": "about-detailed-services-section",
+    "category": "ui",
+    "description": "Detailed services section on About page explaining Research, Script, Film & Edit, and Upload processes with expanded descriptions",
+    "steps": [
+      "Navigate to About page services section",
+      "Verify Research subsection with detailed explanation",
+      "Verify Script subsection with detailed explanation",
+      "Verify Film & Edit and Upload subsections with detailed explanations"
+    ],
+    "priority": 2,
+    "passes": false,
+    "selected": true,
+    "order": 17
+  },
+  {
+    "id": "about-research-details",
+    "category": "ui",
+    "description": "Detailed Research section explaining 10-15 hours of brand research, pattern analysis, and 2-4 week update cycles",
+    "steps": [
+      "Navigate to About page Research section",
+      "Verify explanation of 3-4 second user attention span",
+      "Verify mention of 10-15 hours research commitment",
+      "Verify explanation of 2-4 week research update cycles"
+    ],
+    "priority": 3,
+    "passes": false,
+    "selected": true,
+    "order": 18
+  },
+  {
+    "id": "about-script-details",
+    "category": "ui",
+    "description": "Detailed Script section explaining monthly content planning, consistency importance, and tailored business scripting",
+    "steps": [
+      "Navigate to About page Script section",
+      "Verify explanation of monthly video scripting",
+      "Verify emphasis on consistency for social media growth",
+      "Verify mention of tailored business-specific content"
+    ],
+    "priority": 3,
+    "passes": false,
+    "selected": true,
+    "order": 19
+  },
+  {
+    "id": "about-film-edit-details",
+    "category": "ui",
+    "description": "Detailed Film & Edit section explaining cost-effective phone filming and comprehensive editing services including subtitles and color grading",
+    "steps": [
+      "Navigate to About page Film & Edit section",
+      "Verify explanation of phone filming capabilities",
+      "Verify mention of 1080p 30fps social media requirements",
+      "Verify editing services list including subtitles and color-grading"
+    ],
+    "priority": 3,
+    "passes": false,
+    "selected": true,
+    "order": 20
+  },
+  {
+    "id": "about-upload-details",
+    "category": "ui",
+    "description": "Detailed Upload section explaining platform-specific optimization for TikTok, Instagram, YouTube Shorts, and LinkedIn algorithms",
+    "steps": [
+      "Navigate to About page Upload section",
+      "Verify explanation of platform-specific algorithms",
+      "Verify mention of TikTok, Instagram, YouTube Shorts, LinkedIn",
+      "Verify emphasis on optimized posting for each platform"
+    ],
+    "priority": 3,
+    "passes": false,
+    "selected": true,
+    "order": 21
+  },
+  {
+    "id": "about-book-now-button",
+    "category": "navigation",
+    "description": "Book Now button on About page that allows interested users to initiate contact or booking process",
+    "steps": [
+      "Navigate to About page",
+      "Locate Book Now button",
+      "Verify button is prominently displayed",
+      "Click button to verify it initiates contact/booking process"
+    ],
+    "priority": 1,
+    "passes": false,
+    "selected": true,
+    "order": 22
+  },
+  {
+    "id": "pricing-page-navigation",
+    "category": "navigation",
+    "description": "Dedicated Pricing page accessible via main navigation and service section buttons",
+    "steps": [
+      "Click Pricing link in main navigation",
+      "Verify Pricing page loads correctly",
+      "Navigate back to homepage and click 'learn more about our pricing' button",
+      "Verify same Pricing page loads"
+    ],
+    "priority": 1,
+    "passes": false,
+    "selected": true,
+    "order": 23
+  },
+  {
+    "id": "pricing-cost-explanation",
+    "category": "ui",
+    "description": "Pricing justification section explaining team expertise, research, scripting, editing, and social media management value",
+    "steps": [
+      "Navigate to Pricing page",
+      "Locate cost explanation section",
+      "Verify explanation covers team expertise and services",
+      "Verify emphasis on full creative team value proposition"
+    ],
+    "priority": 2,
+    "passes": false,
+    "selected": true,
+    "order": 24
+  },
+  {
+    "id": "starter-pricing-plan",
+    "category": "ui",
+    "description": "Starter plan display showing 15 shorts/month for €1950/month with full service list and Book Now button",
+    "steps": [
+      "Navigate to Pricing page",
+      "Locate Starter plan section",
+      "Verify 15 shorts/month and €1950/month pricing",
+      "Verify complete service list and Book Now button are present"
+    ],
+    "priority": 1,
+    "passes": false,
+    "selected": true,
+    "order": 25
+  },
+  {
+    "id": "optimise-pricing-plan",
+    "category": "ui",
+    "description": "Optimise plan display showing 20 shorts/month for €2495/month with full service list and Book Now button",
+    "steps": [
+      "Navigate to Pricing page",
+      "Locate Optimise plan section",
+      "Verify 20 shorts/month and €2495/month pricing",
+      "Verify complete service list and Book Now button are present"
+    ],
+    "priority": 1,
+    "passes": false,
+    "selected": true,
+    "order": 26
+  },
+  {
+    "id": "dominate-pricing-plan",
+    "category": "ui",
+    "description": "Dominate plan display showing 30 shorts/month for €3395/month with full service list and Book Now button",
+    "steps": [
+      "Navigate to Pricing page",
+      "Locate Dominate plan section",
+      "Verify 30 shorts/month and €3395/month pricing",
+      "Verify complete service list and Book Now button are present"
+    ],
+    "priority": 1,
+    "passes": false,
+    "selected": true,
+    "order": 27
+  },
+  {
+    "id": "pricing-plan-features",
+    "category": "ui",
+    "description": "Detailed feature list for each pricing plan including onboarding calls, research, scripting, editing, uploading, Instagram stories, email support, and monthly reports",
+    "steps": [
+      "Navigate to each pricing plan",
+      "Verify Onboarding/Review Calls feature listed",
+      "Verify Research, Scripting, Editing, Uploading features listed",
+      "Verify Instagram Stories, Email Support, Monthly Reports, and Profile Optimization bonus listed"
+    ],
+    "priority": 2,
+    "passes": false,
+    "selected": true,
+    "order": 28
+  },
+  {
+    "id": "pricing-book-now-buttons",
+    "category": "functional",
+    "description": "Book Now buttons on each pricing plan that initiate the booking/contact process for that specific plan",
+    "steps": [
+      "Navigate to Pricing page",
+      "Click Book Now button on Starter plan",
+      "Verify booking process initiates with Starter plan context",
+      "Repeat for Optimise and Dominate plans"
+    ],
+    "priority": 1,
+    "passes": false,
+    "selected": true,
+    "order": 29
+  },
+  {
+    "id": "contact-page-navigation",
+    "category": "navigation",
+    "description": "Dedicated Contact Us page accessible via main navigation",
+    "steps": [
+      "Click Contact Us link in main navigation",
+      "Verify Contact page loads correctly",
+      "Verify page displays contact form or information",
+      "Verify page maintains consistent styling with rest of site"
+    ],
+    "priority": 1,
+    "passes": false,
+    "selected": true,
+    "order": 30
+  },
+  {
+    "id": "contact-form-display",
+    "category": "ui",
+    "description": "Basic contact form allowing users to submit inquiries with standard contact fields",
+    "steps": [
+      "Navigate to Contact Us page",
+      "Verify contact form is displayed",
+      "Verify form contains appropriate input fields",
+      "Verify form has submit button"
+    ],
+    "priority": 1,
+    "passes": false,
+    "selected": true,
+    "order": 31
+  },
+  {
+    "id": "contact-form-submission",
+    "category": "functional",
+    "description": "Functional contact form that accepts user input and processes form submissions",
+    "steps": [
+      "Navigate to Contact Us page",
+      "Fill out all required form fields",
+      "Click submit button",
+      "Verify form submission processes successfully with confirmation message"
+    ],
+    "priority": 1,
+    "passes": false,
+    "selected": true,
+    "order": 32
+  },
+  {
+    "id": "responsive-mobile-design",
+    "category": "ui",
+    "description": "Mobile-responsive design ensuring all pages and features work properly on mobile devices and tablets",
+    "steps": [
+      "Access website on mobile device or resize browser to mobile width",
+      "Navigate through all pages (Home, About, Pricing, Contact)",
+      "Verify all content displays properly and remains readable",
+      "Verify all buttons and navigation work on mobile"
+    ],
+    "priority": 2,
+    "passes": false,
+    "selected": true,
+    "order": 33
+  },
+  {
+    "id": "color-scheme-implementation",
+    "category": "ui",
+    "description": "Consistent implementation of retro poster color palette across all pages including forest green headers, cognac brown hero, ivory services, burgundy footer, and antique gold accents",
+    "steps": [
+      "Navigate through all website pages",
+      "Verify header uses deep forest green (#014421)",
+      "Verify hero section uses cognac brown (#8B5E3C)",
+      "Verify services section uses ivory/cream (#F8F4E3) and footer uses burgundy (#581845)"
+    ],
+    "priority": 2,
+    "passes": false,
+    "selected": true,
+    "order": 34
+  },
+  {
+    "id": "typography-implementation",
+    "category": "ui",
+    "description": "Consistent use of CA SMUT and CA SMUT FULL fonts throughout the website as specified in design requirements",
+    "steps": [
+      "Navigate through all website pages",
+      "Verify headings use CA SMUT font",
+      "Verify body text uses CA SMUT FULL font",
+      "Verify font rendering is consistent across different browsers"
+    ],
+    "priority": 2,
+    "passes": false,
+    "selected": true,
+    "order": 35
+  }
+]
