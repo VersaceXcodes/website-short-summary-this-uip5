@@ -1,12 +1,12 @@
 # Feature Implementation
 
 ## Feature Details
-- **ID**: about-detailed-services-section
-- **Title**: Detailed services section on About page explaining Research, Script, Film & Edit, and Upload processes with expanded descriptions
+- **ID**: pricing-cost-explanation
+- **Title**: Pricing justification section explaining team expertise, research, scripting, editing, and social media management value
 - **Category**: ui
 
 ## Description
-Detailed services section on About page explaining Research, Script, Film & Edit, and Upload processes with expanded descriptions
+Pricing justification section explaining team expertise, research, scripting, editing, and social media management value
 
 ## Project Context
 - **Platform**: Vite React (Web)
@@ -18,10 +18,10 @@ Detailed services section on About page explaining Research, Script, Film & Edit
 - Keep changes within the existing Vite boilerplate
 
 ## Verification Steps
-1. Navigate to About page services section
-2. Verify Research subsection with detailed explanation
-3. Verify Script subsection with detailed explanation
-4. Verify Film & Edit and Upload subsections with detailed explanations
+1. Navigate to Pricing page
+2. Locate cost explanation section
+3. Verify explanation covers team expertise and services
+4. Verify emphasis on full creative team value proposition
 
 ## Instructions
 1. **Explore**: Review the existing codebase structure and patterns
@@ -38,7 +38,7 @@ Detailed services section on About page explaining Research, Script, Film & Edit
 5. **Update**: Only mark feature as "passes": true in feature_list.json AFTER browser testing confirms it works
 
 ## Important
-- Implement ONLY this specific feature (ID: about-detailed-services-section)
+- Implement ONLY this specific feature (ID: pricing-cost-explanation)
 - Do NOT modify features already marked as passes: true
 - Follow existing code patterns and conventions
 - Maintain backward compatibility

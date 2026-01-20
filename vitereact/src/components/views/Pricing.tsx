@@ -1,5 +1,5 @@
 import React from 'react';
-import { Check } from 'lucide-react';
+import { Check, Users, Search, FileText, Video, Share2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   Card,
@@ -73,6 +73,34 @@ const pricingPlans = [
   }
 ];
 
+const valueProps = [
+  {
+    title: "Team Expertise",
+    description: "You're not just hiring an editor, but a full team of strategists, writers, and creators dedicated to your growth.",
+    icon: Users
+  },
+  {
+    title: "Deep Research",
+    description: "We spend hours analyzing your niche to ensure every video targets the right audience.",
+    icon: Search
+  },
+  {
+    title: "Pro Scripting",
+    description: "Professional scriptwriters craft engaging narratives that hook viewers from the first second.",
+    icon: FileText
+  },
+  {
+    title: "High-End Editing",
+    description: "Retention-focused editing using the latest trends and techniques to keep viewers watching.",
+    icon: Video
+  },
+  {
+    title: "Social Management",
+    description: "We handle the posting and optimization across platforms, so you can focus on running your business.",
+    icon: Share2
+  }
+];
+
 const Pricing: React.FC = () => {
   const navigate = useNavigate();
 
@@ -88,7 +116,7 @@ const Pricing: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto mb-24">
           {pricingPlans.map((plan, index) => (
             <Card 
               key={index} 
@@ -143,6 +171,34 @@ const Pricing: React.FC = () => {
               </CardFooter>
             </Card>
           ))}
+        </div>
+
+        {/* Value Justification Section */}
+        <div className="max-w-6xl mx-auto mb-20 bg-white rounded-3xl p-8 md:p-12 border border-cognac-brown/10 shadow-sm">
+          <div className="text-center mb-12">
+            <h2 className="font-smut text-3xl md:text-5xl text-cognac-brown uppercase mb-4">
+              Why It's Worth It
+            </h2>
+            <p className="font-smut-full text-lg text-cognac-brown/70 max-w-2xl mx-auto">
+              You're not just paying for videos. You're investing in a complete content ecosystem designed to scale your brand.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {valueProps.map((prop, index) => (
+              <div key={index} className="flex flex-col items-start p-4 hover:bg-ivory/50 rounded-xl transition-colors">
+                <div className="p-3 bg-forest-green/10 rounded-lg mb-4 text-forest-green">
+                  <prop.icon size={28} />
+                </div>
+                <h3 className="font-smut text-xl text-cognac-brown uppercase mb-2">
+                  {prop.title}
+                </h3>
+                <p className="font-smut-full text-base text-cognac-brown/80 leading-relaxed">
+                  {prop.description}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="mt-20 text-center">

@@ -316,8 +316,9 @@
     "selected": true,
     "order": 17,
     "status": "completed",
-    "lastAttemptAt": "2026-01-20T18:35:59.499Z",
-    "attempts": 1
+    "lastAttemptAt": "2026-01-20T18:40:26.517Z",
+    "attempts": 1,
+    "completedAt": "2026-01-20T18:40:26.517Z"
   },
   {
     "id": "about-research-details",
@@ -432,9 +433,12 @@
       "Verify emphasis on full creative team value proposition"
     ],
     "priority": 2,
-    "passes": false,
+    "passes": true,
     "selected": true,
-    "order": 24
+    "order": 24,
+    "status": "completed",
+    "lastAttemptAt": "2026-01-20T18:40:32.652Z",
+    "attempts": 1
   },
   {
     "id": "starter-pricing-plan",
