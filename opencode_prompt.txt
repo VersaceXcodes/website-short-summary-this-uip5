@@ -1,12 +1,12 @@
 # Feature Implementation
 
 ## Feature Details
-- **ID**: starter-pricing-plan
-- **Title**: Starter plan display showing 15 shorts/month for €1950/month with full service list and Book Now button
+- **ID**: optimise-pricing-plan
+- **Title**: Optimise plan display showing 20 shorts/month for €2495/month with full service list and Book Now button
 - **Category**: ui
 
 ## Description
-Starter plan display showing 15 shorts/month for €1950/month with full service list and Book Now button
+Optimise plan display showing 20 shorts/month for €2495/month with full service list and Book Now button
 
 ## Project Context
 - **Platform**: Vite React (Web)
@@ -19,8 +19,8 @@ Starter plan display showing 15 shorts/month for €1950/month with full service
 
 ## Verification Steps
 1. Navigate to Pricing page
-2. Locate Starter plan section
-3. Verify 15 shorts/month and €1950/month pricing
+2. Locate Optimise plan section
+3. Verify 20 shorts/month and €2495/month pricing
 4. Verify complete service list and Book Now button are present
 
 ## Instructions
@@ -38,7 +38,7 @@ Starter plan display showing 15 shorts/month for €1950/month with full service
 5. **Update**: Only mark feature as "passes": true in feature_list.json AFTER browser testing confirms it works
 
 ## Important
-- Implement ONLY this specific feature (ID: starter-pricing-plan)
+- Implement ONLY this specific feature (ID: optimise-pricing-plan)
 - Do NOT modify features already marked as passes: true
 - Follow existing code patterns and conventions
 - Maintain backward compatibility

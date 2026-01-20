@@ -13,12 +13,12 @@ import { useNavigate } from 'react-router-dom';
 
 const pricingPlans = [
   {
-    name: "Starter",
-    price: "€1,950",
+    name: "Optimise",
+    price: "€2,495",
     period: "/month",
     description: "Comprehensive monthly package for consistent high-quality content.",
     features: [
-      "15 Short Form Videos",
+      "20 Short Form Videos",
       "Onboarding & Review Calls",
       "Topic Research & Concepting",
       "Professional Scriptwriting",

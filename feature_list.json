@@ -416,9 +416,9 @@
     "selected": true,
     "order": 25,
     "status": "completed",
-    "lastAttemptAt": "2026-01-20T16:25:00.000Z",
+    "lastAttemptAt": "2026-01-20T16:23:11.615Z",
     "attempts": 3,
-    "completedAt": "2026-01-20T16:25:00.000Z"
+    "completedAt": "2026-01-20T16:23:11.615Z"
   },
   {
     "id": "optimise-pricing-plan",
@@ -433,7 +433,10 @@
     "priority": 1,
     "passes": false,
     "selected": true,
-    "order": 26
+    "order": 26,
+    "status": "in_progress",
+    "lastAttemptAt": "2026-01-20T16:23:17.085Z",
+    "attempts": 1
   },
   {
     "id": "dominate-pricing-plan",
