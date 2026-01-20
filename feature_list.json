@@ -63,12 +63,13 @@
       "Verify all 4 service steps are visible with proper icons and descriptions"
     ],
     "priority": 1,
-    "passes": false,
+    "passes": true,
     "selected": true,
     "order": 4,
-    "status": "in_progress",
-    "lastAttemptAt": "2026-01-20T14:26:19.835Z",
-    "attempts": 1
+    "status": "completed",
+    "lastAttemptAt": "2026-01-20T14:37:02.574Z",
+    "attempts": 3,
+    "completedAt": "2026-01-20T15:00:00.000Z"
   },
   {
     "id": "research-service-display",
