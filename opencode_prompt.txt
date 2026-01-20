@@ -1,12 +1,12 @@
 # Feature Implementation
 
 ## Feature Details
-- **ID**: pricing-plan-features
-- **Title**: Detailed feature list for each pricing plan including onboarding calls, research, scripting, editing, uploading, Instagram stories, email support, and monthly reports
+- **ID**: responsive-mobile-design
+- **Title**: Mobile-responsive design ensuring all pages and features work properly on mobile devices and tablets
 - **Category**: ui
 
 ## Description
-Detailed feature list for each pricing plan including onboarding calls, research, scripting, editing, uploading, Instagram stories, email support, and monthly reports
+Mobile-responsive design ensuring all pages and features work properly on mobile devices and tablets
 
 ## Project Context
 - **Platform**: Vite React (Web)
@@ -18,10 +18,10 @@ Detailed feature list for each pricing plan including onboarding calls, research
 - Keep changes within the existing Vite boilerplate
 
 ## Verification Steps
-1. Navigate to each pricing plan
-2. Verify Onboarding/Review Calls feature listed
-3. Verify Research, Scripting, Editing, Uploading features listed
-4. Verify Instagram Stories, Email Support, Monthly Reports, and Profile Optimization bonus listed
+1. Access website on mobile device or resize browser to mobile width
+2. Navigate through all pages (Home, About, Pricing, Contact)
+3. Verify all content displays properly and remains readable
+4. Verify all buttons and navigation work on mobile
 
 ## Instructions
 1. **Explore**: Review the existing codebase structure and patterns
@@ -38,7 +38,7 @@ Detailed feature list for each pricing plan including onboarding calls, research
 5. **Update**: Only mark feature as "passes": true in feature_list.json AFTER browser testing confirms it works
 
 ## Important
-- Implement ONLY this specific feature (ID: pricing-plan-features)
+- Implement ONLY this specific feature (ID: responsive-mobile-design)
 - Do NOT modify features already marked as passes: true
 - Follow existing code patterns and conventions
 - Maintain backward compatibility

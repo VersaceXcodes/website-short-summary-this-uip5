@@ -514,9 +514,9 @@
     "selected": true,
     "order": 28,
     "status": "completed",
-    "lastAttemptAt": "2026-01-20T19:00:00.000Z",
+    "lastAttemptAt": "2026-01-20T18:50:19.895Z",
     "attempts": 2,
-    "completedAt": "2026-01-20T19:00:00.000Z"
+    "completedAt": "2026-01-20T18:50:19.895Z"
   },
   {
     "id": "pricing-book-now-buttons",
@@ -606,9 +606,12 @@
       "Verify all buttons and navigation work on mobile"
     ],
     "priority": 2,
-    "passes": false,
+    "passes": true,
     "selected": true,
-    "order": 33
+    "order": 33,
+    "status": "completed",
+    "lastAttemptAt": "2026-01-20T18:50:24.237Z",
+    "attempts": 1
   },
   {
     "id": "color-scheme-implementation",
