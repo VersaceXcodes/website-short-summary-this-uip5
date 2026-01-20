@@ -13,6 +13,25 @@ import { useNavigate } from 'react-router-dom';
 
 const pricingPlans = [
   {
+    name: "Starter",
+    price: "€1,950",
+    period: "/month",
+    description: "Perfect for businesses just getting started with short-form content.",
+    features: [
+      "15 Short Form Videos",
+      "Onboarding & Review Calls",
+      "Topic Research & Concepting",
+      "Professional Scriptwriting",
+      "Editing & Sound Design",
+      "Uploading & Optimization",
+      "Instagram Stories",
+      "Email Support",
+      "Monthly Analytics Report"
+    ],
+    buttonText: "Book Now",
+    popular: false
+  },
+  {
     name: "Optimise",
     price: "€2,495",
     period: "/month",
@@ -30,38 +49,26 @@ const pricingPlans = [
       "Profile Optimization (Bonus)"
     ],
     buttonText: "Book Now",
-    popular: false
-  },
-  {
-    name: "Growth",
-    price: "$1,999",
-    period: "/month",
-    description: "Ideal for growing brands looking to scale their social presence.",
-    features: [
-      "5 High-Quality Short Form Videos",
-      "Professional Editing & Sound Design",
-      "Bi-Weekly Strategy Calls",
-      "Comprehensive Analytics Report",
-      "Cross-Platform Optimization",
-      "2 Revision Rounds per Video"
-    ],
-    buttonText: "Get Started",
     popular: true
   },
   {
-    name: "Dominance",
-    price: "$3,499",
+    name: "Dominate",
+    price: "€3,395",
     period: "/month",
     description: "For brands that want to dominate their niche with daily content.",
     features: [
-      "10 High-Quality Short Form Videos",
-      "Professional Editing & Sound Design",
-      "Weekly Strategy Calls",
-      "Advanced Analytics & Insights",
-      "Priority Support",
-      "Unlimited Revisions"
+      "30 Short Form Videos",
+      "Onboarding & Review Calls",
+      "Topic Research & Concepting",
+      "Professional Scriptwriting",
+      "Editing & Sound Design",
+      "Uploading & Optimization",
+      "Instagram Stories",
+      "Priority Email Support",
+      "Advanced Analytics Report",
+      "Profile Optimization (Bonus)"
     ],
-    buttonText: "Contact Us",
+    buttonText: "Book Now",
     popular: false
   }
 ];
