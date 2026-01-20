@@ -10,9 +10,12 @@
       "Verify navigation remains visible and functional on all pages"
     ],
     "priority": 1,
-    "passes": false,
+    "passes": true,
     "selected": true,
-    "order": 1
+    "order": 1,
+    "status": "in_progress",
+    "lastAttemptAt": "2026-01-20T14:12:00.977Z",
+    "attempts": 1
   },
   {
     "id": "homepage-hero-section",
