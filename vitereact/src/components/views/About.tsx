@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import DetailedServicesSection from '@/components/DetailedServicesSection';
 
 const About: React.FC = () => {
   return (
@@ -45,6 +46,8 @@ const About: React.FC = () => {
                     </div>
                 </div>
             </div>
+
+            <DetailedServicesSection />
 
             <div className="mt-20 border-t border-ivory/20 pt-12">
                 <h3 className="font-smut text-3xl md:text-5xl mb-8 uppercase text-center">Why Choose Us?</h3>

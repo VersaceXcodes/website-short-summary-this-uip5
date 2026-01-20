@@ -1,12 +1,12 @@
 # Feature Implementation
 
 ## Feature Details
-- **ID**: footer-social-icons
-- **Title**: Social media icons in footer that will link to agency's social media profiles (links to be added later)
+- **ID**: about-detailed-services-section
+- **Title**: Detailed services section on About page explaining Research, Script, Film & Edit, and Upload processes with expanded descriptions
 - **Category**: ui
 
 ## Description
-Social media icons in footer that will link to agency's social media profiles (links to be added later)
+Detailed services section on About page explaining Research, Script, Film & Edit, and Upload processes with expanded descriptions
 
 ## Project Context
 - **Platform**: Vite React (Web)
@@ -18,10 +18,10 @@ Social media icons in footer that will link to agency's social media profiles (l
 - Keep changes within the existing Vite boilerplate
 
 ## Verification Steps
-1. Navigate to footer section
-2. Verify all major social media icons are present
-3. Verify icons are properly styled and visible
-4. Verify icons are clickable (even if links not yet active)
+1. Navigate to About page services section
+2. Verify Research subsection with detailed explanation
+3. Verify Script subsection with detailed explanation
+4. Verify Film & Edit and Upload subsections with detailed explanations
 
 ## Instructions
 1. **Explore**: Review the existing codebase structure and patterns
@@ -38,7 +38,7 @@ Social media icons in footer that will link to agency's social media profiles (l
 5. **Update**: Only mark feature as "passes": true in feature_list.json AFTER browser testing confirms it works
 
 ## Important
-- Implement ONLY this specific feature (ID: footer-social-icons)
+- Implement ONLY this specific feature (ID: about-detailed-services-section)
 - Do NOT modify features already marked as passes: true
 - Follow existing code patterns and conventions
 - Maintain backward compatibility

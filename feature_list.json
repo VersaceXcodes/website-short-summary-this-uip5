@@ -260,8 +260,9 @@
     "selected": true,
     "order": 14,
     "status": "completed",
-    "completedAt": "2026-01-20T18:35:00.000Z",
-    "attempts": 2
+    "completedAt": "2026-01-20T18:35:55.276Z",
+    "attempts": 2,
+    "lastAttemptAt": "2026-01-20T18:35:55.276Z"
   },
   {
     "id": "about-page-navigation",
@@ -311,9 +312,12 @@
       "Verify Film & Edit and Upload subsections with detailed explanations"
     ],
     "priority": 2,
-    "passes": false,
+    "passes": true,
     "selected": true,
-    "order": 17
+    "order": 17,
+    "status": "completed",
+    "lastAttemptAt": "2026-01-20T18:35:59.499Z",
+    "attempts": 1
   },
   {
     "id": "about-research-details",
@@ -326,9 +330,10 @@
       "Verify explanation of 2-4 week research update cycles"
     ],
     "priority": 3,
-    "passes": false,
+    "passes": true,
     "selected": true,
-    "order": 18
+    "order": 18,
+    "status": "completed"
   },
   {
     "id": "about-script-details",
@@ -341,9 +346,10 @@
       "Verify mention of tailored business-specific content"
     ],
     "priority": 3,
-    "passes": false,
+    "passes": true,
     "selected": true,
-    "order": 19
+    "order": 19,
+    "status": "completed"
   },
   {
     "id": "about-film-edit-details",
@@ -356,9 +362,10 @@
       "Verify editing services list including subtitles and color-grading"
     ],
     "priority": 3,
-    "passes": false,
+    "passes": true,
     "selected": true,
-    "order": 20
+    "order": 20,
+    "status": "completed"
   },
   {
     "id": "about-upload-details",
@@ -371,9 +378,10 @@
       "Verify emphasis on optimized posting for each platform"
     ],
     "priority": 3,
-    "passes": false,
+    "passes": true,
     "selected": true,
-    "order": 21
+    "order": 21,
+    "status": "completed"
   },
   {
     "id": "about-book-now-button",
