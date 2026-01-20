@@ -363,8 +363,9 @@
     "selected": true,
     "order": 22,
     "status": "in_progress",
-    "lastAttemptAt": "2026-01-20T15:33:02.136Z",
-    "attempts": 1
+    "lastAttemptAt": "2026-01-20T15:43:44.385Z",
+    "attempts": 2,
+    "errorMessage": "Agent completed but feature not marked as passed"
   },
   {
     "id": "pricing-page-navigation",
