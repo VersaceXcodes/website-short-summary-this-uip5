@@ -437,8 +437,9 @@
     "selected": true,
     "order": 24,
     "status": "completed",
-    "lastAttemptAt": "2026-01-20T18:40:32.652Z",
-    "attempts": 1
+    "lastAttemptAt": "2026-01-20T18:46:59.471Z",
+    "attempts": 1,
+    "completedAt": "2026-01-20T18:46:59.471Z"
   },
   {
     "id": "starter-pricing-plan",
@@ -509,9 +510,13 @@
       "Verify Instagram Stories, Email Support, Monthly Reports, and Profile Optimization bonus listed"
     ],
     "priority": 2,
-    "passes": false,
+    "passes": true,
     "selected": true,
-    "order": 28
+    "order": 28,
+    "status": "completed",
+    "lastAttemptAt": "2026-01-20T19:00:00.000Z",
+    "attempts": 2,
+    "completedAt": "2026-01-20T19:00:00.000Z"
   },
   {
     "id": "pricing-book-now-buttons",
