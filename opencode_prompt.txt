@@ -1,12 +1,12 @@
 # Feature Implementation
 
 ## Feature Details
-- **ID**: homepage-hero-section
-- **Title**: Welcome section with cognac brown background displaying main headline 'Taking Your Business to the Next Level' and descriptive text about social media services
+- **ID**: services-overview-section
+- **Title**: Services section with ivory background explaining 'How our services work' with 4 service steps: Research, Script, Film & Edit, Upload
 - **Category**: ui
 
 ## Description
-Welcome section with cognac brown background displaying main headline 'Taking Your Business to the Next Level' and descriptive text about social media services
+Services section with ivory background explaining 'How our services work' with 4 service steps: Research, Script, Film & Edit, Upload
 
 ## Project Context
 - **Platform**: Vite React (Web)
@@ -18,10 +18,10 @@ Welcome section with cognac brown background displaying main headline 'Taking Yo
 - Keep changes within the existing Vite boilerplate
 
 ## Verification Steps
-1. Load homepage and verify hero section displays with cognac brown background
-2. Verify headline text appears on right side using CA SMUT font
-3. Verify descriptive text appears on left side using CA SMUT FULL font
-4. Verify logo displays in center and moves to back when overlapping text
+1. Navigate to services section on homepage
+2. Verify section displays with ivory/cream background
+3. Verify 'How our services work' heading displays prominently
+4. Verify all 4 service steps are visible with proper icons and descriptions
 
 ## Instructions
 1. **Explore**: Review the existing codebase structure and patterns
@@ -38,7 +38,7 @@ Welcome section with cognac brown background displaying main headline 'Taking Yo
 5. **Update**: Only mark feature as "passes": true in feature_list.json AFTER browser testing confirms it works
 
 ## Important
-- Implement ONLY this specific feature (ID: homepage-hero-section)
+- Implement ONLY this specific feature (ID: services-overview-section)
 - Do NOT modify features already marked as passes: true
 - Follow existing code patterns and conventions
 - Maintain backward compatibility

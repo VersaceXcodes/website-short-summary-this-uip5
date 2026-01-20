@@ -33,8 +33,9 @@
     "selected": true,
     "order": 2,
     "status": "completed",
-    "lastAttemptAt": "2026-01-20T14:21:34.602Z",
-    "attempts": 1
+    "lastAttemptAt": "2026-01-20T14:26:15.054Z",
+    "attempts": 1,
+    "completedAt": "2026-01-20T14:26:15.054Z"
   },
   {
     "id": "scroll-mini-logo",
@@ -64,7 +65,10 @@
     "priority": 1,
     "passes": false,
     "selected": true,
-    "order": 4
+    "order": 4,
+    "status": "in_progress",
+    "lastAttemptAt": "2026-01-20T14:26:19.835Z",
+    "attempts": 1
   },
   {
     "id": "research-service-display",
