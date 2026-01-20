@@ -48,12 +48,13 @@
       "Scroll back to top and verify logo disappears"
     ],
     "priority": 2,
-    "passes": false,
+    "passes": true,
     "selected": true,
     "order": 3,
-    "status": "in_progress",
-    "lastAttemptAt": "2026-01-20T17:37:14.146Z",
-    "attempts": 1
+    "status": "completed",
+    "lastAttemptAt": "2026-01-20T17:55:00.000Z",
+    "attempts": 3,
+    "completedAt": "2026-01-20T17:55:00.000Z"
   },
   {
     "id": "services-overview-section",
