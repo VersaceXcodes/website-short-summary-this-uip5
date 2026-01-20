@@ -1,12 +1,12 @@
 # Feature Implementation
 
 ## Feature Details
-- **ID**: services-learn-pricing-button
-- **Title**: Button in services section that navigates users to the Pricing page to learn about service costs
-- **Category**: navigation
+- **ID**: faq-section-display
+- **Title**: FAQ section displaying 8 frequently asked questions with collapsible/expandable answers to keep page length manageable
+- **Category**: ui
 
 ## Description
-Button in services section that navigates users to the Pricing page to learn about service costs
+FAQ section displaying 8 frequently asked questions with collapsible/expandable answers to keep page length manageable
 
 ## Project Context
 - **Platform**: Vite React (Web)
@@ -18,10 +18,10 @@ Button in services section that navigates users to the Pricing page to learn abo
 - Keep changes within the existing Vite boilerplate
 
 ## Verification Steps
-1. Navigate to services section on homepage
-2. Locate 'learn more about our pricing' button
-3. Click the button
-4. Verify navigation to Pricing page occurs
+1. Navigate to FAQ section on homepage
+2. Verify all 8 FAQ questions are visible
+3. Verify answers are initially collapsed/hidden
+4. Click on each question to verify answers expand and collapse properly
 
 ## Instructions
 1. **Explore**: Review the existing codebase structure and patterns
@@ -38,7 +38,7 @@ Button in services section that navigates users to the Pricing page to learn abo
 5. **Update**: Only mark feature as "passes": true in feature_list.json AFTER browser testing confirms it works
 
 ## Important
-- Implement ONLY this specific feature (ID: services-learn-pricing-button)
+- Implement ONLY this specific feature (ID: faq-section-display)
 - Do NOT modify features already marked as passes: true
 - Follow existing code patterns and conventions
 - Maintain backward compatibility

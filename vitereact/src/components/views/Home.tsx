@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '@/assets/logo.svg';
 import ServicesSection from '@/components/ServicesSection';
+import FAQSection from '@/components/FAQSection';
 
 const Home: React.FC = () => {
   return (
@@ -39,6 +40,7 @@ const Home: React.FC = () => {
       </div>
       
       <ServicesSection />
+      <FAQSection />
     </div>
   );
 };

@@ -165,9 +165,9 @@
     "selected": true,
     "order": 10,
     "status": "completed",
-    "lastAttemptAt": "2026-01-20T14:50:12.643Z",
+    "lastAttemptAt": "2026-01-20T14:58:52.227Z",
     "attempts": 1,
-    "completedAt": "2026-01-20T14:58:00.000Z"
+    "completedAt": "2026-01-20T14:58:52.227Z"
   },
   {
     "id": "faq-section-display",
@@ -180,9 +180,12 @@
       "Click on each question to verify answers expand and collapse properly"
     ],
     "priority": 1,
-    "passes": false,
+    "passes": true,
     "selected": true,
-    "order": 11
+    "order": 11,
+    "status": "completed",
+    "completedAt": "2026-01-20T14:58:57.542Z",
+    "attempts": 1
   },
   {
     "id": "faq-question-expansion",
