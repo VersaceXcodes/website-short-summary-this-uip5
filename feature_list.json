@@ -412,12 +412,13 @@
       "Verify complete service list and Book Now button are present"
     ],
     "priority": 1,
-    "passes": false,
+    "passes": true,
     "selected": true,
     "order": 25,
-    "status": "in_progress",
-    "lastAttemptAt": "2026-01-20T16:06:03.413Z",
-    "attempts": 1
+    "status": "completed",
+    "lastAttemptAt": "2026-01-20T16:25:00.000Z",
+    "attempts": 3,
+    "completedAt": "2026-01-20T16:25:00.000Z"
   },
   {
     "id": "optimise-pricing-plan",

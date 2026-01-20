@@ -18,13 +18,16 @@ const pricingPlans = [
     period: "/month",
     description: "Comprehensive monthly package for consistent high-quality content.",
     features: [
-      "15 High-Quality Short Form Videos",
-      "Professional Editing & Sound Design",
-      "Scriptwriting & Content Strategy",
-      "Trend Research & Concepting",
-      "Dedicated Account Manager",
-      "Comprehensive Analytics Report",
-      "Unlimited Revisions"
+      "15 Short Form Videos",
+      "Onboarding & Review Calls",
+      "Topic Research & Concepting",
+      "Professional Scriptwriting",
+      "Editing & Sound Design",
+      "Uploading & Optimization",
+      "Instagram Stories",
+      "Email Support",
+      "Monthly Analytics Report",
+      "Profile Optimization (Bonus)"
     ],
     buttonText: "Book Now",
     popular: false
