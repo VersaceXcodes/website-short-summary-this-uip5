@@ -1,12 +1,12 @@
 # Feature Implementation
 
 ## Feature Details
-- **ID**: faq-section-display
-- **Title**: FAQ section displaying 8 frequently asked questions with collapsible/expandable answers to keep page length manageable
+- **ID**: homepage-footer
+- **Title**: Footer section with burgundy background containing social media icons and contact email contact@cinebih
 - **Category**: ui
 
 ## Description
-FAQ section displaying 8 frequently asked questions with collapsible/expandable answers to keep page length manageable
+Footer section with burgundy background containing social media icons and contact email contact@cinebih.com
 
 ## Project Context
 - **Platform**: Vite React (Web)
@@ -18,10 +18,10 @@ FAQ section displaying 8 frequently asked questions with collapsible/expandable 
 - Keep changes within the existing Vite boilerplate
 
 ## Verification Steps
-1. Navigate to FAQ section on homepage
-2. Verify all 8 FAQ questions are visible
-3. Verify answers are initially collapsed/hidden
-4. Click on each question to verify answers expand and collapse properly
+1. Scroll to bottom of homepage
+2. Verify footer displays with burgundy background
+3. Verify social media icons are present
+4. Verify contact email contact@cinebih.com is displayed
 
 ## Instructions
 1. **Explore**: Review the existing codebase structure and patterns
@@ -38,7 +38,7 @@ FAQ section displaying 8 frequently asked questions with collapsible/expandable 
 5. **Update**: Only mark feature as "passes": true in feature_list.json AFTER browser testing confirms it works
 
 ## Important
-- Implement ONLY this specific feature (ID: faq-section-display)
+- Implement ONLY this specific feature (ID: homepage-footer)
 - Do NOT modify features already marked as passes: true
 - Follow existing code patterns and conventions
 - Maintain backward compatibility

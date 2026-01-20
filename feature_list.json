@@ -184,8 +184,9 @@
     "selected": true,
     "order": 11,
     "status": "completed",
-    "completedAt": "2026-01-20T14:58:57.542Z",
-    "attempts": 1
+    "completedAt": "2026-01-20T15:09:41.737Z",
+    "attempts": 1,
+    "lastAttemptAt": "2026-01-20T15:09:41.737Z"
   },
   {
     "id": "faq-question-expansion",
@@ -215,7 +216,10 @@
     "priority": 1,
     "passes": false,
     "selected": true,
-    "order": 13
+    "order": 13,
+    "status": "in_progress",
+    "lastAttemptAt": "2026-01-20T15:10:03.861Z",
+    "attempts": 1
   },
   {
     "id": "footer-social-icons",
