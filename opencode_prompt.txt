@@ -1,12 +1,12 @@
 # Feature Implementation
 
 ## Feature Details
-- **ID**: homepage-footer
-- **Title**: Footer section with burgundy background containing social media icons and contact email contact@cinebih
-- **Category**: ui
+- **ID**: about-page-navigation
+- **Title**: Dedicated About page accessible via main navigation and service section buttons
+- **Category**: navigation
 
 ## Description
-Footer section with burgundy background containing social media icons and contact email contact@cinebih.com
+Dedicated About page accessible via main navigation and service section buttons
 
 ## Project Context
 - **Platform**: Vite React (Web)
@@ -18,10 +18,10 @@ Footer section with burgundy background containing social media icons and contac
 - Keep changes within the existing Vite boilerplate
 
 ## Verification Steps
-1. Scroll to bottom of homepage
-2. Verify footer displays with burgundy background
-3. Verify social media icons are present
-4. Verify contact email contact@cinebih.com is displayed
+1. Click About link in main navigation
+2. Verify About page loads correctly
+3. Navigate back to homepage and click 'learn more about what we do' button
+4. Verify same About page loads
 
 ## Instructions
 1. **Explore**: Review the existing codebase structure and patterns
@@ -38,7 +38,7 @@ Footer section with burgundy background containing social media icons and contac
 5. **Update**: Only mark feature as "passes": true in feature_list.json AFTER browser testing confirms it works
 
 ## Important
-- Implement ONLY this specific feature (ID: homepage-footer)
+- Implement ONLY this specific feature (ID: about-page-navigation)
 - Do NOT modify features already marked as passes: true
 - Follow existing code patterns and conventions
 - Maintain backward compatibility

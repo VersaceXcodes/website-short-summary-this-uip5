@@ -218,7 +218,8 @@
     "selected": true,
     "order": 13,
     "status": "completed",
-    "completedAt": "2026-01-20T15:20:00.000Z"
+    "completedAt": "2026-01-20T15:18:51.237Z",
+    "lastAttemptAt": "2026-01-20T15:18:51.237Z"
   },
   {
     "id": "footer-social-icons",
@@ -246,9 +247,12 @@
       "Verify same About page loads"
     ],
     "priority": 1,
-    "passes": false,
+    "passes": true,
     "selected": true,
-    "order": 15
+    "order": 15,
+    "status": "completed",
+    "lastAttemptAt": "2026-01-20T15:18:55.545Z",
+    "attempts": 1
   },
   {
     "id": "about-our-story-section",
