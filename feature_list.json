@@ -504,12 +504,13 @@
       "Verify page maintains consistent styling with rest of site"
     ],
     "priority": 1,
-    "passes": false,
+    "passes": true,
     "selected": true,
     "order": 30,
-    "status": "in_progress",
-    "lastAttemptAt": "2026-01-20T17:00:49.319Z",
-    "attempts": 1
+    "status": "completed",
+    "lastAttemptAt": "2026-01-20T17:11:49.296Z",
+    "attempts": 2,
+    "errorMessage": "Agent completed but feature not marked as passed"
   },
   {
     "id": "contact-form-display",
