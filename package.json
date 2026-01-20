@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "concurrently": "^8.2.2",
-    "pg": "^8.17.1"
+    "pg": "^8.17.2"
   },
   "devDependencies": {
     "@flydotio/dockerfile": "^0.7.8"

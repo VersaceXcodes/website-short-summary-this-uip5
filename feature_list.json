@@ -105,12 +105,13 @@
       "Verify description explains monthly script creation process"
     ],
     "priority": 2,
-    "passes": false,
+    "passes": true,
     "selected": true,
     "order": 6,
-    "status": "in_progress",
-    "lastAttemptAt": "2026-01-20T18:00:27.111Z",
-    "attempts": 1
+    "status": "completed",
+    "lastAttemptAt": "2026-01-20T18:11:12.648Z",
+    "attempts": 3,
+    "completedAt": "2026-01-20T18:15:00.000Z"
   },
   {
     "id": "film-edit-service-display",
