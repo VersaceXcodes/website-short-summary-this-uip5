@@ -382,8 +382,9 @@
     "selected": true,
     "order": 23,
     "status": "completed",
-    "lastAttemptAt": "2026-01-20T15:59:30.097Z",
-    "attempts": 1
+    "lastAttemptAt": "2026-01-20T16:05:57.130Z",
+    "attempts": 1,
+    "completedAt": "2026-01-20T16:05:57.130Z"
   },
   {
     "id": "pricing-cost-explanation",
@@ -413,7 +414,10 @@
     "priority": 1,
     "passes": false,
     "selected": true,
-    "order": 25
+    "order": 25,
+    "status": "in_progress",
+    "lastAttemptAt": "2026-01-20T16:06:03.413Z",
+    "attempts": 1
   },
   {
     "id": "optimise-pricing-plan",

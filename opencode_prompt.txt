@@ -1,12 +1,12 @@
 # Feature Implementation
 
 ## Feature Details
-- **ID**: pricing-page-navigation
-- **Title**: Dedicated Pricing page accessible via main navigation and service section buttons
-- **Category**: navigation
+- **ID**: starter-pricing-plan
+- **Title**: Starter plan display showing 15 shorts/month for €1950/month with full service list and Book Now button
+- **Category**: ui
 
 ## Description
-Dedicated Pricing page accessible via main navigation and service section buttons
+Starter plan display showing 15 shorts/month for €1950/month with full service list and Book Now button
 
 ## Project Context
 - **Platform**: Vite React (Web)
@@ -18,10 +18,10 @@ Dedicated Pricing page accessible via main navigation and service section button
 - Keep changes within the existing Vite boilerplate
 
 ## Verification Steps
-1. Click Pricing link in main navigation
-2. Verify Pricing page loads correctly
-3. Navigate back to homepage and click 'learn more about our pricing' button
-4. Verify same Pricing page loads
+1. Navigate to Pricing page
+2. Locate Starter plan section
+3. Verify 15 shorts/month and €1950/month pricing
+4. Verify complete service list and Book Now button are present
 
 ## Instructions
 1. **Explore**: Review the existing codebase structure and patterns
@@ -38,7 +38,7 @@ Dedicated Pricing page accessible via main navigation and service section button
 5. **Update**: Only mark feature as "passes": true in feature_list.json AFTER browser testing confirms it works
 
 ## Important
-- Implement ONLY this specific feature (ID: pricing-page-navigation)
+- Implement ONLY this specific feature (ID: starter-pricing-plan)
 - Do NOT modify features already marked as passes: true
 - Follow existing code patterns and conventions
 - Maintain backward compatibility

@@ -14,17 +14,19 @@ import { useNavigate } from 'react-router-dom';
 const pricingPlans = [
   {
     name: "Starter",
-    price: "$999",
+    price: "€1,950",
     period: "/month",
-    description: "Perfect for small businesses just getting started with video content.",
+    description: "Comprehensive monthly package for consistent high-quality content.",
     features: [
-      "2 High-Quality Short Form Videos",
+      "15 High-Quality Short Form Videos",
       "Professional Editing & Sound Design",
-      "Monthly Strategy Call",
-      "Basic Analytics Report",
-      "1 Revision Round per Video"
+      "Scriptwriting & Content Strategy",
+      "Trend Research & Concepting",
+      "Dedicated Account Manager",
+      "Comprehensive Analytics Report",
+      "Unlimited Revisions"
     ],
-    buttonText: "Get Started",
+    buttonText: "Book Now",
     popular: false
   },
   {
