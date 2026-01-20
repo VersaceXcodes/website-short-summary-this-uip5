@@ -43,18 +43,18 @@ const UV_Login: React.FC = () => {
 
   return (
     <>
-      <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="min-h-screen flex items-center justify-center bg-ivory py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-md w-full space-y-8">
           <div>
-            <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
+            <h2 className="mt-6 text-center text-3xl font-extrabold text-cognac-brown font-smut uppercase tracking-wide">
               {isRegisterMode ? 'Create your account' : 'Sign in to your account'}
             </h2>
           </div>
           
           <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
             {errorMessage && (
-              <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-md">
-                <p className="text-sm">{errorMessage}</p>
+              <div className="bg-rust-orange/10 border border-rust-orange text-rust-orange px-4 py-3 rounded-md">
+                <p className="text-sm font-smut-full">{errorMessage}</p>
               </div>
             )}
             
@@ -72,7 +72,7 @@ const UV_Login: React.FC = () => {
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     placeholder="Full Name"
-                    className="relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
+                    className="relative block w-full px-3 py-2 border border-cognac-brown/20 placeholder-cognac-brown/50 text-cognac-brown rounded-md focus:outline-none focus:ring-forest-green focus:border-forest-green focus:z-10 sm:text-sm bg-white font-smut-full"
                   />
                 </div>
               )}
@@ -90,7 +90,7 @@ const UV_Login: React.FC = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Email address"
-                  className="relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
+                  className="relative block w-full px-3 py-2 border border-cognac-brown/20 placeholder-cognac-brown/50 text-cognac-brown rounded-md focus:outline-none focus:ring-forest-green focus:border-forest-green focus:z-10 sm:text-sm bg-white font-smut-full"
                 />
               </div>
               
@@ -107,7 +107,7 @@ const UV_Login: React.FC = () => {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="Password"
-                  className="relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
+                  className="relative block w-full px-3 py-2 border border-cognac-brown/20 placeholder-cognac-brown/50 text-cognac-brown rounded-md focus:outline-none focus:ring-forest-green focus:border-forest-green focus:z-10 sm:text-sm bg-white font-smut-full"
                 />
               </div>
             </div>
@@ -116,11 +116,11 @@ const UV_Login: React.FC = () => {
               <button
                 type="submit"
                 disabled={isLoading}
-                className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-ivory bg-forest-green hover:bg-forest-green/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-forest-green disabled:opacity-50 disabled:cursor-not-allowed font-smut uppercase tracking-wider transition-colors"
               >
                 {isLoading ? (
                   <span className="flex items-center">
-                    <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" fill="none" viewBox="0 0 24 24">
+                    <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-ivory" fill="none" viewBox="0 0 24 24">
                       <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                       <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                     </svg>
@@ -136,7 +136,7 @@ const UV_Login: React.FC = () => {
               <button
                 type="button"
                 onClick={toggleMode}
-                className="text-blue-600 hover:text-blue-500 text-sm font-medium"
+                className="text-antique-gold hover:text-antique-gold/80 text-sm font-medium font-smut uppercase tracking-wide transition-colors"
               >
                 {isRegisterMode 
                   ? 'Already have an account? Sign in' 

@@ -610,8 +610,9 @@
     "selected": true,
     "order": 33,
     "status": "completed",
-    "lastAttemptAt": "2026-01-20T18:50:24.237Z",
-    "attempts": 1
+    "lastAttemptAt": "2026-01-20T18:53:05.191Z",
+    "attempts": 1,
+    "completedAt": "2026-01-20T18:53:05.191Z"
   },
   {
     "id": "color-scheme-implementation",
@@ -626,7 +627,10 @@
     "priority": 2,
     "passes": false,
     "selected": true,
-    "order": 34
+    "order": 34,
+    "status": "in_progress",
+    "lastAttemptAt": "2026-01-20T18:53:09.319Z",
+    "attempts": 1
   },
   {
     "id": "typography-implementation",
