@@ -147,9 +147,9 @@
     "selected": true,
     "order": 8,
     "status": "completed",
-    "lastAttemptAt": "2026-01-20T18:21:19.510Z",
+    "lastAttemptAt": "2026-01-20T18:26:35.702Z",
     "attempts": 2,
-    "completedAt": "2026-01-20T18:21:19.510Z"
+    "completedAt": "2026-01-20T18:26:35.702Z"
   },
   {
     "id": "services-learn-more-about-button",
@@ -219,9 +219,12 @@
       "Click question again to verify answer collapses"
     ],
     "priority": 2,
-    "passes": false,
+    "passes": true,
     "selected": true,
-    "order": 12
+    "order": 12,
+    "status": "completed",
+    "lastAttemptAt": "2026-01-20T18:26:40.741Z",
+    "attempts": 1
   },
   {
     "id": "homepage-footer",

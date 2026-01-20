@@ -1,12 +1,12 @@
 # Feature Implementation
 
 ## Feature Details
-- **ID**: upload-service-display
-- **Title**: Upload service card showing upload icon and description about optimized content uploading across multiple social media platforms
-- **Category**: ui
+- **ID**: faq-question-expansion
+- **Title**: Interactive functionality allowing users to click FAQ questions to expand/collapse detailed answers
+- **Category**: functional
 
 ## Description
-Upload service card showing upload icon and description about optimized content uploading across multiple social media platforms
+Interactive functionality allowing users to click FAQ questions to expand/collapse detailed answers
 
 ## Project Context
 - **Platform**: Vite React (Web)
@@ -18,10 +18,10 @@ Upload service card showing upload icon and description about optimized content 
 - Keep changes within the existing Vite boilerplate
 
 ## Verification Steps
-1. Navigate to services section
-2. Locate Upload service card
-3. Verify upload icon displays correctly
-4. Verify description mentions Instagram, TikTok, Facebook, YouTube, LinkedIn platforms
+1. Navigate to FAQ section
+2. Click on first FAQ question
+3. Verify answer expands and displays full content
+4. Click question again to verify answer collapses
 
 ## Instructions
 1. **Explore**: Review the existing codebase structure and patterns
@@ -38,7 +38,7 @@ Upload service card showing upload icon and description about optimized content 
 5. **Update**: Only mark feature as "passes": true in feature_list.json AFTER browser testing confirms it works
 
 ## Important
-- Implement ONLY this specific feature (ID: upload-service-display)
+- Implement ONLY this specific feature (ID: faq-question-expansion)
 - Do NOT modify features already marked as passes: true
 - Follow existing code patterns and conventions
 - Maintain backward compatibility
