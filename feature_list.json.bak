@@ -266,11 +266,12 @@
       "Verify content covers business growth challenges and agency solutions"
     ],
     "priority": 1,
-    "passes": true,
+    "passes": false,
     "selected": true,
     "order": 16,
-    "status": "completed",
-    "completedAt": "2026-01-20T15:29:59.801Z"
+    "status": "in_progress",
+    "lastAttemptAt": "2026-01-20T15:26:04.950Z",
+    "attempts": 1
   },
   {
     "id": "about-detailed-services-section",
