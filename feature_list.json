@@ -13,9 +13,10 @@
     "passes": true,
     "selected": true,
     "order": 1,
-    "status": "in_progress",
-    "lastAttemptAt": "2026-01-20T14:12:00.977Z",
-    "attempts": 1
+    "status": "completed",
+    "lastAttemptAt": "2026-01-20T14:21:29.688Z",
+    "attempts": 1,
+    "completedAt": "2026-01-20T14:21:29.688Z"
   },
   {
     "id": "homepage-hero-section",
@@ -28,9 +29,12 @@
       "Verify logo displays in center and moves to back when overlapping text"
     ],
     "priority": 1,
-    "passes": false,
+    "passes": true,
     "selected": true,
-    "order": 2
+    "order": 2,
+    "status": "completed",
+    "lastAttemptAt": "2026-01-20T14:21:34.602Z",
+    "attempts": 1
   },
   {
     "id": "scroll-mini-logo",

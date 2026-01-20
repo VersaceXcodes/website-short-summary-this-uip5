@@ -1,12 +1,12 @@
 # Feature Implementation
 
 ## Feature Details
-- **ID**: homepage-header-navigation
-- **Title**: Main navigation header with Home, About, Pricing, Contact Us links that allows users to navigate between all main sections of the website
-- **Category**: navigation
+- **ID**: homepage-hero-section
+- **Title**: Welcome section with cognac brown background displaying main headline 'Taking Your Business to the Next Level' and descriptive text about social media services
+- **Category**: ui
 
 ## Description
-Main navigation header with Home, About, Pricing, Contact Us links that allows users to navigate between all main sections of the website
+Welcome section with cognac brown background displaying main headline 'Taking Your Business to the Next Level' and descriptive text about social media services
 
 ## Project Context
 - **Platform**: Vite React (Web)
@@ -18,10 +18,10 @@ Main navigation header with Home, About, Pricing, Contact Us links that allows u
 - Keep changes within the existing Vite boilerplate
 
 ## Verification Steps
-1. Load homepage and verify header displays with forest green background
-2. Click each navigation link (Home, About, Pricing, Contact Us)
-3. Verify each link navigates to correct page/section
-4. Verify navigation remains visible and functional on all pages
+1. Load homepage and verify hero section displays with cognac brown background
+2. Verify headline text appears on right side using CA SMUT font
+3. Verify descriptive text appears on left side using CA SMUT FULL font
+4. Verify logo displays in center and moves to back when overlapping text
 
 ## Instructions
 1. **Explore**: Review the existing codebase structure and patterns
@@ -38,7 +38,7 @@ Main navigation header with Home, About, Pricing, Contact Us links that allows u
 5. **Update**: Only mark feature as "passes": true in feature_list.json AFTER browser testing confirms it works
 
 ## Important
-- Implement ONLY this specific feature (ID: homepage-header-navigation)
+- Implement ONLY this specific feature (ID: homepage-hero-section)
 - Do NOT modify features already marked as passes: true
 - Follow existing code patterns and conventions
 - Maintain backward compatibility
