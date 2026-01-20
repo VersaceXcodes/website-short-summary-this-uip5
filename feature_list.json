@@ -508,9 +508,10 @@
     "selected": true,
     "order": 30,
     "status": "completed",
-    "lastAttemptAt": "2026-01-20T17:11:49.296Z",
+    "lastAttemptAt": "2026-01-20T17:22:31.609Z",
     "attempts": 2,
-    "errorMessage": "Agent completed but feature not marked as passed"
+    "errorMessage": "Agent completed but feature not marked as passed",
+    "completedAt": "2026-01-20T17:22:31.609Z"
   },
   {
     "id": "contact-form-display",
@@ -523,9 +524,13 @@
       "Verify form has submit button"
     ],
     "priority": 1,
-    "passes": false,
+    "passes": true,
     "selected": true,
-    "order": 31
+    "order": 31,
+    "status": "completed",
+    "completedAt": "2026-01-20T17:22:37.592Z",
+    "lastAttemptAt": "2026-01-20T17:22:37.592Z",
+    "attempts": 2
   },
   {
     "id": "contact-form-submission",

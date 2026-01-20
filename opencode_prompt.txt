@@ -1,12 +1,12 @@
 # Feature Implementation
 
 ## Feature Details
-- **ID**: contact-page-navigation
-- **Title**: Dedicated Contact Us page accessible via main navigation
-- **Category**: navigation
+- **ID**: contact-form-display
+- **Title**: Basic contact form allowing users to submit inquiries with standard contact fields
+- **Category**: ui
 
 ## Description
-Dedicated Contact Us page accessible via main navigation
+Basic contact form allowing users to submit inquiries with standard contact fields
 
 ## Project Context
 - **Platform**: Vite React (Web)
@@ -18,10 +18,10 @@ Dedicated Contact Us page accessible via main navigation
 - Keep changes within the existing Vite boilerplate
 
 ## Verification Steps
-1. Click Contact Us link in main navigation
-2. Verify Contact page loads correctly
-3. Verify page displays contact form or information
-4. Verify page maintains consistent styling with rest of site
+1. Navigate to Contact Us page
+2. Verify contact form is displayed
+3. Verify form contains appropriate input fields
+4. Verify form has submit button
 
 ## Instructions
 1. **Explore**: Review the existing codebase structure and patterns
@@ -38,7 +38,7 @@ Dedicated Contact Us page accessible via main navigation
 5. **Update**: Only mark feature as "passes": true in feature_list.json AFTER browser testing confirms it works
 
 ## Important
-- Implement ONLY this specific feature (ID: contact-page-navigation)
+- Implement ONLY this specific feature (ID: contact-form-display)
 - Do NOT modify features already marked as passes: true
 - Follow existing code patterns and conventions
 - Maintain backward compatibility
