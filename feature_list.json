@@ -454,9 +454,10 @@
     "selected": true,
     "order": 27,
     "status": "completed",
-    "lastAttemptAt": "2026-01-20T16:45:53.674Z",
+    "lastAttemptAt": "2026-01-20T16:56:33.851Z",
     "attempts": 2,
-    "errorMessage": "Agent completed but feature not marked as passed"
+    "errorMessage": "Agent completed but feature not marked as passed",
+    "completedAt": "2026-01-20T16:56:33.851Z"
   },
   {
     "id": "pricing-plan-features",
@@ -484,9 +485,12 @@
       "Repeat for Optimise and Dominate plans"
     ],
     "priority": 1,
-    "passes": false,
+    "passes": true,
     "selected": true,
-    "order": 29
+    "order": 29,
+    "status": "completed",
+    "lastAttemptAt": "2026-01-20T16:56:39.203Z",
+    "attempts": 1
   },
   {
     "id": "contact-page-navigation",

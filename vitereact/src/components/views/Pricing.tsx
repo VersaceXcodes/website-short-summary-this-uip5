@@ -131,7 +131,7 @@ const Pricing: React.FC = () => {
               </CardContent>
               <CardFooter>
                 <Button 
-                  onClick={() => navigate('/contact')} 
+                  onClick={() => navigate(`/contact?plan=${encodeURIComponent(plan.name)}`)} 
                   className={`w-full py-6 text-lg font-smut uppercase tracking-wider ${
                     plan.popular 
                       ? 'bg-antique-gold text-forest-green hover:bg-ivory hover:text-forest-green' 

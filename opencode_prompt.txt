@@ -1,12 +1,12 @@
 # Feature Implementation
 
 ## Feature Details
-- **ID**: dominate-pricing-plan
-- **Title**: Dominate plan display showing 30 shorts/month for €3395/month with full service list and Book Now button
-- **Category**: ui
+- **ID**: pricing-book-now-buttons
+- **Title**: Book Now buttons on each pricing plan that initiate the booking/contact process for that specific plan
+- **Category**: functional
 
 ## Description
-Dominate plan display showing 30 shorts/month for €3395/month with full service list and Book Now button
+Book Now buttons on each pricing plan that initiate the booking/contact process for that specific plan
 
 ## Project Context
 - **Platform**: Vite React (Web)
@@ -19,9 +19,9 @@ Dominate plan display showing 30 shorts/month for €3395/month with full servic
 
 ## Verification Steps
 1. Navigate to Pricing page
-2. Locate Dominate plan section
-3. Verify 30 shorts/month and €3395/month pricing
-4. Verify complete service list and Book Now button are present
+2. Click Book Now button on Starter plan
+3. Verify booking process initiates with Starter plan context
+4. Repeat for Optimise and Dominate plans
 
 ## Instructions
 1. **Explore**: Review the existing codebase structure and patterns
@@ -38,7 +38,7 @@ Dominate plan display showing 30 shorts/month for €3395/month with full servic
 5. **Update**: Only mark feature as "passes": true in feature_list.json AFTER browser testing confirms it works
 
 ## Important
-- Implement ONLY this specific feature (ID: dominate-pricing-plan)
+- Implement ONLY this specific feature (ID: pricing-book-now-buttons)
 - Do NOT modify features already marked as passes: true
 - Follow existing code patterns and conventions
 - Maintain backward compatibility
