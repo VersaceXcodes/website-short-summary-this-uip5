@@ -1,12 +1,12 @@
 # Feature Implementation
 
 ## Feature Details
-- **ID**: color-scheme-implementation
-- **Title**: Consistent implementation of retro poster color palette across all pages including forest green headers, cognac brown hero, ivory services, burgundy footer, and antique gold accents
+- **ID**: typography-implementation
+- **Title**: Consistent use of CA SMUT and CA SMUT FULL fonts throughout the website as specified in design requirements
 - **Category**: ui
 
 ## Description
-Consistent implementation of retro poster color palette across all pages including forest green headers, cognac brown hero, ivory services, burgundy footer, and antique gold accents
+Consistent use of CA SMUT and CA SMUT FULL fonts throughout the website as specified in design requirements
 
 ## Project Context
 - **Platform**: Vite React (Web)
@@ -19,9 +19,9 @@ Consistent implementation of retro poster color palette across all pages includi
 
 ## Verification Steps
 1. Navigate through all website pages
-2. Verify header uses deep forest green (#014421)
-3. Verify hero section uses cognac brown (#8B5E3C)
-4. Verify services section uses ivory/cream (#F8F4E3) and footer uses burgundy (#581845)
+2. Verify headings use CA SMUT font
+3. Verify body text uses CA SMUT FULL font
+4. Verify font rendering is consistent across different browsers
 
 ## Instructions
 1. **Explore**: Review the existing codebase structure and patterns
@@ -38,7 +38,7 @@ Consistent implementation of retro poster color palette across all pages includi
 5. **Update**: Only mark feature as "passes": true in feature_list.json AFTER browser testing confirms it works
 
 ## Important
-- Implement ONLY this specific feature (ID: color-scheme-implementation)
+- Implement ONLY this specific feature (ID: typography-implementation)
 - Do NOT modify features already marked as passes: true
 - Follow existing code patterns and conventions
 - Maintain backward compatibility
