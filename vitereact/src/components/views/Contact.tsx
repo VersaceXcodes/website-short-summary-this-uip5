@@ -35,20 +35,43 @@ const Contact: React.FC = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate API call
-    setTimeout(() => {
-      console.log('Form submitted:', formData);
+    try {
+      // In development, assume backend is on port 3000 if not specified
+      const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+      
+      const response = await fetch(`${API_URL}/api/contact`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.message || 'Something went wrong');
+      }
+
       toast({
         title: "Message Sent",
         description: "We've received your message and will get back to you soon.",
       });
       setFormData({ name: '', email: '', subject: '', message: '' });
+    } catch (error) {
+      console.error('Submission error:', error);
+      toast({
+        title: "Error",
+        description: error instanceof Error ? error.message : "Failed to send message. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   return (

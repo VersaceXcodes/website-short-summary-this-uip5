@@ -274,6 +274,32 @@ app.get("/", (req, res) => {
   res.json({ message: "cofounder backend boilerplate :)" });
 });
 
+// Contact form endpoint
+app.post('/api/contact', async (req, res) => {
+  try {
+    const { name, email, subject, message } = req.body;
+
+    // Validation
+    if (!name || !email || !message) {
+      return res.status(400).json({ message: 'Name, email, and message are required' });
+    }
+
+    // Insert into database
+    const result = await pool.query(
+      'INSERT INTO contact_messages (name, email, subject, message) VALUES ($1, $2, $3, $4) RETURNING id, created_at',
+      [name, email, subject || null, message]
+    );
+
+    res.status(201).json({
+      message: 'Message sent successfully',
+      data: result.rows[0]
+    });
+  } catch (error) {
+    console.error('Contact form error:', error);
+    res.status(500).json({ message: 'Internal server error' });
+  }
+});
+
 // Catch-all route for SPA routing
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
