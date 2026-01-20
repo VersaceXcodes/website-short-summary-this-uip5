@@ -1,12 +1,12 @@
 # Feature Implementation
 
 ## Feature Details
-- **ID**: optimise-pricing-plan
-- **Title**: Optimise plan display showing 20 shorts/month for €2495/month with full service list and Book Now button
+- **ID**: dominate-pricing-plan
+- **Title**: Dominate plan display showing 30 shorts/month for €3395/month with full service list and Book Now button
 - **Category**: ui
 
 ## Description
-Optimise plan display showing 20 shorts/month for €2495/month with full service list and Book Now button
+Dominate plan display showing 30 shorts/month for €3395/month with full service list and Book Now button
 
 ## Project Context
 - **Platform**: Vite React (Web)
@@ -19,8 +19,8 @@ Optimise plan display showing 20 shorts/month for €2495/month with full servic
 
 ## Verification Steps
 1. Navigate to Pricing page
-2. Locate Optimise plan section
-3. Verify 20 shorts/month and €2495/month pricing
+2. Locate Dominate plan section
+3. Verify 30 shorts/month and €3395/month pricing
 4. Verify complete service list and Book Now button are present
 
 ## Instructions
@@ -38,7 +38,7 @@ Optimise plan display showing 20 shorts/month for €2495/month with full servic
 5. **Update**: Only mark feature as "passes": true in feature_list.json AFTER browser testing confirms it works
 
 ## Important
-- Implement ONLY this specific feature (ID: optimise-pricing-plan)
+- Implement ONLY this specific feature (ID: dominate-pricing-plan)
 - Do NOT modify features already marked as passes: true
 - Follow existing code patterns and conventions
 - Maintain backward compatibility
