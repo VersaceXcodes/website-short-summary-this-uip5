@@ -270,7 +270,8 @@
     "selected": true,
     "order": 16,
     "status": "completed",
-    "completedAt": "2026-01-20T15:29:59.801Z"
+    "completedAt": "2026-01-20T15:32:56.329Z",
+    "lastAttemptAt": "2026-01-20T15:32:56.329Z"
   },
   {
     "id": "about-detailed-services-section",
@@ -360,7 +361,10 @@
     "priority": 1,
     "passes": false,
     "selected": true,
-    "order": 22
+    "order": 22,
+    "status": "in_progress",
+    "lastAttemptAt": "2026-01-20T15:33:02.136Z",
+    "attempts": 1
   },
   {
     "id": "pricing-page-navigation",

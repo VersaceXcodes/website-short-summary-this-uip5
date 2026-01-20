@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { Button } from '@/components/ui/button';
 
 const About: React.FC = () => {
   return (
@@ -61,6 +63,17 @@ const About: React.FC = () => {
                     </div>
                 </div>
            </div>
+            <div className="mt-20 border-t border-ivory/20 pt-12 mb-12">
+                <div className="text-center">
+                     <h2 className="font-smut text-3xl md:text-5xl mb-6 uppercase text-ivory">Ready to Create Something Extraordinary?</h2>
+                     <p className="font-smut-full text-lg md:text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+                         Whether you have a fully formed idea or just a spark of inspiration, we're here to help you tell your story.
+                     </p>
+                     <Button asChild size="lg" className="bg-antique-gold hover:bg-antique-gold/90 text-forest-green text-xl px-10 py-6 font-smut uppercase tracking-wider h-auto">
+                         <Link to="/contact">Book Now</Link>
+                     </Button>
+                </div>
+            </div>
        </div>
     </div>
   );
