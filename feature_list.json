@@ -625,12 +625,13 @@
       "Verify services section uses ivory/cream (#F8F4E3) and footer uses burgundy (#581845)"
     ],
     "priority": 2,
-    "passes": false,
+    "passes": true,
     "selected": true,
     "order": 34,
-    "status": "in_progress",
-    "lastAttemptAt": "2026-01-20T18:53:09.319Z",
-    "attempts": 1
+    "status": "completed",
+    "lastAttemptAt": "2026-01-20T19:04:03.607Z",
+    "attempts": 2,
+    "errorMessage": "Agent completed but feature not marked as passed"
   },
   {
     "id": "typography-implementation",
