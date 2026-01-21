@@ -1,10 +1,13 @@
-import React from 'react';
+
+import Services from '../components/home/Services';
+
+import FAQ from '../components/home/FAQ';
 
 const Home = () => {
   return (
-    <main className="bg-cognac min-h-[calc(100vh-100px)] text-ivory overflow-hidden relative flex flex-col items-center">
+    <main className="bg-cognac min-h-[calc(100vh-100px)] text-ivory overflow-hidden relative flex flex-col">
       {/* Hero Section */}
-      <section className="relative w-full max-w-7xl mx-auto flex-grow flex flex-col justify-center px-8 py-10 md:py-20">
+      <section className="relative w-full max-w-7xl mx-auto flex-grow flex flex-col justify-center px-8 py-10 md:py-20 min-h-[90vh]">
         
         {/* Central Logo Placeholder - Behind text */}
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none opacity-10">
@@ -39,6 +42,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+      
+      <Services />
+      <FAQ />
     </main>
   );
 };

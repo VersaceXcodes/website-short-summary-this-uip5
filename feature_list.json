@@ -1,51 +1,89 @@
 [
   {
-    "name": "Project Scaffolding & Home Page",
-    "description": "Initialize React app, setup routing, fonts, colors, and implement the Home/Hero section.",
+    "id": "initialize-project-structure-1768965137049",
+    "category": "Integration",
+    "description": "Initialize valid Vite+React project structure and dependencies",
+    "steps": [
+      "Generate package.json in /app/vitereact to match existing package-lock.json",
+      "Install react and react-dom dependencies",
+      "Configure vite.config.js for React support"
+    ],
     "priority": 1,
+    "passes": true,
     "selected": true,
-    "passes": false
+    "order": 1
   },
   {
-    "name": "Services Section",
-    "description": "Implement the Services section with 4 steps and icons.",
+    "id": "feature-services-section",
+    "category": "Frontend",
+    "description": "Implement Services section with 4 steps (Research, Script, Film & Edit, Upload)",
+    "steps": [
+      "Create ServiceCard component",
+      "Add Services section to Home page or separate page",
+      "Implement responsive grid layout",
+      "Add icons for each service"
+    ],
     "priority": 2,
-    "selected": false,
-    "passes": false
+    "passes": true,
+    "selected": true,
+    "order": 2
   },
   {
-    "name": "FAQ Section",
-    "description": "Implement the FAQ section with foldable questions.",
+    "id": "feature-faq-section",
+    "category": "Frontend",
+    "description": "Implement FAQ section with foldable questions",
+    "steps": [
+      "Create Accordion/FAQ component",
+      "Add FAQ data content",
+      "Style with project colors"
+    ],
     "priority": 3,
-    "selected": false,
-    "passes": false
+    "passes": true,
+    "selected": true,
+    "order": 3
   },
   {
-    "name": "Pricing Section",
-    "description": "Implement the Pricing section with 3 tiers.",
+    "id": "feature-about-page",
+    "category": "Frontend",
+    "description": "Implement About page with 'Our Story' and detailed service info",
+    "steps": [
+      "Create About page route",
+      "Add 'Our Story' section",
+      "Add detailed Research/Script/Film/Upload sections",
+      "Style text and layout"
+    ],
     "priority": 4,
-    "selected": false,
-    "passes": false
+    "passes": true,
+    "selected": true,
+    "order": 4
   },
   {
-    "name": "About Page",
-    "description": "Implement the About page with 'Our Story' and detailed service info.",
+    "id": "feature-pricing-section",
+    "category": "Frontend",
+    "description": "Implement Pricing section with 3 tiers",
+    "steps": [
+      "Create PricingCard component",
+      "Add 'Why cost?' section",
+      "Implement Starter, Optimise, Dominate tiers",
+      "Add 'Book Now' buttons"
+    ],
     "priority": 5,
-    "selected": false,
-    "passes": false
+    "passes": true,
+    "selected": true,
+    "order": 5
   },
   {
-    "name": "Contact & Footer",
-    "description": "Implement Contact Us section and Footer.",
+    "id": "feature-contact-footer",
+    "category": "Frontend",
+    "description": "Implement Contact Us section and Footer",
+    "steps": [
+      "Create Contact section",
+      "Create Footer with social icons",
+      "Add email link"
+    ],
     "priority": 6,
-    "selected": false,
-    "passes": false
-  },
-  {
-    "name": "AI Integration",
-    "description": "Integrate LaunchPulse AI for chat/responses.",
-    "priority": 7,
-    "selected": false,
-    "passes": false
+    "passes": true,
+    "selected": true,
+    "order": 6
   }
 ]
