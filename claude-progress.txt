@@ -1,3 +1,20 @@
 # Session Progress
+
+## Session 1 (Previous)
 - Initialized project scaffolding.
 - Created feature list.
+
+## Session 2 (Current - January 21, 2026)
+- Fixed Vite configuration to resolve "Blocked request" error by adding allowedHosts configuration
+- Added navigation functionality to hero section buttons ("Learn more about what we do" and "Learn more about our pricing")
+- Verified all features are working correctly through browser testing:
+  * Home page with hero section, services, and FAQ (collapsible) ✓
+  * About page with Our Story and detailed service information ✓
+  * Pricing page with 3 tiers (Starter, Optimise, Dominate) ✓
+  * Contact page with contact form ✓
+  * Footer with social icons and email ✓
+  * Navigation between all pages ✓
+  * FAQ accordion functionality ✓
+  * Button navigation to About and Pricing pages ✓
+- No console errors detected
+- All features from feature_list.json are implemented and passing

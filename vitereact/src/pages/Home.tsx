@@ -1,9 +1,11 @@
-
+import { useNavigate } from 'react-router-dom';
 import Services from '../components/home/Services';
 
 import FAQ from '../components/home/FAQ';
 
 const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <main className="bg-cognac min-h-[calc(100vh-100px)] text-ivory overflow-hidden relative flex flex-col">
       {/* Hero Section */}
@@ -25,10 +27,16 @@ const Home = () => {
             </p>
             
             <div className="pt-8 flex flex-col sm:flex-row gap-6">
-              <button className="bg-rust text-ivory font-display text-2xl px-8 py-3 rounded shadow-lg hover:bg-red-700 transition-all uppercase tracking-wide transform hover:scale-105">
+              <button 
+                onClick={() => navigate('/about')}
+                className="bg-rust text-ivory font-display text-2xl px-8 py-3 rounded shadow-lg hover:bg-red-700 transition-all uppercase tracking-wide transform hover:scale-105"
+              >
                 Learn more about what we do
               </button>
-              <button className="border-2 border-gold text-gold font-display text-2xl px-8 py-3 rounded hover:bg-gold hover:text-forest transition-all uppercase tracking-wide transform hover:scale-105">
+              <button 
+                onClick={() => navigate('/pricing')}
+                className="border-2 border-gold text-gold font-display text-2xl px-8 py-3 rounded hover:bg-gold hover:text-forest transition-all uppercase tracking-wide transform hover:scale-105"
+              >
                 Learn more about our pricing
               </button>
             </div>
