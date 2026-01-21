@@ -1,0 +1,3 @@
+# Session Progress
+- Initialized project scaffolding.
+- Created feature list.

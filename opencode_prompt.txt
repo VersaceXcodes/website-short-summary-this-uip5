@@ -383,7 +383,7 @@ something like this# ontact us
 just something basic like this
 
 ## Current User Request
-check if these are met requirements ### **sections 1: Header**
+check if my website app matches this ### **sections 1: Header**
 
 **Home.**
 

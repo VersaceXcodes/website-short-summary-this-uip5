@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Project Scaffolding & Home Page",
+    "description": "Initialize React app, setup routing, fonts, colors, and implement the Home/Hero section.",
+    "priority": 1,
+    "selected": true,
+    "passes": false
+  },
+  {
+    "name": "Services Section",
+    "description": "Implement the Services section with 4 steps and icons.",
+    "priority": 2,
+    "selected": false,
+    "passes": false
+  },
+  {
+    "name": "FAQ Section",
+    "description": "Implement the FAQ section with foldable questions.",
+    "priority": 3,
+    "selected": false,
+    "passes": false
+  },
+  {
+    "name": "Pricing Section",
+    "description": "Implement the Pricing section with 3 tiers.",
+    "priority": 4,
+    "selected": false,
+    "passes": false
+  },
+  {
+    "name": "About Page",
+    "description": "Implement the About page with 'Our Story' and detailed service info.",
+    "priority": 5,
+    "selected": false,
+    "passes": false
+  },
+  {
+    "name": "Contact & Footer",
+    "description": "Implement Contact Us section and Footer.",
+    "priority": 6,
+    "selected": false,
+    "passes": false
+  },
+  {
+    "name": "AI Integration",
+    "description": "Integrate LaunchPulse AI for chat/responses.",
+    "priority": 7,
+    "selected": false,
+    "passes": false
+  }
+]
