@@ -1,453 +1,338 @@
-You are an AI Software Engineer working on an existing project.
+Context from previous failed attempt:
+Previous Error/Analysis: Agent analysis indicates deployment failure or fix attempt
+Previous Agent Response: N/A
 
-## STARTUP SEQUENCE (do this first)
-1. Run `pwd` to verify you're in /app/expo
-2. Read /app/claude-progress.txt and run `git log --oneline -10` to understand recent progress
-3. Run `chmod +x /app/init.sh && /app/init.sh` to start dev servers
-4. Basic smoke test: verify the app loads by checking server logs
-5. Read /app/feature_list.json to see the feature list
+Based on the previous attempt's failure, re-analyze the following new build logs for deployment of project 'website-short-summary-this-uip5'. If the deployment was successful, respond ONLY with the exact phrase "Deployment successful.". If it failed again, identify the root cause (considering the previous failure) and use the available tools to modify the code and fix the error(s). Provide a summary of the fix if applied.
 
-## IMPLEMENTATION ORDER - FRONTEND FIRST
-For each feature, ALWAYS build in this order to give users immediate visual feedback:
-
-1. **UI First**: Create the user interface components and screens FIRST
-   - Build visual components with placeholder/mock data
-   - Implement navigation and user flows
-   - Style and polish the UI for immediate visual impact
-
-2. **Types Second**: Define TypeScript types/interfaces for the data
-   - Create shared types that frontend and backend will use
-
-3. **Backend Last**: Implement server/API/database AFTER UI is working
-   - Connect the already-working UI to real backend
-   - Replace mock data with actual API calls
-
-## IMPLEMENTATION RULES
-- Work on ONLY ONE feature per session
-- Pick the highest-priority feature where "passes": false and "selected": true
-- Follow the FRONTEND FIRST order above when implementing
-- Implement it fully with proper error handling
-- Use Playwright MCP to browser test the feature before marking complete:
-  - Navigate to the app preview URL
-  - Interact with the feature (click buttons, fill forms, navigate screens)
-  - Verify expected behavior occurs and no errors appear
-  - Take a screenshot to confirm the feature is working
-- Only mark "passes": true in feature_list.json AFTER browser testing confirms it works
-- Update /app/claude-progress.txt with session notes
-- Leave the codebase in a clean, working state
-
-## Project Description (for context)
-# WEBSITE
-
-**SHORT SUMMARY**
-
-This website will be a content creation agency, the aesthetic/idea behind this will be a **retro poster** looking website. the inspiration behind this business model is (pblaunch.com).
-
-### colour pallet
-
-- **Backgrounds & Sections**
-    - Deep **Forest Green** (#014421) → used in header and about section background.
-    - Warm **Cognac Brown** (#8B5E3C) → hero background.
-    - Soft **Ivory/Cream** (#F8F4E3) → services background.
-    - Rich **Burgundy** (#581845) → footer / call-to-action background.
-- **Text & Highlights**
-    - **Antique Gold** (#B08D57) → used for headings, accents, buttons, and icons.
-    - **Ivory** (#F8F4E3) → used for most text on darker backgrounds.
-    - **Rust Orange** (#B7410E) → button background colour.
-
-# HOME
-
-### **sections 1: Header**
-
-**Home.**
-
-**About.**
-
-**pricing.**
-
-**Contact Us.**
-
-### **sections 2: welcome**
-
-The header and welcome sections should share the same background, ( there is no image background as of now but if you can create one, create it, if not leave it blank and ill add it later.
-
-**Right of the welcome** I want written (Taking Your Business to the Next Level).
-
-Font: **( CA SMUT)**
-
-On the Left side I want written (We help businesses grow faster by expanding their reach and attracting new clients through powerful social media strategies that connect brands with audiences worldwide. From strategy to execution, everything is handled by our team — so you can focus on scaling your business).
-
-Font: **(CA SMUT FULL)**
-
-Centre and if the the logo over lapses the writing make the logo in the back. also when you start to scroll down, i want a small logo show up in centre of header.
-
-![ChatGPT Image Jan 8, 2026, 05_33_48 PM.png](attachment:87cb13ea-1d93-4cf5-a6fc-ab33af478668:ChatGPT_Image_Jan_8_2026_05_33_48_PM.png)
-
-### **section 3: Services**
-
-How our services work under it I want:
-
-1. Research
-
-we find the highest performing content creators and content within your niche/business on each social media platforms. this will be the icon ontop.
-
-![ChatGPT Image Jan 8, 2026, 06_18_04 PM.png](attachment:c647a4c8-f2f4-4a78-bd24-a2c4b1d097e2:ChatGPT_Image_Jan_8_2026_06_18_04_PM.png)
-
-1. Script
-
-Using the research and information on your business,
-
-we create you a full months worth of scripts. this is the icon for it.
-
-![ChatGPT Image Jan 8, 2026, 06_19_44 PM.png](attachment:bac4878a-f597-4ea2-8c8c-08c4c008a550:ChatGPT_Image_Jan_8_2026_06_19_44_PM.png)
-
-1. Film & Edit
-
-using the scripts you film the videos.
-
-we edit the videos for you. this is the icon to use
-
-![ChatGPT Image Jan 8, 2026, 06_23_43 PM.png](attachment:89adc6bc-c0e0-4455-9a77-24686e4f92a4:ChatGPT_Image_Jan_8_2026_06_23_43_PM.png)
-
-1. Upload
-
-We upload the content on your chosen social media channels, in a manner that's optimized for each platform (Instagram, TikTok, Facebook, YouTube, LinkedIn).
-
-![ChatGPT Image Jan 8, 2026, 06_31_17 PM.png](attachment:3901e786-15b0-40fe-9fcb-f92c0a354805:ChatGPT_Image_Jan_8_2026_06_31_17_PM.png)
-
-i want it to look something like this  but the fonts changed ca smut & ca smut full
-
-![Screenshot 2026-01-08 182714.png](attachment:6850e9b0-d8ec-4bda-910f-97985cfe3068:Screenshot_2026-01-08_182714.png)
-
-but obviously i want it to look cleaner. and i want the to remove read more more button. the read more brings you to about page.
-
-add 2 buttons
-
-1. **learn more about what we do.** this will bring you to **about page.**
-2. **learn more about our pricing.** this will bring you to **pricing page.**
-
-### Section 4: FAQ
-
-questions and answers i need it to be foldable so the the page isn’t too long.
-
-1. How do I know I need this service?
-
-If you're a business owner wanting to scale and sell on social media and are willing to put money into a system that does work then book a call. If your not quiet ready to book any any other question please feel free to contact us about anything.
-
-1. Why should my business be on social media?
-
-There are 4.26 billion social media users.
-
-- There are 4.26 billion social media users
-- 54% of people use social media to research products
-- 71% of purchase decisions are made on social media
-1. What is the point of building up your personal brand?
-
-What do all these people and their businesses have in common?
-
-### **Gary Vaynerchuk (GaryVee)** – Entrepreneurship & Marketing
-
-- Built his brand by documenting his journey growing his family wine business.
-- Uses short-form content to share advice, motivation, and real-life experiences.
-- His personal brand powers his media agency (VaynerMedia) and investments.
-
-### **MrBeast (Jimmy Donaldson)** – Entertainment
-
-- Started with small, quirky challenge videos.
-- His personal style of generosity, big challenges, and storytelling created a cult-like following.
-- Now runs multiple businesses (MrBeast Burger, Feastables) fueled by his brand.
-
-### **Logan Paul & KSI** – Entertainment / Boxing / Business
-
-- Built audiences through YouTube personalities.
-- Personal brands now power massive ventures (Prime Hydration, boxing events).
-
-### **Alex Hormozi** – Business & Fitness
-
-- Shares straightforward, no-BS advice on business growth.
-- His personal brand (known for simplicity, transparency, and value-first content) drove his book sales and business consulting.
-
-They all created their own personal brands through performing, singing, TV, or social media. When they created companies due to the fact that they had such GIANT personal brands their companies thrived. Their own personal brand was literally their marketing. Social media is the ultimate solution for your daily individual to be able to do this without becoming an actor, singer, or athletic personality. An average businessman can establish themselves and their business through social media like never before. It is a tremendous opportunity, if you don't take it your competition will and take all of your customers with them.
-
-1. I’m not comfortable on camera — can this still work for me?
-
-Absolutely. Many businesses use voiceovers, product shots, animations, or behind-the-scenes footage instead of being on camera. We’ll design a strategy that works for you. But there's no better time to tackle your fears, than now. Customers will be more comfortable when they know who the face of the business is or the staff, but we can always find a solution around faceless content.
-
-1. Do I need to record the videos myself?
-
-Yes — you'll film the videos (To keep the price as low as possible). 
-
-We handle the rest: scripting, editing, branding, and upload. 
-
-we do offer a videographer at an additional cost.
-
-1. How much time does it take?
-
-We do as much of the work as is feasible. We will research, script, edit and upload for you. Your task is only to shoot as it is your own brand. Time to shoot depends from individual to individual but for all practical purposes 4-12 hours a month is sufficient. But no guarantee of the time is possible as for all it is not the same.
-
-1. What are the outcomes that I can experience?
-
-Results vary for each person. Your niche, target, posts per month all determine how fast that is going to grow!
-
-we created strong personal brands, 10xed the company, and loyal followers that just so happen to be our target audience.
-
-Unlike paid advertising avenues social media seems to be far less favourable. But the compensations that you'll actually be reaping are so much higher in value even if it takes longer to reap. I'm glad it's tough because otherwise everyone would be doing it.
-
-1. Do you also respond to messages and comments?
-
-yes we do, we also help integrate AI which automatically responds to basic comments, like questions about your business and respond to DM (messages), for more in depth questions we answer them directly.
-
-1. What makes our agency different from other marketing companies?
-
-Fewer yet focus solely on ads or marketing in general. We deal specifically with short-form content — today's fastest-growing method of reaching loyal consumers. And all of our strategies are industry-specific rather than generic.
-
-### Footer
-
-add social icons with links to socials ( add all icons and i will add links
-
-add email contact@cinebih.com# ABOUT
-
-### Section: Our Story
-
-We started this agency with one key principle:
-
-There's a story worth telling for every business — it just needs the right content to be told. We identified a gap.
-
-So many great businesses — from gyms and restaurants to online coaches and e-commerce businesses — were struggling, not growing online. We realized social media was where to get seen, but creating content that actually works was scary:
-
-- What do we share?
-- How do we make it stand out?
-- How do we find the time?
-
-**That's where we stepped in.**
-
-We founded Cinebih to take the guesswork out of content creation. By discovering what performs best in every industry, we script a month, guide you through simple filming, then handle the editing, optimizing, and posting on TikTok, Instagram, YouTube Shorts, Facebook, and LinkedIn.
-
-Our strategy rests upon one simple fact: each industry has differences.
-
-- Restaurants need content that brings local consumers to their front door.
-- E-commerce businesses need global exposure to be seen above the crowd.
-- Coaches and educators need personal branding in order to build trust.
-- Service professionals need credibility and consistency to gain clients.
-
-We don't believe in generic thought. We believe in tailored content to suit your industry and goals.
-
-What started as an idea to help a few local businesses has grown into an arena where brands from everywhere can leverage social media into their biggest growth engine.
-
-Because at the end of the day, content isn't about views.
-
-It's about creating relationships, fostering trust, and building your business.
-
-### section: Research, script, film & edit, upload
-
-**Research**
-
-**Why & What do we research?**
-
-**On average social media users watch for 3-4 seconds before scrolling away.**
-
-**We look for patterns and what keeps viewers engaged.**
-
-**we ensure to spend 10 -15 hours for your brand in research. Patterns constantly change so we ensure to stay up to date by researching roughly every 2-4 weeks to keep your business up to date with all other social media users.**
-
-**What we look for are hooks that are used and created results for multiple businesses or niches similar to your business model.**
-
-**Script**
-
-**Why & What is that we script?**
-
-**We script a whole month of videos because consistency is the best method for social media growth. It does not build momentum if you post here and there, but frequent appearances keep you in front of your audience and signal sites that your content is valuable.**
-
-**Planning 30 days' content in advance, we remove the stress of "what do I post today? " and give you a definite roadmap. Each script is tailored to your business, written to capture attention quickly, and designed to engage — turning views into followers and followers into customers.".**
-
-**Film & Edit**
-
-**What & Why do you film & we Edit?**
-
-**Hiring a filmmaking team can cost a lot and not all business can afford it.**
-
-**Most phones can film good enough footage since social media only supports 1080p at 30fps**
-
-**we also can help you learn how to use your own cameras for the best results and videos don't need to be cinematic as all they need is to be high quality and tell a story or relay a message.**
-
-**we do the editing from, subtitle, colour-grading to putting all the videos together to ensure a quality video as result, also editing is the hardest part of filming as its the most time consuming, that way we save you time to focus on your business.**
-
-**Upload**
-
-**Why do we Upload?**
-
-**Each platform (TikTok, Instagram, yt shorts, etc)**
-
-**has they're own algorithm ( how social media understands who to show your content too).**
-
-**That is why we ensure to post each content based off each platform from TikTok, Instagram, yt shorts & LinkedIn. Too ensure best results from each and every platform.**
-
-![Screenshot 2026-01-08 193528.png](attachment:cf77b5a8-caae-42bd-96f3-aefe931f7795:Screenshot_2026-01-08_193528.png)
-
-format like this. but change the colours and bckground. also add book now button# PRICING
-
-WHY DOES  OUR SERVICE COST THIS MUCH**?**
-
-Behind each content we create is an entire team of people ensuring it gets the job done. Our social media researchers dig into your industry, study your competition, and track trends so your strategy remains cutting-edge. Our scriptwriters craft ideas for content that will halt viewers dead in their tracks in seconds. Our editors transform your uncut footage into completed, scroll-stopping videos for TikTok, Instagram, YouTube Shorts, Facebook, and LinkedIn. Finally, our social media managers upload and schedule everything in the correct format, at the right time, to maximize its effect.
-
-When you invest with us, you're not just investing in video editing — you're investing in a full creative team dedicated to growing your business online. This level of expertise, attention, and detail is what our pricing covers and causes your content not only look great, but actually perform.
-
-**Our Services**
-
-**Our Services**
-
-**1.STARTER**
-
-**15 SHORTS/MONTH**
-
-Onboarding/Review Calls
-
-Research
-
-Scripting
-
-Editing
-
-Uploading
-
-7 Sales Focused Instagram Stories
-
-24/7 Weekday Email Support
-
-Monthly Reports
-
-- BONUS: Optimize Your Profile Checklist
-
-**euro 1950/MONTH**
-
-book now
-
-**2.OPTIMISE**
-
-**20 SHORTS/MONTH**
-
-Onboarding/Review Calls
-
-Research
-
-Scripting
-
-Editing
-
-Uploading
-
-7 Sales Focused Instagram Stories
-
-24/7 Weekday Email Support
-
-Monthly Reports
-
-- BONUS: Optimize Your Profile Checklist
-
-**2495/MONTH**
-
-book now
-
-**3.DOMINATE**
-
-**30 SHORTS/MONTH**
-
-Onboarding/Review Calls
-
-Research
-
-Scripting
-
-Editing
-
-Uploading
-
-7 Sales Focused Instagram Stories
-
-24/7 Weekday Email Support
-
-Monthly Reports
-
-- BONUS: Optimize Your Profile Checklist
-
-**3395/MONTH**
-
-book now
-
-![image.png](attachment:9ad5eb3a-0a4e-4c79-9715-b7a17ee82416:image.png)
-
-something like this# ontact us
-
-![image.png](attachment:bed50584-ec2f-49b3-81f4-59dfe47509fb:image.png)
-
-just something basic like this
-
-## Current User Request
-Blocked request. This host ("ta-01kfdv865mp1kbgkqgwh2vsm7c-5173.wo-qeb87fsaim6iltfcrmhhs9lke.w.modal.host") is not allowed.
-To allow this host, add "ta-01kfdv865mp1kbgkqgwh2vsm7c-5173.wo-qeb87fsaim6iltfcrmhhs9lke.w.modal.host" to `server.allowedHosts` in vite.config.js.
-
-Start by running the startup sequence, then pick the next feature to implement.
-
-## AI Integration (LaunchPulse AI Proxy)
-
-This project has AI integration enabled. Use the LaunchPulse AI wrapper for all AI/LLM operations.
-
-### ⚠️ CRITICAL CONSTRAINTS - DO NOT VIOLATE
-- **DO NOT** run `npm install openai` or any AI SDK
-- **DO NOT** add OPENAI_API_KEY or any AI provider keys to .env
-
-**WHY**: AI is ALREADY configured through LaunchPulse proxy.
-
-### Available AI Components
-- **./__create/ai** - OpenAI-compatible API wrapper
-- **./hooks/useAI** - Hooks: `useChat()` and `useAsk()`
-
-### Usage
-```typescript
-import { ai } from './__create/ai';
-const answer = await ai.ask('Question here');
-
-import { useChat } from './hooks/useAI';
-const { messages, send } = useChat();
+CURRENT BUILD LOGS:
 ```
 
-### Environment Variables (Auto-Injected)
-- `VITE_LAUNCHPULSE_AI_KEY`
-- `VITE_LAUNCHPULSE_PROJECT_ID`
-- `VITE_LAUNCHPULSE_API_URL`
+=== Job: Deploy to Cloud Run ===
+2026-01-22T08:31:23.0131382Z Current runner version: '2.331.0'
+2026-01-22T08:31:23.0168303Z ##[group]Runner Image Provisioner
+2026-01-22T08:31:23.0169884Z Hosted Compute Agent
+2026-01-22T08:31:23.0171301Z Version: 20251211.462
+2026-01-22T08:31:23.0172743Z Commit: 6cbad8c2bb55d58165063d031ccabf57e2d2db61
+2026-01-22T08:31:23.0174460Z Build Date: 2025-12-11T16:28:49Z
+2026-01-22T08:31:23.0176127Z Worker ID: ***c9f9ae8c-a292-4b6d-9988-d1d2f9a3a683***
+2026-01-22T08:31:23.0177671Z ##[endgroup]
+2026-01-22T08:31:23.0178779Z ##[group]Operating System
+2026-01-22T08:31:23.0180123Z Ubuntu
+2026-01-22T08:31:23.0181113Z 24.04.3
+2026-01-22T08:31:23.0182216Z LTS
+2026-01-22T08:31:23.0183242Z ##[endgroup]
+2026-01-22T08:31:23.0184397Z ##[group]Runner Image
+2026-01-22T08:31:23.0185725Z Image: ubuntu-24.04
+2026-01-22T08:31:23.0186958Z Version: 20260111.209.1
+2026-01-22T08:31:23.0188977Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260111.209/images/ubuntu/Ubuntu2404-Readme.md
+2026-01-22T08:31:23.0192342Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260111.209
+2026-01-22T08:31:23.0194626Z ##[endgroup]
+2026-01-22T08:31:23.0197412Z ##[group]GITHUB_TOKEN Permissions
+2026-01-22T08:31:23.0200498Z Contents: read
+2026-01-22T08:31:23.0201871Z Metadata: read
+2026-01-22T08:31:23.0203111Z ##[endgroup]
+2026-01-22T08:31:23.0206495Z Secret source: Actions
+2026-01-22T08:31:23.0209106Z Prepare workflow directory
+2026-01-22T08:31:23.0843222Z Prepare all required actions
+2026-01-22T08:31:23.0899268Z Getting action download info
+2026-01-22T08:31:23.5009568Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+2026-01-22T08:31:23.6510947Z Download action repository 'google-github-actions/auth@v2' (SHA:c200f3691d83b41bf9bbd8638997a462592937ed)
+2026-01-22T08:31:24.0600243Z Download action repository 'google-github-actions/setup-gcloud@v2' (SHA:e427ad8a34f8676edf47cf7d7925499adf3eb74f)
+2026-01-22T08:31:24.6270707Z Complete job name: Deploy to Cloud Run
+2026-01-22T08:31:24.7113510Z ##[group]Run actions/checkout@v4
+2026-01-22T08:31:24.7115809Z with:
+2026-01-22T08:31:24.7117198Z   repository: VersaceXcodes/website-short-summary-this-uip5
+2026-01-22T08:31:24.7119126Z   token: ***
+2026-01-22T08:31:24.7120178Z   ssh-strict: true
+2026-01-22T08:31:24.7121273Z   ssh-user: git
+2026-01-22T08:31:24.7122394Z   persist-credentials: true
+2026-01-22T08:31:24.7123600Z   clean: true
+2026-01-22T08:31:24.7124731Z   sparse-checkout-cone-mode: true
+2026-01-22T08:31:24.7126207Z   fetch-depth: 1
+2026-01-22T08:31:24.7127312Z   fetch-tags: false
+2026-01-22T08:31:24.7128439Z   show-progress: true
+2026-01-22T08:31:24.7129564Z   lfs: false
+2026-01-22T08:31:24.7130623Z   submodules: false
+2026-01-22T08:31:24.7131781Z   set-safe-directory: true
+2026-01-22T08:31:24.7133323Z env:
+2026-01-22T08:31:24.7134433Z   PROJECT_ID: ***
+2026-01-22T08:31:24.7136010Z   SERVICE_NAME: website-short-summary-this-uip5
+2026-01-22T08:31:24.7137448Z   REGION: us-central1
+2026-01-22T08:31:24.7138634Z ##[endgroup]
+2026-01-22T08:31:24.8235717Z Syncing repository: VersaceXcodes/website-short-summary-this-uip5
+2026-01-22T08:31:24.8239286Z ##[group]Getting Git version info
+2026-01-22T08:31:24.8241549Z Working directory is '/home/runner/work/website-short-summary-this-uip5/website-short-summary-this-uip5'
+2026-01-22T08:31:24.8244527Z [command]/usr/bin/git version
+2026-01-22T08:31:24.8316710Z git version 2.52.0
+2026-01-22T08:31:24.8343753Z ##[endgroup]
+2026-01-22T08:31:24.8358724Z Temporarily overriding HOME='/home/runner/work/_temp/3c765f97-66df-4b14-a955-f57a0a4a72be' before making global git config changes
+2026-01-22T08:31:24.8361870Z Adding repository directory to the temporary git global config as a safe directory
+2026-01-22T08:31:24.8372609Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/website-short-summary-this-uip5/website-short-summary-this-uip5
+2026-01-22T08:31:24.8416830Z Deleting the contents of '/home/runner/work/website-short-summary-this-uip5/website-short-summary-this-uip5'
+2026-01-22T08:31:24.8420890Z ##[group]Initializing the repository
+2026-01-22T08:31:24.8424668Z [command]/usr/bin/git init /home/runner/work/website-short-summary-this-uip5/website-short-summary-this-uip5
+2026-01-22T08:31:24.8542248Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-01-22T08:31:24.8546511Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-01-22T08:31:24.8549502Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-01-22T08:31:24.8551256Z hint: call:
+2026-01-22T08:31:24.8552269Z hint:
+2026-01-22T08:31:24.8554010Z hint: 	git config --global init.defaultBranch <name>
+2026-01-22T08:31:24.8555745Z hint:
+2026-01-22T08:31:24.8557306Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-01-22T08:31:24.8559926Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-01-22T08:31:24.8561678Z hint:
+2026-01-22T08:31:24.8562721Z hint: 	git branch -m <name>
+2026-01-22T08:31:24.8563971Z hint:
+2026-01-22T08:31:24.8565704Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-01-22T08:31:24.8568729Z Initialized empty Git repository in /home/runner/work/website-short-summary-this-uip5/website-short-summary-this-uip5/.git/
+2026-01-22T08:31:24.8573562Z [command]/usr/bin/git remote add origin https://github.com/VersaceXcodes/website-short-summary-this-uip5
+2026-01-22T08:31:24.8599846Z ##[endgroup]
+2026-01-22T08:31:24.8601774Z ##[group]Disabling automatic garbage collection
+2026-01-22T08:31:24.8603648Z [command]/usr/bin/git config --local gc.auto 0
+2026-01-22T08:31:24.8632861Z ##[endgroup]
+2026-01-22T08:31:24.8634622Z ##[group]Setting up auth
+2026-01-22T08:31:24.8639025Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-01-22T08:31:24.8670659Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-01-22T08:31:24.9071188Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-01-22T08:31:24.9105935Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-01-22T08:31:24.9322176Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-01-22T08:31:24.9432217Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-01-22T08:31:24.9596902Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-01-22T08:31:24.9631663Z ##[endgroup]
+2026-01-22T08:31:24.9635197Z ##[group]Fetching the repository
+2026-01-22T08:31:24.9643992Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +cad2ad0431da9b740461b8c66bcaee12c98bbda6:refs/remotes/origin/main
+2026-01-22T08:31:25.3446830Z From https://github.com/VersaceXcodes/website-short-summary-this-uip5
+2026-01-22T08:31:25.3478247Z  * [new ref]         cad2ad0431da9b740461b8c66bcaee12c98bbda6 -> origin/main
+2026-01-22T08:31:25.3485167Z ##[endgroup]
+2026-01-22T08:31:25.3488391Z ##[group]Determining the checkout info
+2026-01-22T08:31:25.3491918Z ##[endgroup]
+2026-01-22T08:31:25.3493947Z [command]/usr/bin/git sparse-checkout disable
+2026-01-22T08:31:25.3537037Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-01-22T08:31:25.3565629Z ##[group]Checking out the ref
+2026-01-22T08:31:25.3568909Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-01-22T08:31:25.3714465Z Switched to a new branch 'main'
+2026-01-22T08:31:25.3716642Z branch 'main' set up to track 'origin/main'.
+2026-01-22T08:31:25.3726716Z ##[endgroup]
+2026-01-22T08:31:25.3760722Z [command]/usr/bin/git log -1 --format=%H
+2026-01-22T08:31:25.3782896Z cad2ad0431da9b740461b8c66bcaee12c98bbda6
+2026-01-22T08:31:25.4139939Z ##[group]Run google-github-actions/auth@v2
+2026-01-22T08:31:25.4141332Z with:
+2026-01-22T08:31:25.4175830Z   credentials_json: ***
+2026-01-22T08:31:25.4177056Z   create_credentials_file: true
+2026-01-22T08:31:25.4178342Z   export_environment_variables: true
+2026-01-22T08:31:25.4179655Z   universe: googleapis.com
+2026-01-22T08:31:25.4180852Z   cleanup_credentials: true
+2026-01-22T08:31:25.4182060Z   access_token_lifetime: 3600s
+2026-01-22T08:31:25.4183634Z   access_token_scopes: https://www.googleapis.com/auth/cloud-platform
+2026-01-22T08:31:25.4185425Z   id_token_include_email: false
+2026-01-22T08:31:25.4186604Z env:
+2026-01-22T08:31:25.4187648Z   PROJECT_ID: ***
+2026-01-22T08:31:25.4188874Z   SERVICE_NAME: website-short-summary-this-uip5
+2026-01-22T08:31:25.4190301Z   REGION: us-central1
+2026-01-22T08:31:25.4191379Z ##[endgroup]
+2026-01-22T08:31:25.5112522Z Created credentials file at "/home/runner/work/website-short-summary-this-uip5/website-short-summary-this-uip5/gha-creds-9e721f059f1cd62c.json"
+2026-01-22T08:31:25.5340339Z ##[group]Run google-github-actions/setup-gcloud@v2
+2026-01-22T08:31:25.5341814Z with:
+2026-01-22T08:31:25.5342808Z   version: latest
+2026-01-22T08:31:25.5343862Z   skip_install: false
+2026-01-22T08:31:25.5345253Z   skip_tool_cache: false
+2026-01-22T08:31:25.5346393Z env:
+2026-01-22T08:31:25.5347497Z   PROJECT_ID: ***
+2026-01-22T08:31:25.5348702Z   SERVICE_NAME: website-short-summary-this-uip5
+2026-01-22T08:31:25.5350082Z   REGION: us-central1
+2026-01-22T08:31:25.5352650Z   CLOUDSDK_AUTH_CREDENTIAL_FILE_OVERRIDE: /home/runner/work/website-short-summary-this-uip5/website-short-summary-this-uip5/gha-creds-9e721f059f1cd62c.json
+2026-01-22T08:31:25.5357031Z   GOOGLE_APPLICATION_CREDENTIALS: /home/runner/work/website-short-summary-this-uip5/website-short-summary-this-uip5/gha-creds-9e721f059f1cd62c.json
+2026-01-22T08:31:25.5360907Z   GOOGLE_GHA_CREDS_PATH: /home/runner/work/website-short-summary-this-uip5/website-short-summary-this-uip5/gha-creds-9e721f059f1cd62c.json
+2026-01-22T08:31:25.5363573Z   CLOUDSDK_CORE_PROJECT: ***
+2026-01-22T08:31:25.5364828Z   CLOUDSDK_PROJECT: ***
+2026-01-22T08:31:25.5366276Z   GCLOUD_PROJECT: ***
+2026-01-22T08:31:25.5367439Z   GCP_PROJECT: ***
+2026-01-22T08:31:25.5368600Z   GOOGLE_CLOUD_PROJECT: ***
+2026-01-22T08:31:25.5369727Z ##[endgroup]
+2026-01-22T08:31:28.2062688Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/d9c7b096-d4a0-49c0-81c7-c397a8d6f8a8 -f /home/runner/work/_temp/2ab86cc4-f0b1-4abc-aec4-6c6db71363e1
+2026-01-22T08:31:46.9351750Z Successfully authenticated
+2026-01-22T08:31:46.9531563Z ##[group]Run gcloud auth configure-docker --quiet
+2026-01-22T08:31:46.9532236Z [36;1mgcloud auth configure-docker --quiet[0m
+2026-01-22T08:31:46.9570637Z shell: /usr/bin/bash -e ***0***
+2026-01-22T08:31:46.9570982Z env:
+2026-01-22T08:31:46.9571262Z   PROJECT_ID: ***
+2026-01-22T08:31:46.9571592Z   SERVICE_NAME: website-short-summary-this-uip5
+2026-01-22T08:31:46.9571982Z   REGION: us-central1
+2026-01-22T08:31:46.9572701Z   CLOUDSDK_AUTH_CREDENTIAL_FILE_OVERRIDE: /home/runner/work/website-short-summary-this-uip5/website-short-summary-this-uip5/gha-creds-9e721f059f1cd62c.json
+2026-01-22T08:31:46.9573847Z   GOOGLE_APPLICATION_CREDENTIALS: /home/runner/work/website-short-summary-this-uip5/website-short-summary-this-uip5/gha-creds-9e721f059f1cd62c.json
+2026-01-22T08:31:46.9575111Z   GOOGLE_GHA_CREDS_PATH: /home/runner/work/website-short-summary-this-uip5/website-short-summary-this-uip5/gha-creds-9e721f059f1cd62c.json
+2026-01-22T08:31:46.9575833Z   CLOUDSDK_CORE_PROJECT: ***
+2026-01-22T08:31:46.9576215Z   CLOUDSDK_PROJECT: ***
+2026-01-22T08:31:46.9576525Z   GCLOUD_PROJECT: ***
+2026-01-22T08:31:46.9576838Z   GCP_PROJECT: ***
+2026-01-22T08:31:46.9577133Z   GOOGLE_CLOUD_PROJECT: ***
+2026-01-22T08:31:46.9577502Z   CLOUDSDK_METRICS_ENVIRONMENT: github-actions-setup-gcloud
+2026-01-22T08:31:46.9577931Z   CLOUDSDK_METRICS_ENVIRONMENT_VERSION: 2.2.1
+2026-01-22T08:31:46.9578520Z ##[endgroup]
+2026-01-22T08:31:48.2675476Z Adding credentials for all GCR repositories.
+2026-01-22T08:31:48.2680077Z WARNING: A long list of credential helpers may cause delays running 'docker build'. We recommend passing the registry name to configure only the registry you are using.
+2026-01-22T08:31:48.2863015Z Docker configuration file updated.
+2026-01-22T08:31:48.3824315Z ##[group]Run docker build --no-cache -t gcr.io/$PROJECT_ID/$SERVICE_NAME:cad2ad0431da9b740461b8c66bcaee12c98bbda6 .
+2026-01-22T08:31:48.3825500Z [36;1mdocker build --no-cache -t gcr.io/$PROJECT_ID/$SERVICE_NAME:cad2ad0431da9b740461b8c66bcaee12c98bbda6 .[0m
+2026-01-22T08:31:48.3826399Z [36;1mdocker tag gcr.io/$PROJECT_ID/$SERVICE_NAME:cad2ad0431da9b740461b8c66bcaee12c98bbda6 gcr.io/$PROJECT_ID/$SERVICE_NAME:latest[0m
+2026-01-22T08:31:48.3857708Z shell: /usr/bin/bash -e ***0***
+2026-01-22T08:31:48.3858040Z env:
+2026-01-22T08:31:48.3858334Z   PROJECT_ID: ***
+2026-01-22T08:31:48.3858700Z   SERVICE_NAME: website-short-summary-this-uip5
+2026-01-22T08:31:48.3859118Z   REGION: us-central1
+2026-01-22T08:31:48.3859843Z   CLOUDSDK_AUTH_CREDENTIAL_FILE_OVERRIDE: /home/runner/work/website-short-summary-this-uip5/website-short-summary-this-uip5/gha-creds-9e721f059f1cd62c.json
+2026-01-22T08:31:48.3861023Z   GOOGLE_APPLICATION_CREDENTIALS: /home/runner/work/website-short-summary-this-uip5/website-short-summary-this-uip5/gha-creds-9e721f059f1cd62c.json
+2026-01-22T08:31:48.3862082Z   GOOGLE_GHA_CREDS_PATH: /home/runner/work/website-short-summary-this-uip5/website-short-summary-this-uip5/gha-creds-9e721f059f1cd62c.json
+2026-01-22T08:31:48.3862774Z   CLOUDSDK_CORE_PROJECT: ***
+2026-01-22T08:31:48.3863114Z   CLOUDSDK_PROJECT: ***
+2026-01-22T08:31:48.3863416Z   GCLOUD_PROJECT: ***
+2026-01-22T08:31:48.3863705Z   GCP_PROJECT: ***
+2026-01-22T08:31:48.3864001Z   GOOGLE_CLOUD_PROJECT: ***
+2026-01-22T08:31:48.3864373Z   CLOUDSDK_METRICS_ENVIRONMENT: github-actions-setup-gcloud
+2026-01-22T08:31:48.3864802Z   CLOUDSDK_METRICS_ENVIRONMENT_VERSION: 2.2.1
+2026-01-22T08:31:48.3865353Z ##[endgroup]
+2026-01-22T08:31:50.5902212Z #0 building with "default" instance using docker driver
+2026-01-22T08:31:50.5902744Z 
+2026-01-22T08:31:50.5903002Z #1 [internal] load build definition from Dockerfile
+2026-01-22T08:31:50.5903625Z #1 transferring dockerfile: 1.80kB 0.0s done
+2026-01-22T08:31:50.5904169Z #1 DONE 0.0s
+2026-01-22T08:31:50.5904462Z 
+2026-01-22T08:31:50.5904780Z #2 [auth] library/node:pull token for registry-1.docker.io
+2026-01-22T08:31:50.7408296Z #2 DONE 0.0s
+2026-01-22T08:31:50.7408692Z 
+2026-01-22T08:31:50.7409031Z #3 [internal] load metadata for docker.io/library/node:18-slim
+2026-01-22T08:31:52.1127824Z #3 DONE 1.6s
+2026-01-22T08:31:52.2386417Z 
+2026-01-22T08:31:52.2386957Z #4 [internal] load .dockerignore
+2026-01-22T08:31:52.2387602Z #4 transferring context: 165B done
+2026-01-22T08:31:52.2387988Z #4 DONE 0.0s
+2026-01-22T08:31:52.2388210Z 
+2026-01-22T08:31:52.2388433Z #5 [internal] load build context
+2026-01-22T08:31:52.2388991Z #5 transferring context: 187.05kB 0.0s done
+2026-01-22T08:31:52.2389587Z #5 DONE 0.0s
+2026-01-22T08:31:52.2389827Z 
+2026-01-22T08:31:52.2390599Z #6 [frontend-build  1/10] FROM docker.io/library/node:18-slim@sha256:f9ab18e354e6855ae56ef2b290dd225c1e51a564f87584b9bd21dd651838830e
+2026-01-22T08:31:52.2391993Z #6 resolve docker.io/library/node:18-slim@sha256:f9ab18e354e6855ae56ef2b290dd225c1e51a564f87584b9bd21dd651838830e done
+2026-01-22T08:31:52.2392887Z #6 sha256:f9ab18e354e6855ae56ef2b290dd225c1e51a564f87584b9bd21dd651838830e 6.49kB / 6.49kB done
+2026-01-22T08:31:52.2393684Z #6 sha256:fc3faf127a182135fd956e68d570b1932a758f8008866d8dd6e131cf89de9605 1.93kB / 1.93kB done
+2026-01-22T08:31:52.2394487Z #6 sha256:101e0128c8ea90af6e5eba2abbae8486503c6383c35cb30e2c60842a5a288479 6.54kB / 6.54kB done
+2026-01-22T08:31:52.2395549Z #6 sha256:61320b01ae5e0798393ef25f2dc72faf43703e60ba089b07d7170acbabbf8f62 0B / 28.23MB 0.1s
+2026-01-22T08:31:52.2396313Z #6 sha256:b98d3ae1ab80d768fc7be41c07c4757d205cc33d2d26261b8273defb45455315 0B / 3.31kB 0.1s
+2026-01-22T08:31:52.2397395Z #6 sha256:b1831021e35a69864dfc4c89eab9ab1232cf3508c787b082c55ee386c5c8527d 0B / 38.25MB 0.1s
+2026-01-22T08:31:52.3387670Z #6 sha256:b98d3ae1ab80d768fc7be41c07c4757d205cc33d2d26261b8273defb45455315 3.31kB / 3.31kB 0.2s done
+2026-01-22T08:31:52.3389494Z #6 sha256:c768ab8cba73bb84835e67ed974c93e3e0e3ce1f67a73802422d66021fc9a07a 0B / 1.71MB 0.2s
+2026-01-22T08:31:52.5383742Z #6 sha256:b1831021e35a69864dfc4c89eab9ab1232cf3508c787b082c55ee386c5c8527d 36.70MB / 38.25MB 0.4s
+2026-01-22T08:31:52.5384648Z #6 sha256:c768ab8cba73bb84835e67ed974c93e3e0e3ce1f67a73802422d66021fc9a07a 1.71MB / 1.71MB 0.4s done
+2026-01-22T08:31:52.5385700Z #6 sha256:8c994cf49dd19aec88c96926e1a13b36a8f3e159942a5a2d0a9e2dc3e9e6c3dc 0B / 448B 0.4s
+2026-01-22T08:31:52.7384309Z #6 sha256:b1831021e35a69864dfc4c89eab9ab1232cf3508c787b082c55ee386c5c8527d 38.25MB / 38.25MB 0.4s done
+2026-01-22T08:31:52.7385551Z #6 sha256:8c994cf49dd19aec88c96926e1a13b36a8f3e159942a5a2d0a9e2dc3e9e6c3dc 448B / 448B 0.4s done
+2026-01-22T08:31:53.3381204Z #6 sha256:61320b01ae5e0798393ef25f2dc72faf43703e60ba089b07d7170acbabbf8f62 2.10MB / 28.23MB 1.2s
+2026-01-22T08:31:53.8380552Z #6 sha256:61320b01ae5e0798393ef25f2dc72faf43703e60ba089b07d7170acbabbf8f62 5.24MB / 28.23MB 1.7s
+2026-01-22T08:31:54.2416040Z #6 sha256:61320b01ae5e0798393ef25f2dc72faf43703e60ba089b07d7170acbabbf8f62 8.39MB / 28.23MB 2.1s
+2026-01-22T08:31:54.4381988Z #6 sha256:61320b01ae5e0798393ef25f2dc72faf43703e60ba089b07d7170acbabbf8f62 10.49MB / 28.23MB 2.3s
+2026-01-22T08:31:54.7378994Z #6 sha256:61320b01ae5e0798393ef25f2dc72faf43703e60ba089b07d7170acbabbf8f62 13.63MB / 28.23MB 2.6s
+2026-01-22T08:31:54.8380170Z #6 sha256:61320b01ae5e0798393ef25f2dc72faf43703e60ba089b07d7170acbabbf8f62 15.73MB / 28.23MB 2.7s
+2026-01-22T08:31:54.9381148Z #6 sha256:61320b01ae5e0798393ef25f2dc72faf43703e60ba089b07d7170acbabbf8f62 17.83MB / 28.23MB 2.8s
+2026-01-22T08:31:55.0382678Z #6 sha256:61320b01ae5e0798393ef25f2dc72faf43703e60ba089b07d7170acbabbf8f62 19.92MB / 28.23MB 2.9s
+2026-01-22T08:31:55.3383388Z #6 sha256:61320b01ae5e0798393ef25f2dc72faf43703e60ba089b07d7170acbabbf8f62 25.17MB / 28.23MB 3.2s
+2026-01-22T08:31:55.4967591Z #6 sha256:61320b01ae5e0798393ef25f2dc72faf43703e60ba089b07d7170acbabbf8f62 27.26MB / 28.23MB 3.3s
+2026-01-22T08:31:55.4968811Z #6 extracting sha256:61320b01ae5e0798393ef25f2dc72faf43703e60ba089b07d7170acbabbf8f62
+2026-01-22T08:31:55.5978903Z #6 sha256:61320b01ae5e0798393ef25f2dc72faf43703e60ba089b07d7170acbabbf8f62 28.23MB / 28.23MB 3.3s done
+2026-01-22T08:31:56.4966983Z #6 extracting sha256:61320b01ae5e0798393ef25f2dc72faf43703e60ba089b07d7170acbabbf8f62 1.0s done
+2026-01-22T08:31:56.6858188Z #6 extracting sha256:b98d3ae1ab80d768fc7be41c07c4757d205cc33d2d26261b8273defb45455315 done
+2026-01-22T08:31:58.0159602Z #6 extracting sha256:b1831021e35a69864dfc4c89eab9ab1232cf3508c787b082c55ee386c5c8527d
+2026-01-22T08:31:59.2858440Z #6 extracting sha256:b1831021e35a69864dfc4c89eab9ab1232cf3508c787b082c55ee386c5c8527d 1.1s done
+2026-01-22T08:31:59.2860180Z #6 extracting sha256:c768ab8cba73bb84835e67ed974c93e3e0e3ce1f67a73802422d66021fc9a07a 0.0s done
+2026-01-22T08:31:59.3863996Z #6 extracting sha256:8c994cf49dd19aec88c96926e1a13b36a8f3e159942a5a2d0a9e2dc3e9e6c3dc done
+2026-01-22T08:31:59.3865097Z #6 DONE 7.2s
+2026-01-22T08:31:59.3865337Z 
+2026-01-22T08:31:59.3865487Z #7 [stage-1 2/8] WORKDIR /app
+2026-01-22T08:31:59.3865849Z #7 DONE 0.0s
+2026-01-22T08:31:59.3866215Z 
+2026-01-22T08:31:59.3866511Z #8 [frontend-build  2/10] WORKDIR /app/vitereact
+2026-01-22T08:31:59.3867192Z #8 DONE 0.0s
+2026-01-22T08:31:59.3867475Z 
+2026-01-22T08:31:59.3867807Z #9 [stage-1 3/8] COPY backend/package*.json ./backend/
+2026-01-22T08:31:59.3868336Z #9 DONE 0.0s
+2026-01-22T08:31:59.3868796Z 
+2026-01-22T08:31:59.3869133Z #10 [frontend-build  3/10] COPY vitereact/package*.json ./
+2026-01-22T08:31:59.3869859Z #10 DONE 0.0s
+2026-01-22T08:31:59.3870411Z 
+2026-01-22T08:31:59.3870844Z #11 [stage-1 4/8] WORKDIR /app/backend
+2026-01-22T08:31:59.5429035Z #11 DONE 0.0s
+2026-01-22T08:31:59.5429913Z 
+2026-01-22T08:31:59.5430220Z #12 [stage-1 5/8] RUN npm ci --production
+2026-01-22T08:31:59.6668601Z #12 0.274 npm warn config production Use `--omit=dev` instead.
+2026-01-22T08:32:00.0203059Z #12 0.628 npm error code EUSAGE
+2026-01-22T08:32:00.1486200Z #12 0.628 npm error
+2026-01-22T08:32:00.1487302Z #12 0.628 npm error The `npm ci` command can only install with an existing package-lock.json or
+2026-01-22T08:32:00.1489200Z #12 0.628 npm error npm-shrinkwrap.json with lockfileVersion >= 1. Run an install with npm@5 or
+2026-01-22T08:32:00.1490694Z #12 0.628 npm error later to generate a package-lock.json file, then try again.
+2026-01-22T08:32:00.1491737Z #12 0.628 npm error
+2026-01-22T08:32:00.1492244Z #12 0.628 npm error Clean install a project
+2026-01-22T08:32:00.1492844Z #12 0.628 npm error
+2026-01-22T08:32:00.1493305Z #12 0.628 npm error Usage:
+2026-01-22T08:32:00.1493811Z #12 0.628 npm error npm ci
+2026-01-22T08:32:00.1494305Z #12 0.628 npm error
+2026-01-22T08:32:00.1494751Z #12 0.628 npm error Options:
+2026-01-22T08:32:00.1495891Z #12 0.628 npm error [--install-strategy <hoisted|nested|shallow|linked>] [--legacy-bundling]
+2026-01-22T08:32:00.1497121Z #12 0.628 npm error [--global-style] [--omit <dev|optional|peer> [--omit <dev|optional|peer> ...]]
+2026-01-22T08:32:00.1498237Z #12 0.628 npm error [--include <prod|dev|optional|peer> [--include <prod|dev|optional|peer> ...]]
+2026-01-22T08:32:00.1499308Z #12 0.628 npm error [--strict-peer-deps] [--foreground-scripts] [--ignore-scripts] [--no-audit]
+2026-01-22T08:32:00.1500184Z #12 0.628 npm error [--no-bin-links] [--no-fund] [--dry-run]
+2026-01-22T08:32:00.1501079Z #12 0.628 npm error [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
+2026-01-22T08:32:00.1502038Z #12 0.628 npm error [-ws|--workspaces] [--include-workspace-root] [--install-links]
+2026-01-22T08:32:00.1502745Z #12 0.628 npm error
+2026-01-22T08:32:00.1503372Z #12 0.628 npm error aliases: clean-install, ic, install-clean, isntall-clean
+2026-01-22T08:32:00.1504082Z #12 0.628 npm error
+2026-01-22T08:32:00.1504564Z #12 0.628 npm error Run "npm help ci" for more info
+2026-01-22T08:32:00.1505638Z #12 0.629 npm error A complete log of this run can be found in: /root/.npm/_logs/2026-01-22T08_31_59_635Z-debug-0.log
+2026-01-22T08:32:00.1506807Z #12 ERROR: process "/bin/sh -c npm ci --production" did not complete successfully: exit code: 1
+2026-01-22T08:32:00.1507405Z 
+2026-01-22T08:32:00.1507674Z #13 [frontend-build  4/10] RUN npm ci --legacy-peer-deps
+2026-01-22T08:32:00.1508232Z #13 CANCELED
+2026-01-22T08:32:00.1508609Z ------
+2026-01-22T08:32:00.1509009Z  > [stage-1 5/8] RUN npm ci --production:
+2026-01-22T08:32:00.1509783Z 0.628 npm error [--include <prod|dev|optional|peer> [--include <prod|dev|optional|peer> ...]]
+2026-01-22T08:32:00.1510835Z 0.628 npm error [--strict-peer-deps] [--foreground-scripts] [--ignore-scripts] [--no-audit]
+2026-01-22T08:32:00.1511687Z 0.628 npm error [--no-bin-links] [--no-fund] [--dry-run]
+2026-01-22T08:32:00.1512487Z 0.628 npm error [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
+2026-01-22T08:32:00.1513436Z 0.628 npm error [-ws|--workspaces] [--include-workspace-root] [--install-links]
+2026-01-22T08:32:00.1514141Z 0.628 npm error
+2026-01-22T08:32:00.1514717Z 0.628 npm error aliases: clean-install, ic, install-clean, isntall-clean
+2026-01-22T08:32:00.1515547Z 0.628 npm error
+2026-01-22T08:32:00.1516024Z 0.628 npm error Run "npm help ci" for more info
+2026-01-22T08:32:00.1516915Z 0.629 npm error A complete log of this run can be found in: /root/.npm/_logs/2026-01-22T08_31_59_635Z-debug-0.log
+2026-01-22T08:32:00.1517790Z ------
+2026-01-22T08:32:00.1518172Z Dockerfile:22
+2026-01-22T08:32:00.1518560Z --------------------
+2026-01-22T08:32:00.1519013Z   20 |     COPY backend/package*.json ./backend/
+2026-01-22T08:32:00.1519559Z   21 |     WORKDIR /app/backend
+2026-01-22T08:32:00.1520032Z   22 | >>> RUN npm ci --production
+2026-01-22T08:32:00.1520497Z   23 |     
+2026-01-22T08:32:00.1520886Z   24 |     # Copy backend source
+2026-01-22T08:32:00.1521365Z --------------------
+2026-01-22T08:32:00.1522542Z ERROR: failed to build: failed to solve: process "/bin/sh -c npm ci --production" did not complete successfully: exit code: 1
+2026-01-22T08:32:00.1554681Z ##[error]Process completed with exit code 1.
+2026-01-22T08:32:00.1678563Z Post job cleanup.
+2026-01-22T08:32:00.2512152Z Removed exported credentials at "/home/runner/work/website-short-summary-this-uip5/website-short-summary-this-uip5/gha-creds-9e721f059f1cd62c.json".
+2026-01-22T08:32:00.2634638Z Post job cleanup.
+2026-01-22T08:32:00.3589605Z [command]/usr/bin/git version
+2026-01-22T08:32:00.3628055Z git version 2.52.0
+2026-01-22T08:32:00.3673596Z Temporarily overriding HOME='/home/runner/work/_temp/dd6061e7-d1de-4327-abdc-d4d9ea38be7e' before making global git config changes
+2026-01-22T08:32:00.3675286Z Adding repository directory to the temporary git global config as a safe directory
+2026-01-22T08:32:00.3681203Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/website-short-summary-this-uip5/website-short-summary-this-uip5
+2026-01-22T08:32:00.3719560Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-01-22T08:32:00.3754449Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-01-22T08:32:00.3987451Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-01-22T08:32:00.4008618Z http.https://github.com/.extraheader
+2026-01-22T08:32:00.4021712Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-01-22T08:32:00.4053105Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-01-22T08:32:00.4278900Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-01-22T08:32:00.4310973Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-01-22T08:32:00.4644124Z Evaluate and set job outputs
+2026-01-22T08:32:00.4650372Z Cleaning up orphan processes
 
-
-## Database Integration (PostgreSQL via OpenCode Tools)
-
-This project has a PostgreSQL database connected. You have access to database tools:
-
-### Available Database Tools
-- **query_database** - Execute SQL queries (SELECT, INSERT, UPDATE, DELETE). Returns rows and row count.
-- **list_tables** - List all tables in the public schema
-- **describe_table** - Get column information for a specific table (name, type, nullable, default)
-
-### Usage Examples
 ```
-// List all tables
-Use the list_tables tool
 
-// Describe a table
-Use the describe_table tool with table_name: "users"
-
-// Run a query
-Use the query_database tool with sql: "SELECT * FROM users LIMIT 5"
-```
-
-### Database Info
-- Database: app_website_short_summary_this_uip5_1768917568711
-- Host: ep-cool-sky-ahreczza.c-3.us-east-1.aws.neon.tech
-
-### Schema & Initialization (Generated Apps)
-- Schema file (from backend boilerplate): `/app/backend/db.sql`
-- Apply schema: `cd /app/backend && node initdb.js` (uses DATABASE_URL)
-- Add queries/endpoints in `/app/backend/server.ts` using the existing `pool` from `pg`
-
-### ⚠️ IMPORTANT
-- Always use parameterized queries for user input to prevent SQL injection
-- The database connection uses the project's DATABASE_URL (already configured)
-- These tools connect directly to the user's Neon PostgreSQL database
+Important: After applying fixes, do not attempt to build the project yourself. The build and deployment process is managed externally.
