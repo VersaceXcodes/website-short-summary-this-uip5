@@ -4,7 +4,7 @@
 - Initialized project scaffolding.
 - Created feature list.
 
-## Session 2 (Current - January 21, 2026)
+## Session 2 (January 21, 2026)
 - Fixed Vite configuration to resolve "Blocked request" error by adding allowedHosts configuration
 - Added navigation functionality to hero section buttons ("Learn more about what we do" and "Learn more about our pricing")
 - Verified all features are working correctly through browser testing:
@@ -18,3 +18,15 @@
   * Button navigation to About and Pricing pages ✓
 - No console errors detected
 - All features from feature_list.json are implemented and passing
+
+## Session 3 (Current - January 23, 2026)
+- Added logo implementation to the website:
+  * Downloaded and integrated the Cinebih logo (logo.png) into project assets
+  * Added logo to hero section center as background element (opacity 20%, positioned behind text)
+  * Implemented scroll-triggered logo in Header component:
+    - Logo appears in center of header when user scrolls down (>100px)
+    - Smooth fade-in/scale animation transition
+    - Header made sticky with shadow for better visibility
+  * Browser tested scroll behavior - working perfectly
+- No console errors detected
+- Logo implementation complete and tested ✓

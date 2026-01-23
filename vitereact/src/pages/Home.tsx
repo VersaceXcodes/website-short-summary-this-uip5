@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import Services from '../components/home/Services';
-
 import FAQ from '../components/home/FAQ';
+import logo from '../assets/images/logo.png';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -11,12 +11,13 @@ const Home = () => {
       {/* Hero Section */}
       <section className="relative w-full max-w-7xl mx-auto flex-grow flex flex-col justify-center px-8 py-10 md:py-20 min-h-[90vh]">
         
-        {/* Central Logo Placeholder - Behind text */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none opacity-10">
-           {/* Placeholder circle for logo - using CSS shapes to simulate a logo mark */}
-           <div className="w-[600px] h-[600px] rounded-full border-[20px] border-forest flex items-center justify-center">
-              <div className="w-[400px] h-[400px] border-[20px] border-gold rotate-45"></div>
-           </div>
+        {/* Central Logo - Behind text */}
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none opacity-20 z-0">
+           <img 
+             src={logo} 
+             alt="Cinebih Logo" 
+             className="w-[500px] h-auto md:w-[600px] object-contain"
+           />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center relative z-10">
