@@ -383,23 +383,11 @@ something like this# ontact us
 just something basic like this
 
 ## Current User Request
-I added In attachment the logo I want you to add just this changes to the home ,### **sections 2: welcome**
-
-The header and welcome sections should share the same background, ( there is no image background as of now but if you can create one, create it, if not leave it blank and ill add it later.
-
-**Right of the welcome** I want written (Taking Your Business to the Next Level).
-
-Font: **( CA SMUT)**
-
-On the Left side I want written (We help businesses grow faster by expanding their reach and attracting new clients through powerful social media strategies that connect brands with audiences worldwide. From strategy to execution, everything is handled by our team — so you can focus on scaling your business).
-
-Font: **(CA SMUT FULL)**
-
-Centre and if the the logo over lapses the writing make the logo in the back. also when you start to scroll down, i want a small logo show up in centre of header.
+see screenshot thats currently website wen I scroll down a little the logo gets stuck up on the navbar so fix that issue , then also try make navbar look better idk why theirs full stops ect improve overall look make It more luxury modern type
 
 Additional context:
 User uploaded the following images. Place them exactly where requested; if no explicit location is provided, position them where they best fit within the layout without breaking responsiveness.
-- Asset 1: https://tgvswctfhlubctiodmvo.supabase.co/storage/v1/object/public/project_uploads/4d643db2-10df-40f9-85f4-2c7cc9a90f95/website-short-summary-this-uip5/1769167455460_0_ChatGPT_20Image_20Jan_208_2C_202026_2C_2005_33_48_20PM.png (image/png)
+- Asset 1: https://tgvswctfhlubctiodmvo.supabase.co/storage/v1/object/public/project_uploads/4d643db2-10df-40f9-85f4-2c7cc9a90f95/website-short-summary-this-uip5/1769167923996_0_Screenshot_2026-01-23_at_11.31.01.png (image/png)
 Use the given URLs directly or copy into the project under an appropriate assets/images folder and update imports/links.
 Staged copies are available at /app/__attachments (see attachments.json).
 
