@@ -129,9 +129,14 @@ const About = () => {
                    <p className="italic border-l-4 border-gold pl-4 py-2">That is why we ensure to post each content based off each platform from TikTok, Instagram, yt shorts & LinkedIn. Too ensure best results from each and every platform.</p>
                 </div>
                 <div className="mt-8">
-                  <button className="bg-rust text-ivory font-display text-2xl px-12 py-4 rounded shadow-lg hover:bg-red-700 transition-all uppercase tracking-wide transform hover:scale-105">
+                  <a 
+                    href="https://calendly.com/cinebih/30min" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-block bg-rust text-ivory font-display text-2xl px-12 py-4 rounded shadow-lg hover:bg-red-700 transition-all uppercase tracking-wide transform hover:scale-105"
+                  >
                     Book Now
-                  </button>
+                  </a>
                 </div>
              </div>
           </div>

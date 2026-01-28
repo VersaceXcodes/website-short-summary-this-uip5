@@ -383,13 +383,7 @@ something like this# ontact us
 just something basic like this
 
 ## Current User Request
-see screenshot thats currently website wen I scroll down a little the logo gets stuck up on the navbar so fix that issue , then also try make navbar look better idk why theirs full stops ect improve overall look make It more luxury modern type
-
-Additional context:
-User uploaded the following images. Place them exactly where requested; if no explicit location is provided, position them where they best fit within the layout without breaking responsiveness.
-- Asset 1: https://tgvswctfhlubctiodmvo.supabase.co/storage/v1/object/public/project_uploads/4d643db2-10df-40f9-85f4-2c7cc9a90f95/website-short-summary-this-uip5/1769167923996_0_Screenshot_2026-01-23_at_11.31.01.png (image/png)
-Use the given URLs directly or copy into the project under an appropriate assets/images folder and update imports/links.
-Staged copies are available at /app/__attachments (see attachments.json).
+any button says book now should take them to my booking clanger here's the link https://calendly.com/cinebih/30min , so whenever they click button says book now or meeting now takes them redirects them to this link https://calendly.com/cinebih/30min ,
 
 Start by running the startup sequence, then pick the next feature to implement.
 

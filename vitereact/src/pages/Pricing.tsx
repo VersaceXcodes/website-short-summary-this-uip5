@@ -95,9 +95,14 @@ const Pricing = () => {
                 
                 <div className="text-center mt-auto">
                   <div className="text-4xl font-display text-rust mb-6">{tier.price}<span className="text-lg text-forest/70">/MONTH</span></div>
-                  <button className="w-full bg-rust text-ivory font-display text-2xl px-8 py-3 rounded shadow hover:bg-red-700 transition-all uppercase tracking-wide">
+                  <a 
+                    href="https://calendly.com/cinebih/30min" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="block w-full bg-rust text-ivory font-display text-2xl px-8 py-3 rounded shadow hover:bg-red-700 transition-all uppercase tracking-wide text-center"
+                  >
                     Book Now
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
