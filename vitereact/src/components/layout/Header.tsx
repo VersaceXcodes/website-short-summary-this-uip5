@@ -47,9 +47,16 @@ const Header = () => {
         </div>
       </nav>
 
-      {/* Spacer to balance logo on the left */}
-      <div className={`transition-all duration-300 ${scrolled ? 'opacity-100' : 'opacity-0'}`}>
-        <div className="h-12 w-12"></div>
+      {/* Book Now button - appears on right side */}
+      <div className="flex items-center">
+        <a 
+          href="https://calendly.com/cinebih/30min" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="bg-rust hover:bg-gold text-ivory px-6 py-2 rounded transition-all duration-200 hover:scale-105 font-display text-lg tracking-wider uppercase shadow-md hover:shadow-lg"
+        >
+          Book Now
+        </a>
       </div>
     </header>
   );

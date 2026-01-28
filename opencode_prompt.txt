@@ -383,7 +383,7 @@ something like this# ontact us
 just something basic like this
 
 ## Current User Request
-any button says book now should take them to my booking clanger here's the link https://calendly.com/cinebih/30min , so whenever they click button says book now or meeting now takes them redirects them to this link https://calendly.com/cinebih/30min ,
+add in the nabber book now button and directs them to this https://calendly.com/cinebih/30min
 
 Start by running the startup sequence, then pick the next feature to implement.
 
