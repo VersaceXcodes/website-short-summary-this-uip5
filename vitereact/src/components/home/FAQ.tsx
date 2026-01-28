@@ -88,24 +88,24 @@ const FAQ = () => {
   };
 
   return (
-    <section className="py-20 px-8 bg-forest text-ivory border-t-8 border-gold">
+    <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8 bg-forest text-ivory border-t-4 sm:border-t-8 border-gold">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-6xl md:text-8xl font-display text-gold mb-16 text-center uppercase">
+        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-display text-gold mb-10 sm:mb-12 md:mb-16 text-center uppercase">
           FAQ
         </h2>
 
-        <div className="space-y-4">
+        <div className="space-y-3 sm:space-y-4">
           {faqData.map((item, index) => (
             <div key={index} className="border-2 border-gold/30 rounded bg-forest overflow-hidden transition-all duration-300 hover:border-gold">
               <button
-                className="w-full flex justify-between items-center p-6 text-left focus:outline-none"
+                className="w-full flex justify-between items-start p-4 sm:p-5 md:p-6 text-left focus:outline-none gap-3"
                 onClick={() => toggleFAQ(index)}
               >
-                <span className="font-display text-2xl uppercase tracking-wide pr-8">{item.question}</span>
+                <span className="font-display text-lg sm:text-xl md:text-2xl uppercase tracking-wide flex-1 break-words">{item.question}</span>
                 {openIndex === index ? (
-                  <Minus className="text-gold flex-shrink-0" size={24} />
+                  <Minus className="text-gold flex-shrink-0 mt-1" size={20} />
                 ) : (
-                  <Plus className="text-gold flex-shrink-0" size={24} />
+                  <Plus className="text-gold flex-shrink-0 mt-1" size={20} />
                 )}
               </button>
               
@@ -114,7 +114,7 @@ const FAQ = () => {
                   openIndex === index ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'
                 }`}
               >
-                <div className="p-6 pt-0 font-body text-lg leading-relaxed text-ivory/80 border-t border-gold/10 mt-2">
+                <div className="p-4 sm:p-5 md:p-6 pt-0 font-body text-base sm:text-lg leading-relaxed text-ivory/80 border-t border-gold/10 mt-2">
                   {typeof item.answer === 'string' ? (
                     <div className="whitespace-pre-line">{item.answer}</div>
                   ) : (

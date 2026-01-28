@@ -383,7 +383,7 @@ something like this# ontact us
 just something basic like this
 
 ## Current User Request
-see where says We help businesses grow faster by expanding their reach and attracting new clients through powerful social media strategies that connect brands with audiences worldwide. From strategy to execution, everything is handled by our team — so you can focus on scaling your business., it looks very basic and boring maybe put it in a box or make it look more appealing
+also make make it mobile responsive seems like when I preview it on my phone theirs errors so fix the issues their for example the scrolling and nabber  ect find any other issues for mobile and fix them
 
 Start by running the startup sequence, then pick the next feature to implement.
 
