@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Plus } from 'lucide-react';
 import logo from '../../assets/images/logo.png';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [expandedMobileNav, setExpandedMobileNav] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,6 +20,7 @@ const Header = () => {
   // Close mobile menu when link is clicked
   const handleLinkClick = () => {
     setMobileMenuOpen(false);
+    setExpandedMobileNav(false);
   };
 
   return (
@@ -32,6 +34,23 @@ const Header = () => {
         />
       </div>
       
+      {/* Mobile Navigation - show 2 items + button */}
+      <nav className="flex lg:hidden flex-1 justify-center items-center gap-3 sm:gap-4">
+        <Link to="/" className="font-display text-sm sm:text-base uppercase tracking-wider text-ivory hover:text-gold transition-colors">
+          Home
+        </Link>
+        <Link to="/about" className="font-display text-sm sm:text-base uppercase tracking-wider text-ivory hover:text-gold transition-colors">
+          About
+        </Link>
+        <button
+          onClick={() => setExpandedMobileNav(!expandedMobileNav)}
+          className="text-gold p-1.5 hover:bg-gold/10 rounded transition-colors"
+          aria-label="More pages"
+        >
+          {expandedMobileNav ? <X size={20} /> : <Plus size={20} />}
+        </button>
+      </nav>
+
       {/* Desktop Navigation - centered */}
       <nav className="hidden lg:flex flex-1 justify-center">
         <div className="flex gap-8 xl:gap-12 font-display text-lg xl:text-xl tracking-wider uppercase">
@@ -66,55 +85,30 @@ const Header = () => {
         </a>
       </div>
 
-      {/* Mobile Menu Button */}
-      <button 
-        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-        className="lg:hidden text-gold p-2 hover:bg-gold/10 rounded transition-colors"
-        aria-label="Toggle menu"
-      >
-        {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
-      </button>
-
-      {/* Mobile Menu Overlay */}
-      {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-0 top-[72px] bg-forest/95 backdrop-blur-sm z-40 animate-fadeIn">
-          <nav className="flex flex-col items-center justify-center h-full gap-8 px-8">
-            <Link 
-              to="/" 
-              onClick={handleLinkClick}
-              className="font-display text-3xl uppercase tracking-wider text-ivory hover:text-gold transition-colors w-full text-center py-4 border-b border-gold/20"
-            >
-              Home
-            </Link>
-            <Link 
-              to="/about" 
-              onClick={handleLinkClick}
-              className="font-display text-3xl uppercase tracking-wider text-ivory hover:text-gold transition-colors w-full text-center py-4 border-b border-gold/20"
-            >
-              About
-            </Link>
+      {/* Mobile Expanded Menu - Dropdown for Pricing and Contact */}
+      {expandedMobileNav && (
+        <div className="lg:hidden absolute top-full left-0 right-0 bg-forest/95 backdrop-blur-sm shadow-lg z-40 animate-fadeIn">
+          <nav className="flex flex-col p-4 gap-2">
             <Link 
               to="/pricing" 
               onClick={handleLinkClick}
-              className="font-display text-3xl uppercase tracking-wider text-ivory hover:text-gold transition-colors w-full text-center py-4 border-b border-gold/20"
+              className="font-display text-base sm:text-lg uppercase tracking-wider text-ivory hover:text-gold transition-colors py-3 px-4 border-b border-gold/20"
             >
               Pricing
             </Link>
             <Link 
               to="/contact" 
               onClick={handleLinkClick}
-              className="font-display text-3xl uppercase tracking-wider text-ivory hover:text-gold transition-colors w-full text-center py-4 border-b border-gold/20"
+              className="font-display text-base sm:text-lg uppercase tracking-wider text-ivory hover:text-gold transition-colors py-3 px-4 border-b border-gold/20"
             >
               Contact Us
             </Link>
-            
-            {/* Book Now button in mobile menu */}
             <a 
               href="https://calendly.com/cinebih/30min" 
               target="_blank" 
               rel="noopener noreferrer"
               onClick={handleLinkClick}
-              className="bg-rust hover:bg-gold text-ivory px-8 py-4 rounded transition-all duration-200 font-display text-2xl tracking-wider uppercase shadow-lg mt-4"
+              className="bg-rust hover:bg-gold text-ivory px-4 py-3 rounded transition-all duration-200 font-display text-base sm:text-lg tracking-wider uppercase shadow-lg text-center mt-2"
             >
               Book Now
             </a>
