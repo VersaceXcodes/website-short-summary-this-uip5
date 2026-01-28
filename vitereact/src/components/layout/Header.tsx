@@ -1,11 +1,10 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { Menu, X, Plus } from 'lucide-react';
+import { X, Plus } from 'lucide-react';
 import logo from '../../assets/images/logo.png';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [expandedMobileNav, setExpandedMobileNav] = useState(false);
 
   useEffect(() => {
@@ -19,7 +18,6 @@ const Header = () => {
 
   // Close mobile menu when link is clicked
   const handleLinkClick = () => {
-    setMobileMenuOpen(false);
     setExpandedMobileNav(false);
   };
 
@@ -34,20 +32,28 @@ const Header = () => {
         />
       </div>
       
-      {/* Mobile Navigation - show 2 items + button */}
-      <nav className="flex lg:hidden flex-1 justify-center items-center gap-3 sm:gap-4">
-        <Link to="/" className="font-display text-sm sm:text-base uppercase tracking-wider text-ivory hover:text-gold transition-colors">
+      {/* Mobile Navigation - show HOME, ABOUT, BOOK NOW + button for more */}
+      <nav className="flex lg:hidden flex-1 justify-center items-center gap-2 sm:gap-3">
+        <Link to="/" className="font-display text-xs sm:text-sm uppercase tracking-wider text-ivory hover:text-gold transition-colors">
           Home
         </Link>
-        <Link to="/about" className="font-display text-sm sm:text-base uppercase tracking-wider text-ivory hover:text-gold transition-colors">
+        <Link to="/about" className="font-display text-xs sm:text-sm uppercase tracking-wider text-ivory hover:text-gold transition-colors">
           About
         </Link>
+        <a 
+          href="https://calendly.com/cinebih/30min" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="bg-rust hover:bg-gold text-ivory px-2 sm:px-3 py-1 sm:py-1.5 rounded transition-all duration-200 font-display text-xs sm:text-sm tracking-wider uppercase"
+        >
+          Book Now
+        </a>
         <button
           onClick={() => setExpandedMobileNav(!expandedMobileNav)}
-          className="text-gold p-1.5 hover:bg-gold/10 rounded transition-colors"
+          className="text-gold p-1 sm:p-1.5 hover:bg-gold/10 rounded transition-colors"
           aria-label="More pages"
         >
-          {expandedMobileNav ? <X size={20} /> : <Plus size={20} />}
+          {expandedMobileNav ? <X size={18} /> : <Plus size={18} />}
         </button>
       </nav>
 
@@ -99,19 +105,10 @@ const Header = () => {
             <Link 
               to="/contact" 
               onClick={handleLinkClick}
-              className="font-display text-base sm:text-lg uppercase tracking-wider text-ivory hover:text-gold transition-colors py-3 px-4 border-b border-gold/20"
+              className="font-display text-base sm:text-lg uppercase tracking-wider text-ivory hover:text-gold transition-colors py-3 px-4"
             >
               Contact Us
             </Link>
-            <a 
-              href="https://calendly.com/cinebih/30min" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              onClick={handleLinkClick}
-              className="bg-rust hover:bg-gold text-ivory px-4 py-3 rounded transition-all duration-200 font-display text-base sm:text-lg tracking-wider uppercase shadow-lg text-center mt-2"
-            >
-              Book Now
-            </a>
           </nav>
         </div>
       )}

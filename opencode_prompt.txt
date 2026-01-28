@@ -383,7 +383,7 @@ something like this# ontact us
 just something basic like this
 
 ## Current User Request
-two issues one is when I scroll then click a diffrent page it will be already scrolled down to the same as I was in other page , eg when I click new page I need to start from the top all the pages the home about pricing contact us , currently its if I scroll down a little then click diffrent page it willcbe same scrolled down and doesnt start from the top for the new page , then second fix would be for mobile I want to see the nav at the top instead of having to click button to t see them maybe do like 2/3 pages name then plus sign to see the rest of something
+I see you did home and about and plus sign is it possible to fit in a book now too in the nabber for the mobile
 
 Start by running the startup sequence, then pick the next feature to implement.
 
