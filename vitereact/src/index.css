@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
 
 @theme {
   --color-forest: #014421;
@@ -8,7 +9,7 @@
   --color-gold: #B08D57;
   --color-rust: #B7410E;
 
-  --font-family-display: "Bebas Neue", sans-serif;
+  --font-family-display: "Playfair Display", serif;
   --font-family-body: "Inter", sans-serif;
 }
 
@@ -17,8 +18,109 @@
     background-color: var(--color-forest);
     color: var(--color-ivory);
     font-family: var(--font-family-body);
+    font-weight: 400;
+    letter-spacing: -0.01em;
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-display);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  /* Luxury gradient backgrounds - refined */
+  .gradient-luxury {
+    background: linear-gradient(160deg, #8B5E3C 0%, #73502F 40%, #5D4226 100%);
+  }
+  
+  .gradient-forest {
+    background: linear-gradient(160deg, #014421 0%, #013018 50%, #011d0f 100%);
+  }
+  
+  .gradient-gold {
+    background: linear-gradient(135deg, #D4AF37 0%, #B08D57 50%, #8B6F47 100%);
+  }
+  
+  /* Premium elevation and depth */
+  .elevated-card {
+    background: rgba(248, 244, 227, 0.03);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(176, 141, 87, 0.15);
+  }
+  
+  .elevated-card-dark {
+    background: rgba(1, 68, 33, 0.3);
+    backdrop-filter: blur(24px);
+    border: 1px solid rgba(176, 141, 87, 0.2);
+  }
+  
+  /* Refined text shadows for luxury feel */
+  .text-shadow-luxury {
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .text-shadow-gold {
+    text-shadow: 0 2px 16px rgba(176, 141, 87, 0.2);
+  }
+  
+  /* Subtle glow animations */
+  @keyframes subtle-glow {
+    0%, 100% { box-shadow: 0 0 20px rgba(176, 141, 87, 0.1); }
+    50% { box-shadow: 0 0 40px rgba(176, 141, 87, 0.2); }
+  }
+  
+  .glow-on-hover:hover {
+    animation: subtle-glow 2s ease-in-out infinite;
+  }
+  
+  /* Premium shadows - soft and layered */
+  .shadow-luxury {
+    box-shadow: 
+      0 1px 2px rgba(0, 0, 0, 0.05),
+      0 4px 12px rgba(0, 0, 0, 0.1),
+      0 16px 48px rgba(0, 0, 0, 0.1);
+  }
+  
+  .shadow-luxury-hover {
+    box-shadow: 
+      0 2px 4px rgba(0, 0, 0, 0.05),
+      0 8px 24px rgba(0, 0, 0, 0.12),
+      0 24px 64px rgba(0, 0, 0, 0.15);
+  }
+  
+  .shadow-gold {
+    box-shadow: 
+      0 4px 16px rgba(176, 141, 87, 0.15),
+      0 8px 32px rgba(176, 141, 87, 0.1);
+  }
+  
+  /* Premium button lift effect */
+  .btn-lift {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .btn-lift:hover {
+    transform: translateY(-2px);
+    box-shadow: 
+      0 8px 24px rgba(0, 0, 0, 0.12),
+      0 4px 8px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Smooth premium transitions */
+  .transition-luxury {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .transition-premium {
+    transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+  
+  /* Text gradient for premium feel */
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #D4AF37 0%, #B08D57 50%, #C9A961 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }

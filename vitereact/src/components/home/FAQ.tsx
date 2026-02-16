@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Plus, Minus } from 'lucide-react';
+import { Plus } from 'lucide-react';
 
 const faqData = [
   {
@@ -88,25 +88,37 @@ const FAQ = () => {
   };
 
   return (
-    <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8 bg-forest text-ivory border-t-4 sm:border-t-8 border-gold">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-display text-gold mb-10 sm:mb-12 md:mb-16 text-center uppercase">
-          FAQ
-        </h2>
+    <section className="py-20 sm:py-24 md:py-32 lg:py-40 px-6 sm:px-8 md:px-12 lg:px-16 gradient-forest text-ivory relative overflow-hidden">
+      
+      {/* Decorative background pattern */}
+      <div className="absolute inset-0 opacity-[0.03]" style={{
+        backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(176, 141, 87, 1) 1px, transparent 0)',
+        backgroundSize: '48px 48px'
+      }}></div>
+      
+      <div className="max-w-4xl mx-auto relative z-10">
+        
+        {/* Premium section header */}
+        <div className="text-center mb-16 md:mb-20 space-y-4">
+          <h2 className="font-display font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-gradient-gold leading-[1.1] tracking-tight">
+            Common Questions
+          </h2>
+          <p className="font-body text-lg text-ivory/60 font-light">
+            Everything you need to know
+          </p>
+        </div>
 
-        <div className="space-y-3 sm:space-y-4">
+        <div className="space-y-4">
           {faqData.map((item, index) => (
-            <div key={index} className="border-2 border-gold/30 rounded bg-forest overflow-hidden transition-all duration-300 hover:border-gold">
+            <div key={index} className="elevated-card-dark rounded-2xl overflow-hidden transition-premium hover:shadow-luxury group">
               <button
-                className="w-full flex justify-between items-start p-4 sm:p-5 md:p-6 text-left focus:outline-none gap-3"
+                className="w-full flex justify-between items-start p-6 md:p-8 text-left focus:outline-none gap-4"
                 onClick={() => toggleFAQ(index)}
               >
-                <span className="font-display text-lg sm:text-xl md:text-2xl uppercase tracking-wide flex-1 break-words">{item.question}</span>
-                {openIndex === index ? (
-                  <Minus className="text-gold flex-shrink-0 mt-1" size={20} />
-                ) : (
-                  <Plus className="text-gold flex-shrink-0 mt-1" size={20} />
-                )}
+                <span className="font-display font-medium text-xl md:text-2xl tracking-tight flex-1 text-ivory/90 group-hover:text-gold transition-colors">{item.question}</span>
+                <div className={`flex-shrink-0 mt-1 transition-transform duration-300 ${openIndex === index ? 'rotate-45' : ''}`}>
+                  <Plus className="text-gold" size={24} strokeWidth={2} />
+                </div>
               </button>
               
               <div 
@@ -114,7 +126,7 @@ const FAQ = () => {
                   openIndex === index ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'
                 }`}
               >
-                <div className="p-4 sm:p-5 md:p-6 pt-0 font-body text-base sm:text-lg leading-relaxed text-ivory/80 border-t border-gold/10 mt-2">
+                <div className="px-6 md:px-8 pb-6 md:pb-8 pt-0 font-body text-base md:text-lg leading-relaxed text-ivory/70 font-light border-t border-gold/10 mt-2">
                   {typeof item.answer === 'string' ? (
                     <div className="whitespace-pre-line">{item.answer}</div>
                   ) : (

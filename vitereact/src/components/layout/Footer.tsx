@@ -2,45 +2,65 @@ import { Instagram, Youtube, Facebook, Linkedin, Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-burgundy text-ivory py-12 sm:py-14 md:py-16 px-4 sm:px-6 md:px-8 border-t-4 sm:border-t-8 border-gold">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 sm:gap-8">
+    <footer className="bg-gradient-to-b from-burgundy to-[#3d0f2e] text-ivory py-16 sm:py-20 md:py-24 px-6 sm:px-8 md:px-12 lg:px-16 relative overflow-hidden">
+      
+      {/* Subtle pattern overlay */}
+      <div className="absolute inset-0 opacity-[0.03]" style={{
+        backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(176, 141, 87, 1) 1px, transparent 0)',
+        backgroundSize: '40px 40px'
+      }}></div>
+      
+      {/* Top accent line */}
+      <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-gold/40 to-transparent"></div>
+      
+      <div className="max-w-[1400px] mx-auto relative z-10">
         
-        <div className="text-center md:text-left">
-          <h2 className="text-3xl sm:text-4xl font-display text-gold uppercase mb-2">Cinebih</h2>
-          <p className="font-body text-sm sm:text-base opacity-80 max-w-md">
-            Taking Your Business to the Next Level with powerful social media strategies.
+        <div className="flex flex-col md:flex-row justify-between items-center gap-10 md:gap-16">
+          
+          {/* Brand section */}
+          <div className="text-center md:text-left space-y-3 max-w-md">
+            <h2 className="font-display font-bold text-3xl sm:text-4xl text-gold tracking-tight">Cinebih</h2>
+            <p className="font-body text-sm sm:text-base text-ivory/70 font-light leading-relaxed">
+              Elevating brands through strategic content and data-driven social media excellence.
+            </p>
+          </div>
+
+          {/* Social & Contact */}
+          <div className="flex flex-col items-center md:items-end gap-6">
+            
+            {/* Social icons */}
+            <div className="flex flex-wrap justify-center gap-3">
+              <a href="#" className="w-11 h-11 bg-ivory/10 hover:bg-gold text-ivory rounded-xl flex items-center justify-center transition-premium btn-lift">
+                <Instagram size={20} />
+              </a>
+              <a href="#" className="w-11 h-11 bg-ivory/10 hover:bg-gold text-ivory rounded-xl flex items-center justify-center transition-premium btn-lift font-bold text-sm">
+                Tk
+              </a>
+              <a href="#" className="w-11 h-11 bg-ivory/10 hover:bg-gold text-ivory rounded-xl flex items-center justify-center transition-premium btn-lift">
+                <Youtube size={20} />
+              </a>
+              <a href="#" className="w-11 h-11 bg-ivory/10 hover:bg-gold text-ivory rounded-xl flex items-center justify-center transition-premium btn-lift">
+                <Facebook size={20} />
+              </a>
+              <a href="#" className="w-11 h-11 bg-ivory/10 hover:bg-gold text-ivory rounded-xl flex items-center justify-center transition-premium btn-lift">
+                <Linkedin size={20} />
+              </a>
+            </div>
+            
+            {/* Email */}
+            <a href="mailto:contact@cinebih.com" className="flex items-center gap-2 font-body text-sm sm:text-base hover:text-gold transition-colors group">
+              <Mail size={18} className="group-hover:scale-110 transition-transform" />
+              contact@cinebih.com
+            </a>
+          </div>
+        </div>
+        
+        {/* Bottom bar */}
+        <div className="mt-12 md:mt-16 pt-8 border-t border-ivory/10 text-center">
+          <p className="font-body text-xs sm:text-sm text-ivory/50 font-light">
+            &copy; {new Date().getFullYear()} Cinebih. All rights reserved.
           </p>
         </div>
-
-        <div className="flex flex-col items-center md:items-end gap-4 sm:gap-6">
-          <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
-             {/* Social Icons - Placeholders */}
-             <a href="#" className="p-2.5 sm:p-3 bg-ivory text-burgundy rounded-full hover:bg-gold hover:text-forest transition-colors">
-               <Instagram size={20} className="sm:w-6 sm:h-6" />
-             </a>
-             <a href="#" className="p-2.5 sm:p-3 bg-ivory text-burgundy rounded-full hover:bg-gold hover:text-forest transition-colors">
-               <span className="font-bold text-lg sm:text-xl leading-none">Tk</span> {/* TikTok icon fallback */}
-             </a>
-             <a href="#" className="p-2.5 sm:p-3 bg-ivory text-burgundy rounded-full hover:bg-gold hover:text-forest transition-colors">
-               <Youtube size={20} className="sm:w-6 sm:h-6" />
-             </a>
-             <a href="#" className="p-2.5 sm:p-3 bg-ivory text-burgundy rounded-full hover:bg-gold hover:text-forest transition-colors">
-               <Facebook size={20} className="sm:w-6 sm:h-6" />
-             </a>
-             <a href="#" className="p-2.5 sm:p-3 bg-ivory text-burgundy rounded-full hover:bg-gold hover:text-forest transition-colors">
-               <Linkedin size={20} className="sm:w-6 sm:h-6" />
-             </a>
-          </div>
-          
-          <a href="mailto:contact@cinebih.com" className="flex items-center gap-2 font-display text-lg sm:text-xl hover:text-gold transition-colors">
-            <Mail size={18} className="sm:w-5 sm:h-5" />
-            contact@cinebih.com
-          </a>
-        </div>
-      </div>
-      
-      <div className="max-w-7xl mx-auto mt-8 sm:mt-10 md:mt-12 pt-6 sm:pt-8 border-t border-ivory/20 text-center text-xs sm:text-sm opacity-60">
-        &copy; {new Date().getFullYear()} Cinebih. All rights reserved.
       </div>
     </footer>
   );

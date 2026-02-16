@@ -53,56 +53,84 @@ const pricingTiers = [
 
 const Pricing = () => {
   return (
-    <main className="bg-forest min-h-screen text-ivory">
-      {/* Why Cost Section */}
-      <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8 max-w-7xl mx-auto text-center">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-display text-gold mb-8 sm:mb-10 md:mb-12 uppercase drop-shadow-lg">
-          Pricing
-        </h1>
+    <main className="gradient-forest min-h-screen text-ivory relative overflow-hidden">
+      
+      {/* Decorative background pattern */}
+      <div className="absolute inset-0 opacity-[0.03]" style={{
+        backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(176, 141, 87, 1) 1px, transparent 0)',
+        backgroundSize: '48px 48px'
+      }}></div>
+      
+      {/* Pricing Section */}
+      <section className="py-20 sm:py-24 md:py-32 lg:py-40 px-6 sm:px-8 md:px-12 lg:px-16 max-w-[1400px] mx-auto relative z-10">
         
-        <div className="max-w-4xl mx-auto bg-cognac/30 p-6 sm:p-8 md:p-10 rounded-lg border border-gold/20 mb-12 sm:mb-16 md:mb-20">
-          <h2 className="text-2xl sm:text-3xl font-display text-gold mb-4 sm:mb-6 uppercase tracking-wide">
-            Why does our service cost this much?
-          </h2>
-          <p className="font-body text-base sm:text-lg leading-relaxed text-ivory/90 mb-4 sm:mb-6">
-            Behind each content we create is an entire team of people ensuring it gets the job done. Our social media researchers dig into your industry, study your competition, and track trends so your strategy remains cutting-edge. Our scriptwriters craft ideas for content that will halt viewers dead in their tracks in seconds. Our editors transform your uncut footage into completed, scroll-stopping videos for TikTok, Instagram, YouTube Shorts, Facebook, and LinkedIn. Finally, our social media managers upload and schedule everything in the correct format, at the right time, to maximize its effect.
+        {/* Premium section header */}
+        <div className="text-center mb-16 md:mb-20 space-y-4">
+          <h1 className="font-display font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-gradient-gold leading-[1.1] tracking-tight">
+            Investment
+          </h1>
+          <p className="font-body text-lg md:text-xl text-ivory/60 font-light max-w-2xl mx-auto">
+            Choose the package that scales with your ambition
           </p>
-          <p className="font-body text-base sm:text-lg leading-relaxed text-ivory/90 italic">
-            When you invest with us, you're not just investing in video editing — you're investing in a full creative team dedicated to growing your business online. This level of expertise, attention, and detail is what our pricing covers and causes your content not only look great, but actually perform.
+        </div>
+        
+        {/* Why section - refined */}
+        <div className="max-w-3xl mx-auto elevated-card-dark p-8 md:p-10 lg:p-12 rounded-2xl shadow-luxury mb-16 md:mb-20 lg:mb-24">
+          <h2 className="font-display font-bold text-2xl md:text-3xl text-gold mb-6">
+            Full-Service Content Excellence
+          </h2>
+          <p className="font-body text-base md:text-lg leading-relaxed text-ivory/80 font-light">
+            Your investment includes a dedicated team of researchers, strategists, scriptwriters, editors, and social media managers—all working to amplify your brand across every platform.
           </p>
         </div>
 
         {/* Pricing Cards */}
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-display text-ivory mb-10 sm:mb-12 md:mb-16 uppercase">Our Services</h2>
-        
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
           {pricingTiers.map((tier, index) => (
-            <div key={index} className="bg-ivory text-forest rounded-lg overflow-hidden flex flex-col hover:transform hover:scale-105 transition-all duration-300 shadow-xl border-4 border-gold">
-              <div className="bg-forest text-gold p-5 sm:p-6 text-center border-b-4 border-gold">
-                <h3 className="text-3xl sm:text-4xl font-display uppercase tracking-widest">{tier.name}</h3>
-                <p className="font-display text-lg sm:text-xl mt-2 text-ivory">{tier.shorts} SHORTS/MONTH</p>
-              </div>
+            <div key={index} className="group relative">
               
-              <div className="p-6 sm:p-8 flex-grow flex flex-col justify-between">
-                <ul className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
-                  {tier.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start text-left font-medium text-sm sm:text-base">
-                      <Check size={18} className="text-gold mr-2 sm:mr-3 flex-shrink-0 mt-0.5 sm:mt-1" />
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
+              {/* Card container */}
+              <div className="bg-gradient-to-b from-ivory to-[#F5F0E1] text-forest rounded-2xl overflow-hidden flex flex-col shadow-luxury hover:shadow-luxury-hover transition-premium h-full">
                 
-                <div className="text-center mt-auto">
-                  <div className="text-3xl sm:text-4xl font-display text-rust mb-4 sm:mb-6">{tier.price}<span className="text-sm sm:text-lg text-forest/70">/MONTH</span></div>
-                  <a 
-                    href="https://calendly.com/cinebih/30min" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="block w-full bg-rust text-ivory font-display text-xl sm:text-2xl px-6 sm:px-8 py-3 rounded shadow hover:bg-red-700 transition-all uppercase tracking-wide text-center"
-                  >
-                    Book Now
-                  </a>
+                {/* Header */}
+                <div className="gradient-forest text-gold p-6 md:p-8 text-center relative overflow-hidden">
+                  <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-gold/30 to-transparent"></div>
+                  <h3 className="font-display font-bold text-3xl md:text-4xl tracking-tight mb-2">{tier.name}</h3>
+                  <p className="font-body text-base text-ivory/80">{tier.shorts} videos monthly</p>
+                  <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-gold/30 to-transparent"></div>
+                </div>
+                
+                {/* Content */}
+                <div className="p-6 md:p-8 flex-grow flex flex-col justify-between">
+                  
+                  {/* Features list */}
+                  <ul className="space-y-3 mb-8">
+                    {tier.features.map((feature, idx) => (
+                      <li key={idx} className="flex items-start text-left font-body text-sm font-light">
+                        <div className="w-5 h-5 rounded-full bg-gold/20 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                          <Check size={12} className="text-gold" strokeWidth={3} />
+                        </div>
+                        <span className="text-forest/80">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  
+                  {/* Price and CTA */}
+                  <div className="space-y-4">
+                    <div className="flex items-baseline justify-center gap-1">
+                      <span className="font-display font-bold text-4xl md:text-5xl text-forest">{tier.price}</span>
+                      <span className="font-body text-sm text-forest/50">/month</span>
+                    </div>
+                    
+                    <a 
+                      href="https://calendly.com/cinebih/30min" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="block w-full bg-gradient-to-r from-rust to-red-700 text-ivory font-body font-medium text-base px-8 py-4 rounded-xl shadow-luxury btn-lift text-center"
+                    >
+                      Get Started
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

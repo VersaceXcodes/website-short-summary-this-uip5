@@ -388,7 +388,61 @@ something like this# ontact us
 just something basic like this
 
 ## Current User Request
-the website overall look very basic and outdated make it more modern and luxury
+Make This Website Look Modern & Luxury (Keep Brand Colors)
+Redesign this website to look modern, premium, and high-end while keeping the exact same brand colors.
+Do NOT change the color palette. Instead, elevate the design through layout refinement, typography, spacing, depth, and hierarchy.
+Overall Direction
+High-end, minimal agency aesthetic
+More whitespace and breathing room
+Stronger typography hierarchy
+Cleaner grid alignment
+Softer shadows instead of heavy borders
+Reduce flat, boxy feeling
+Add subtle depth using gradients within the existing color family
+Smooth micro-interactions and hover effects
+The goal is to make this feel like a premium 2026 agency website — confident, clean, and expensive.
+Improve the Hero Section
+Make the headline larger and more dominant
+Reduce the paragraph to a shorter, more powerful message
+Increase line height and spacing
+Replace the heavy solid box style with a softer elevated card or refined container
+Add subtle background depth (light texture, gradient overlay, or soft glow — using the same colors)
+Improve CTA prominence with better padding and spacing
+Refine alignment so the layout feels intentional and balanced
+Improve Typography
+Use a premium serif font for headings
+Use a modern clean sans-serif for body text
+Increase headline size significantly
+Reduce long paragraphs into concise, elegant copy
+Improve spacing between sections
+Luxury is achieved through typography and spacing — not colors.
+Improve Buttons
+Increase padding
+Slightly rounded corners (12–16px)
+Add subtle shadow
+Add smooth hover animation (lift effect or soft brightness change)
+Refine text spacing inside buttons
+Improve Navigation
+Refine spacing between menu items
+Add subtle hover effect
+Make the CTA button feel more premium (shadow, refined padding)
+Add a subtle separation from the hero (thin divider or slight elevation)
+Improve Existing Sections
+Refine card layouts (better spacing and alignment)
+Increase visual hierarchy between headings and body text
+Improve consistency in padding
+Add subtle depth using shadows or soft layered backgrounds
+Make metrics or key points larger and more impactful
+Improve alignment so everything feels structured and intentional
+Remove any heavy borders, large empty color blocks, or flat boxed sections that feel basic.
+Overall Feel
+Premium
+Confident
+Clean
+Structured
+Minimal
+High-end agency aesthetic
+Make it feel custom-designed — not template-based.
 
 Start by running the startup sequence, then pick the next feature to implement.
 
