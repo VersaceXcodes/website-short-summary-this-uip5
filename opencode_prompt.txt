@@ -4,8 +4,9 @@ You are an AI Software Engineer working on an existing project.
 1. Run `pwd` to verify you're in /app/expo
 2. Read /app/claude-progress.txt and run `git log --oneline -10` to understand recent progress
 3. Run `chmod +x /app/init.sh && /app/init.sh` to start dev servers
-4. Basic smoke test: verify the app loads by checking server logs
-5. Read /app/feature_list.json to see the feature list
+4. Basic smoke test: verify the app loads and inspect server logs for startup/runtime errors
+5. Run backend API smoke checks with `curl` on localhost (at minimum health/root plus the route(s) you are changing)
+6. Read /app/feature_list.json to see the feature list
 
 ## IMPLEMENTATION ORDER - FRONTEND FIRST
 For each feature, ALWAYS build in this order to give users immediate visual feedback:
@@ -35,6 +36,10 @@ For each feature, ALWAYS build in this order to give users immediate visual feed
 - Only mark "passes": true in feature_list.json AFTER browser testing confirms it works
 - Update /app/claude-progress.txt with session notes
 - Leave the codebase in a clean, working state
+- When adding a new library/package, ALWAYS install it FIRST:
+  - Frontend: `cd /app/vitereact && npm install <package-name>`
+  - Backend: `cd /app/backend && npm install <package-name>`
+- If backend/API behavior is uncertain, read backend server logs and validate impacted endpoints with `curl` before and after fixes
 
 ## Project Description (for context)
 # WEBSITE
@@ -383,9 +388,45 @@ something like this# ontact us
 just something basic like this
 
 ## Current User Request
-I see you did home and about and plus sign is it possible to fit in a book now too in the nabber for the mobile
+the website overall look very basic and outdated make it more modern and luxury
 
 Start by running the startup sequence, then pick the next feature to implement.
+
+## Backend Connection (CRITICAL)
+
+### ⚠️ CRITICAL CONSTRAINTS - DO NOT VIOLATE
+- **DO NOT** remove the environment variable check from API URL configuration
+- **DO NOT** replace `import.meta.env.VITE_API_BASE_URL || 'http://localhost:3000'` with just `'http://localhost:3000'`
+- **ALWAYS** preserve the full pattern: environment variable with localhost fallback
+
+**WHY**:
+- The environment variable contains the tunnel URL for external access (user viewing the app)
+- The localhost fallback is needed for internal sandbox communication
+- Both parts are required. Removing the env var breaks external access.
+
+### Required Pattern (NEVER MODIFY)
+```typescript
+// ✅ CORRECT - Always use this pattern
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3000';
+
+// Then use API_BASE_URL for all fetch calls
+fetch(`${API_BASE_URL}/api/users`)
+```
+
+### ❌ WRONG - Never do this
+```typescript
+// ❌ WRONG - Missing env var, breaks external access
+const API_BASE_URL = 'http://localhost:3000';
+
+// ❌ WRONG - Hardcoded in fetch call
+fetch('http://localhost:3000/api/users')
+```
+
+### How It Works
+- **Inside sandbox**: `VITE_API_BASE_URL` may be unset → falls back to `localhost:3000` → works
+- **External access**: `VITE_API_BASE_URL` is set to tunnel URL → uses tunnel → works
+- **VITE_API_BASE_URL** is automatically injected into `/app/vitereact/.env` when tunnel is created
+
 
 ## AI Integration (LaunchPulse AI Proxy)
 
@@ -408,6 +449,24 @@ const answer = await ai.ask('Question here');
 
 import { useChat } from './hooks/useAI';
 const { messages, send } = useChat();
+```
+
+### Vision/Image Analysis Usage
+```typescript
+import { ai } from './__create/ai';
+
+// Analyze a hosted image URL
+const analysisFromUrl = await ai.vision.analyzeImage({
+  prompt: 'Estimate calories and macros from this meal photo.',
+  imageUrl: 'https://example.com/meal.jpg',
+});
+
+// Analyze a base64 image (captured from camera/gallery)
+const analysisFromBase64 = await ai.vision.analyzeImage({
+  prompt: 'Identify foods and estimate calories.',
+  imageBase64: base64ImageData,
+  mimeType: 'image/jpeg',
+});
 ```
 
 ### Environment Variables (Auto-Injected)
