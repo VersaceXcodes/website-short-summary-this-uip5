@@ -3,10 +3,9 @@ import Layout from './components/layout/Layout';
 import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import About from './pages/About';
-
 import Pricing from './pages/Pricing';
-
 import Contact from './pages/Contact';
+import AIServices from './pages/AIServices';
 
 function App() {
   return (
@@ -18,6 +17,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="pricing" element={<Pricing />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="ai-services" element={<AIServices />} />
         </Route>
       </Routes>
     </BrowserRouter>

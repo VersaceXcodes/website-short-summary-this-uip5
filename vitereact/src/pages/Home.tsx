@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import Services from '../components/home/Services';
 import FAQ from '../components/home/FAQ';
+import AITeaser from '../components/home/AITeaser';
 import logo from '../assets/images/logo.png';
 
 const Home = () => {
@@ -85,6 +86,7 @@ const Home = () => {
       </section>
       
       <Services />
+      <AITeaser />
       <FAQ />
     </main>
   );
