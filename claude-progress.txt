@@ -87,7 +87,7 @@
   * ADDED: Semi-transparent forest green background with backdrop blur for depth
   * ADDED: 2px solid gold border around text box
   * ADDED: Subtle diagonal stripe pattern overlay for texture (5% opacity)
-  * ADDED: Vertical gradient accent bar on left side (gold → rust → gold)
+  * ADDED: Vertical gradient accent bar on left side (gold → rust → gold)
   * ADDED: Large shadow effect (shadow-2xl) for prominence
   * IMPROVED: Text now has proper layering with z-index for readability
   * RESULT: Text section is now visually striking and matches retro poster theme

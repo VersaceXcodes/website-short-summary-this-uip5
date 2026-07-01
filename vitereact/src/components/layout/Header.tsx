@@ -24,7 +24,7 @@ const Header = () => {
   return (
     <header className={`py-5 md:py-6 px-6 sm:px-8 md:px-12 lg:px-16 flex justify-between items-center gradient-luxury text-ivory relative z-50 sticky top-0 transition-all duration-300 ${scrolled ? 'shadow-luxury backdrop-blur-md bg-opacity-95' : ''}`}>
       
-      {/* Subtle bottom border */}
+      {/* Subtle bottom border */}
       <div className={`absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-gold/20 to-transparent transition-opacity duration-300 ${scrolled ? 'opacity-100' : 'opacity-0'}`}></div>
       
       {/* Small Logo - appears on scroll - positioned on left */}
